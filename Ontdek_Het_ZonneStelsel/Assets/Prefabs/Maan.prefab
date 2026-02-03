@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7003816973590892999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3145963063461065455}
+  m_Layer: 0
+  m_Name: Viewpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3145963063461065455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7003816973590892999}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8606294227991799913}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8134919837883256706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52,13 +83,24 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1337b4a48e88d3047a1c7ee1f0616911, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -8919902468743125352, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
+    - target: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_Name
       value: Maan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3145963063461065455}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
@@ -66,7 +108,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1554607724448576105}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5554099054338815676}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+--- !u!4 &8606294227991799913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+  m_PrefabInstance: {fileID: 8134919837883256706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8945384350405522131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
@@ -105,12 +155,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: 
-  _omZonDraaiTijd: 0
-  _asDraaiSnelheid: 0
-  _afstandTotZon: 0
-  _massa: 0
-  _grootteVerkleining: 0
-  _wareGrootte: 0
+  _planeetNaam: Maan
+  _omZonDraaiTijd: 27.9
+  _asDraaiSnelheid: 27.3
+  _afstandTotZon: 150
+  _massa: 0.0735
+  _simulatieGrootte: 0.5
+  _wareGrootte: 0.165
   viewPoint: {fileID: 0}
   _sceneNaam: 
+--- !u!114 &-5554099054338815676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8945384350405522131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateObject
+  rotateType: 0
+  rotationAxis: {x: 0, y: -1, z: 0}
+  axisSpace: 1
+  rotationSpeed: 10000
+  orbitObject: {fileID: 8606294227991799913}
+  planeetInfo: {fileID: 1554607724448576105}
+  useManualSpeed: 0
+  manualSpeed: 10

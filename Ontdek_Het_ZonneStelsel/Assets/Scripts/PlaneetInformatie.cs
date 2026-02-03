@@ -23,9 +23,9 @@ public class PlaneetInformatie : MonoBehaviour
     [SerializeField] private float _massa;
     public float massa => _massa;
 
-    [Tooltip("Grootte verkleint")]
-    [SerializeField] private float _grootteVerkleining;
-    public float grootteVerkleining => _grootteVerkleining;
+    [Tooltip("Simulatie grootte (verkleining/vergroting tov ware grootte)")]
+    [SerializeField] private float _simulatieGrootte;
+    public float simulatieGrootte => _simulatieGrootte;
 
     [Tooltip("Ware grootte")]
     [SerializeField] private float _wareGrootte;
