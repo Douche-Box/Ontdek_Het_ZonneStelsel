@@ -30,7 +30,6 @@ public class CameraController : MonoBehaviour
     [Header("Settings")]
     #region Settings
 
-
     [Header("Camera")]
     #region Camera
 
@@ -44,18 +43,15 @@ public class CameraController : MonoBehaviour
     [Header("Zoom")]
     #region Zoom
 
-    [SerializeField] private ZoomLock _zoomLock = ZoomLock.None;
-    private enum ZoomLock { None, In, Out }
-
     [SerializeField] private float _zoomSpeed = 10f;
 
     [Header("Zoom Distance")]
     [SerializeField] private float _currentZoom;
     [Header("")]
+    [SerializeField] private float _targetZoom;
     [SerializeField] private float _minZoom = -3f;
     [SerializeField] private float _maxZoom = 3f;
 
-    [SerializeField] private float _targetZoom;
 
     [Header("Zoom FOV")]
     [SerializeField] private float _currentFOV;
@@ -67,6 +63,8 @@ public class CameraController : MonoBehaviour
     #endregion
 
     #endregion
+
+    #region Subscriptions
 
     private void OnEnable()
     {
@@ -84,13 +82,23 @@ public class CameraController : MonoBehaviour
         _playerInput.actions.FindAction("Zoom").performed -= OnZoom;
     }
 
+    #endregion
+
     #region Inputs
 
+    /// <summary>
+    /// Handles camera rotation input
+    /// </summary>
+    /// <param name="context">input to read</param>
     private void OnCamera(InputAction.CallbackContext context)
     {
         _cameraInput = context.ReadValue<Vector2>();
     }
 
+    /// <summary>
+    /// Handles camera zoom input
+    /// </summary>
+    /// <param name="context">input to read</param>
     private void OnZoom(InputAction.CallbackContext context)
     {
         float scroll = context.ReadValue<Vector2>().y;
@@ -113,6 +121,10 @@ public class CameraController : MonoBehaviour
         _cameraInput = Vector2.zero;
     }
 
+    /// <summary>
+    /// Handles camera zooming
+    /// the fov changes based on the zoom level
+    /// </summary>
     private void HandleZoom()
     {
         Vector3 pos = _camera.transform.localPosition;
@@ -123,6 +135,9 @@ public class CameraController : MonoBehaviour
         _camera.fieldOfView = Mathf.Lerp(_zoomedOutFOV, _zoomedInFOV, t);
     }
 
+    /// <summary>
+    /// Handles camera rotation based on player input
+    /// </summary>
     private void RotateCamera()
     {
         _yRotation -= _cameraInput.y * _rotationSpeed * Time.deltaTime;
