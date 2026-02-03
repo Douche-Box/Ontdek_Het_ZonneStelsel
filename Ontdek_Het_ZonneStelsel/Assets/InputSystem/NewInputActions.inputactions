@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "NewInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "59c76ea0-3a1d-4dff-bfc7-665f5d23967c",
+            "actions": [
+                {
+                    "name": "Camera",
+                    "type": "Value",
+                    "id": "d48a0f5e-0fac-4f13-8ab0-9e8f299cf029",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "7a31b09d-d47f-4213-a227-1eeb6566e91a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "99d47de8-6c14-4c51-84f0-f8243ec8d930",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52f1a460-1c35-481f-9834-9f19bc9b037c",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
