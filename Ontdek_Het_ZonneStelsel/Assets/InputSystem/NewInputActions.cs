@@ -89,13 +89,22 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
     ""name"": ""NewInputActions"",
     ""maps"": [
         {
-            ""name"": ""FreeLook"",
+            ""name"": ""Player"",
             ""id"": ""59c76ea0-3a1d-4dff-bfc7-665f5d23967c"",
             ""actions"": [
                 {
                     ""name"": ""Camera"",
                     ""type"": ""Value"",
                     ""id"": ""d48a0f5e-0fac-4f13-8ab0-9e8f299cf029"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""1575b38c-5460-483b-b1af-1dc33ecb2d63"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -124,36 +133,8 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""52f1a460-1c35-481f-9834-9f19bc9b037c"",
-                    ""path"": ""<Mouse>/scroll"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""PlanetFocus"",
-            ""id"": ""927892f5-52dd-4aa6-8250-fe4b2576fd2f"",
-            ""actions"": [
-                {
-                    ""name"": ""Move"",
-                    ""type"": ""Value"",
-                    ""id"": ""f03ce99c-434a-41c5-bc19-7fef79043066"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                }
-            ],
-            ""bindings"": [
-                {
                     ""name"": ""2D Vector"",
-                    ""id"": ""6f8c9675-02f1-42e2-a6a5-003b67ec0df9"",
+                    ""id"": ""2b7facf5-1ac3-4966-92f9-9a2a337271b1"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -164,7 +145,7 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""08edeff5-a4e2-4b94-baff-083ab3e8e43b"",
+                    ""id"": ""30807c94-a0fc-455b-bbb8-68dd7e860669"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -175,7 +156,7 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""426807e0-d0c7-43ec-b38d-07966556889e"",
+                    ""id"": ""973d3e60-79dd-4752-8be6-d3e1a902d49c"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -186,7 +167,7 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""74e01e66-7e00-41b6-87ce-b037c095e183"",
+                    ""id"": ""7afaf43e-dc9a-4871-8461-eeec06e867eb"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -197,7 +178,7 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""1056cad4-9e73-4554-b6e5-65c3fce7fa1e"",
+                    ""id"": ""a0945398-9a50-477d-a617-055bc8c1b78f"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -205,6 +186,17 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""52f1a460-1c35-481f-9834-9f19bc9b037c"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -239,13 +231,11 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // FreeLook
-        m_FreeLook = asset.FindActionMap("FreeLook", throwIfNotFound: true);
-        m_FreeLook_Camera = m_FreeLook.FindAction("Camera", throwIfNotFound: true);
-        m_FreeLook_Zoom = m_FreeLook.FindAction("Zoom", throwIfNotFound: true);
-        // PlanetFocus
-        m_PlanetFocus = asset.FindActionMap("PlanetFocus", throwIfNotFound: true);
-        m_PlanetFocus_Move = m_PlanetFocus.FindAction("Move", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_Camera = m_Player.FindAction("Camera", throwIfNotFound: true);
+        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_Zoom = m_Player.FindAction("Zoom", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_PauseMenu = m_Menu.FindAction("PauseMenu", throwIfNotFound: true);
@@ -253,8 +243,7 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
 
     ~@NewInputActions()
     {
-        UnityEngine.Debug.Assert(!m_FreeLook.enabled, "This will cause a leak and performance issues, NewInputActions.FreeLook.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_PlanetFocus.enabled, "This will cause a leak and performance issues, NewInputActions.PlanetFocus.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, NewInputActions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Menu.enabled, "This will cause a leak and performance issues, NewInputActions.Menu.Disable() has not been called.");
     }
 
@@ -328,34 +317,39 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // FreeLook
-    private readonly InputActionMap m_FreeLook;
-    private List<IFreeLookActions> m_FreeLookActionsCallbackInterfaces = new List<IFreeLookActions>();
-    private readonly InputAction m_FreeLook_Camera;
-    private readonly InputAction m_FreeLook_Zoom;
+    // Player
+    private readonly InputActionMap m_Player;
+    private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
+    private readonly InputAction m_Player_Camera;
+    private readonly InputAction m_Player_Move;
+    private readonly InputAction m_Player_Zoom;
     /// <summary>
-    /// Provides access to input actions defined in input action map "FreeLook".
+    /// Provides access to input actions defined in input action map "Player".
     /// </summary>
-    public struct FreeLookActions
+    public struct PlayerActions
     {
         private @NewInputActions m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public FreeLookActions(@NewInputActions wrapper) { m_Wrapper = wrapper; }
+        public PlayerActions(@NewInputActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "FreeLook/Camera".
+        /// Provides access to the underlying input action "Player/Camera".
         /// </summary>
-        public InputAction @Camera => m_Wrapper.m_FreeLook_Camera;
+        public InputAction @Camera => m_Wrapper.m_Player_Camera;
         /// <summary>
-        /// Provides access to the underlying input action "FreeLook/Zoom".
+        /// Provides access to the underlying input action "Player/Move".
         /// </summary>
-        public InputAction @Zoom => m_Wrapper.m_FreeLook_Zoom;
+        public InputAction @Move => m_Wrapper.m_Player_Move;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Zoom".
+        /// </summary>
+        public InputAction @Zoom => m_Wrapper.m_Player_Zoom;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_FreeLook; }
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -363,9 +357,9 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
         public bool enabled => Get().enabled;
         /// <summary>
-        /// Implicitly converts an <see ref="FreeLookActions" /> to an <see ref="InputActionMap" /> instance.
+        /// Implicitly converts an <see ref="PlayerActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
-        public static implicit operator InputActionMap(FreeLookActions set) { return set.Get(); }
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -373,14 +367,17 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
         /// </remarks>
-        /// <seealso cref="FreeLookActions" />
-        public void AddCallbacks(IFreeLookActions instance)
+        /// <seealso cref="PlayerActions" />
+        public void AddCallbacks(IPlayerActions instance)
         {
-            if (instance == null || m_Wrapper.m_FreeLookActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_FreeLookActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
             @Camera.started += instance.OnCamera;
             @Camera.performed += instance.OnCamera;
             @Camera.canceled += instance.OnCamera;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
             @Zoom.started += instance.OnZoom;
             @Zoom.performed += instance.OnZoom;
             @Zoom.canceled += instance.OnZoom;
@@ -392,24 +389,27 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
         /// </remarks>
-        /// <seealso cref="FreeLookActions" />
-        private void UnregisterCallbacks(IFreeLookActions instance)
+        /// <seealso cref="PlayerActions" />
+        private void UnregisterCallbacks(IPlayerActions instance)
         {
             @Camera.started -= instance.OnCamera;
             @Camera.performed -= instance.OnCamera;
             @Camera.canceled -= instance.OnCamera;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
             @Zoom.started -= instance.OnZoom;
             @Zoom.performed -= instance.OnZoom;
             @Zoom.canceled -= instance.OnZoom;
         }
 
         /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="FreeLookActions.UnregisterCallbacks(IFreeLookActions)" />.
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PlayerActions.UnregisterCallbacks(IPlayerActions)" />.
         /// </summary>
-        /// <seealso cref="FreeLookActions.UnregisterCallbacks(IFreeLookActions)" />
-        public void RemoveCallbacks(IFreeLookActions instance)
+        /// <seealso cref="PlayerActions.UnregisterCallbacks(IPlayerActions)" />
+        public void RemoveCallbacks(IPlayerActions instance)
         {
-            if (m_Wrapper.m_FreeLookActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PlayerActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
@@ -419,117 +419,21 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
         /// </remarks>
-        /// <seealso cref="FreeLookActions.AddCallbacks(IFreeLookActions)" />
-        /// <seealso cref="FreeLookActions.RemoveCallbacks(IFreeLookActions)" />
-        /// <seealso cref="FreeLookActions.UnregisterCallbacks(IFreeLookActions)" />
-        public void SetCallbacks(IFreeLookActions instance)
+        /// <seealso cref="PlayerActions.AddCallbacks(IPlayerActions)" />
+        /// <seealso cref="PlayerActions.RemoveCallbacks(IPlayerActions)" />
+        /// <seealso cref="PlayerActions.UnregisterCallbacks(IPlayerActions)" />
+        public void SetCallbacks(IPlayerActions instance)
         {
-            foreach (var item in m_Wrapper.m_FreeLookActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PlayerActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_FreeLookActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
     /// <summary>
-    /// Provides a new <see cref="FreeLookActions" /> instance referencing this action map.
+    /// Provides a new <see cref="PlayerActions" /> instance referencing this action map.
     /// </summary>
-    public FreeLookActions @FreeLook => new FreeLookActions(this);
-
-    // PlanetFocus
-    private readonly InputActionMap m_PlanetFocus;
-    private List<IPlanetFocusActions> m_PlanetFocusActionsCallbackInterfaces = new List<IPlanetFocusActions>();
-    private readonly InputAction m_PlanetFocus_Move;
-    /// <summary>
-    /// Provides access to input actions defined in input action map "PlanetFocus".
-    /// </summary>
-    public struct PlanetFocusActions
-    {
-        private @NewInputActions m_Wrapper;
-
-        /// <summary>
-        /// Construct a new instance of the input action map wrapper class.
-        /// </summary>
-        public PlanetFocusActions(@NewInputActions wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "PlanetFocus/Move".
-        /// </summary>
-        public InputAction @Move => m_Wrapper.m_PlanetFocus_Move;
-        /// <summary>
-        /// Provides access to the underlying input action map instance.
-        /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_PlanetFocus; }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
-        public void Enable() { Get().Enable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
-        public void Disable() { Get().Disable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
-        public bool enabled => Get().enabled;
-        /// <summary>
-        /// Implicitly converts an <see ref="PlanetFocusActions" /> to an <see ref="InputActionMap" /> instance.
-        /// </summary>
-        public static implicit operator InputActionMap(PlanetFocusActions set) { return set.Get(); }
-        /// <summary>
-        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <param name="instance">Callback instance.</param>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
-        /// </remarks>
-        /// <seealso cref="PlanetFocusActions" />
-        public void AddCallbacks(IPlanetFocusActions instance)
-        {
-            if (instance == null || m_Wrapper.m_PlanetFocusActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PlanetFocusActionsCallbackInterfaces.Add(instance);
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
-        }
-
-        /// <summary>
-        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <remarks>
-        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
-        /// </remarks>
-        /// <seealso cref="PlanetFocusActions" />
-        private void UnregisterCallbacks(IPlanetFocusActions instance)
-        {
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
-        }
-
-        /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PlanetFocusActions.UnregisterCallbacks(IPlanetFocusActions)" />.
-        /// </summary>
-        /// <seealso cref="PlanetFocusActions.UnregisterCallbacks(IPlanetFocusActions)" />
-        public void RemoveCallbacks(IPlanetFocusActions instance)
-        {
-            if (m_Wrapper.m_PlanetFocusActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        /// <summary>
-        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
-        /// </summary>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
-        /// </remarks>
-        /// <seealso cref="PlanetFocusActions.AddCallbacks(IPlanetFocusActions)" />
-        /// <seealso cref="PlanetFocusActions.RemoveCallbacks(IPlanetFocusActions)" />
-        /// <seealso cref="PlanetFocusActions.UnregisterCallbacks(IPlanetFocusActions)" />
-        public void SetCallbacks(IPlanetFocusActions instance)
-        {
-            foreach (var item in m_Wrapper.m_PlanetFocusActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_PlanetFocusActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    /// <summary>
-    /// Provides a new <see cref="PlanetFocusActions" /> instance referencing this action map.
-    /// </summary>
-    public PlanetFocusActions @PlanetFocus => new PlanetFocusActions(this);
+    public PlayerActions @Player => new PlayerActions(this);
 
     // Menu
     private readonly InputActionMap m_Menu;
@@ -627,11 +531,11 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
     /// </summary>
     public MenuActions @Menu => new MenuActions(this);
     /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "FreeLook" which allows adding and removing callbacks.
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
-    /// <seealso cref="FreeLookActions.AddCallbacks(IFreeLookActions)" />
-    /// <seealso cref="FreeLookActions.RemoveCallbacks(IFreeLookActions)" />
-    public interface IFreeLookActions
+    /// <seealso cref="PlayerActions.AddCallbacks(IPlayerActions)" />
+    /// <seealso cref="PlayerActions.RemoveCallbacks(IPlayerActions)" />
+    public interface IPlayerActions
     {
         /// <summary>
         /// Method invoked when associated input action "Camera" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
@@ -641,27 +545,19 @@ public partial class @NewInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCamera(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Zoom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnZoom(InputAction.CallbackContext context);
-    }
-    /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "PlanetFocus" which allows adding and removing callbacks.
-    /// </summary>
-    /// <seealso cref="PlanetFocusActions.AddCallbacks(IPlanetFocusActions)" />
-    /// <seealso cref="PlanetFocusActions.RemoveCallbacks(IPlanetFocusActions)" />
-    public interface IPlanetFocusActions
-    {
-        /// <summary>
         /// Method invoked when associated input action "Move" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Zoom" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnZoom(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Menu" which allows adding and removing callbacks.

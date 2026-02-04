@@ -177,19 +177,30 @@ MonoBehaviour:
   _camera: {fileID: 7286008678069017072}
   _playerInput: {fileID: 3683473649468578192}
   _orientation: {fileID: 6314935457196296176}
+  _lookAtTarget: {fileID: 0}
+  _offsetToTarget: {x: 0, y: 0, z: 0}
+  _planetMask:
+    serializedVersion: 2
+    m_Bits: 1
   _cameraInput: {x: 0, y: 0}
   _yRotation: 0
   _xRotation: 0
   _zoomInput: 0
+  _moveInput: {x: 0, y: 0}
+  _isMoving: 0
   _rotationSpeed: 10
+  _moveSpeed: 5
   _minYClamp: -80
   _maxYClamp: 80
-  _zoomLock: 0
+  _lookAtDefaultOffset: 2
+  _parentDistance: 5
+  _isParented: 0
+  _distanceFromTarget: 0
   _zoomSpeed: 2
   _currentZoom: 0
+  _targetZoom: 0
   _minZoom: -3
   _maxZoom: 3
-  _targetZoom: 0
   _currentFOV: 0
   _zoomedOutFOV: 90
   _zoomedInFOV: 30

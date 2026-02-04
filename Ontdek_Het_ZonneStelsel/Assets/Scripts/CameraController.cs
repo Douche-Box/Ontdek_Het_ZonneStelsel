@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Transform _orientation;
 
     [SerializeField] private Transform _lookAtTarget;
+    [SerializeField] private Vector3 _offsetToTarget;
 
     [SerializeField] private LayerMask _planetMask;
 
@@ -27,7 +28,8 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private float _zoomInput;
 
-    [SerializeField] private Vector2 moveInput;
+    [SerializeField] private Vector2 _moveInput;
+    [SerializeField] private bool _isMoving;
 
     #endregion
 
@@ -44,6 +46,11 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _maxYClamp = 89.9f;
 
     [SerializeField] private float _lookAtDefaultOffset = 2.0f;
+
+    [SerializeField] private float _parentDistance = 5f;
+    [SerializeField] private bool _isParented = false;
+
+    [SerializeField] private float _distanceFromTarget;
 
     #endregion
 
@@ -80,8 +87,8 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("Zoom").performed += OnZoom;
 
-        _playerInput.actions.FindAction("Move").performed += OnMove;
-        _playerInput.actions.FindAction("Move").canceled += OnMove;
+        _playerInput.actions.FindAction("Rotate").performed += OnMove;
+        _playerInput.actions.FindAction("Rotate").canceled += OnMove;
     }
 
     private void OnDisable()
@@ -91,8 +98,8 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("Zoom").performed -= OnZoom;
 
-        _playerInput.actions.FindAction("Move").performed -= OnMove;
-        _playerInput.actions.FindAction("Move").canceled -= OnMove;
+        _playerInput.actions.FindAction("Rotate").performed -= OnMove;
+        _playerInput.actions.FindAction("Rotate").canceled -= OnMove;
     }
 
     #endregion
@@ -120,49 +127,48 @@ public class CameraController : MonoBehaviour
         _targetZoom = Mathf.Clamp(_targetZoom, _minZoom, _maxZoom);
     }
 
+    /// <summary>
+    /// Handles camera move input when focussing on a target
+    /// </summary>
+    /// <param name="context"></param>
     private void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
+        _moveInput = context.ReadValue<Vector2>();
+        _isMoving = _moveInput != Vector2.zero;
     }
 
     #endregion
 
-    private void Awake()
-    {
-        SwitchActionMap("FreeLook");
-    }
-
+    /// <summary>
+    /// Adds a new target for the camera to look at
+    /// </summary>
+    /// <param name="newTarget"></param>
     public void AddTarget(Transform newTarget)
     {
         if (newTarget == null || _lookAtTarget == newTarget)
             return;
 
         _lookAtTarget = newTarget;
-        _camera.transform.LookAt(_lookAtTarget.position);
 
-        SwitchActionMap("PlanetFocus");
+        Vector3 dir = (transform.position - _lookAtTarget.position).normalized;
+
+        float scaledOffset = _lookAtDefaultOffset * _lookAtTarget.localScale.magnitude;
+
+        _offsetToTarget = _lookAtTarget.InverseTransformPoint(_lookAtTarget.position + dir * scaledOffset);
     }
 
+    /// <summary>
+    /// Removes the current target the camera is looking at
+    /// </summary>
     public void RemoveTarget()
     {
+        if (_lookAtTarget != null && _isParented)
+        {
+            transform.SetParent(null);
+            _isParented = false;
+        }
+
         _lookAtTarget = null;
-
-        SwitchActionMap("FreeLook");
-    }
-
-    private void SwitchActionMap(string mapName)
-    {
-        if (_playerInput.currentActionMap.name == mapName)
-            return;
-
-        if (_playerInput.actions.FindActionMap(mapName) == null)
-            return;
-
-        _playerInput.currentActionMap.Disable();
-        _playerInput.currentActionMap = _playerInput.actions.FindActionMap(mapName);
-        _playerInput.currentActionMap.Enable();
-
-        Debug.Log($"Switched to Action Map: {mapName}");
     }
 
     private void Update()
@@ -191,10 +197,19 @@ public class CameraController : MonoBehaviour
 
         if (_lookAtTarget != null)
         {
-            if (Vector3.Distance(transform.position, _lookAtTarget.position) > _lookAtDefaultOffset)
+            if (!_isParented && !_isMoving)
+            {
                 MoveTowardsTarget();
+            }
 
-            RotateCameraAroundTarget();
+            if (_isMoving)
+            {
+                RotateCameraAroundTarget();
+            }
+            else
+            {
+                FocusOnPin();
+            }
         }
 
         _cameraInput = Vector2.zero;
@@ -232,20 +247,60 @@ public class CameraController : MonoBehaviour
         _camera.fieldOfView = Mathf.Lerp(_zoomedOutFOV, _zoomedInFOV, t);
     }
 
+    /// <summary>
+    /// Moves the camera towards the target it is looking at and parents it when close enough
+    /// </summary>
     private void MoveTowardsTarget()
     {
-        transform.position = Vector3.Lerp(transform.position, _lookAtTarget.position, Time.deltaTime * _moveSpeed);
+        if (_lookAtTarget == null) return;
+
+        Vector3 targetWorldPos = _lookAtTarget.TransformPoint(_offsetToTarget);
+
+        transform.position = Vector3.Lerp(transform.position, targetWorldPos, Time.deltaTime * _moveSpeed);
+
+        _distanceFromTarget = Vector3.Distance(transform.position, _lookAtTarget.position);
+
+        if (!_isParented && _distanceFromTarget <= _parentDistance)
+        {
+            ParentToTarget();
+        }
+
+        _camera.transform.LookAt(_lookAtTarget.position);
     }
 
+    /// <summary>
+    /// Parents the camera to the target it is looking at
+    /// </summary>
+    private void ParentToTarget()
+    {
+        if (_lookAtTarget == null) return;
+
+        transform.SetParent(_lookAtTarget);
+
+        transform.localPosition = _lookAtTarget.InverseTransformPoint(transform.position);
+        transform.LookAt(_lookAtTarget.position);
+
+        _isParented = true;
+    }
+
+    /// <summary>
+    /// Rotates the camera around the target it is looking at based on player input
+    /// </summary>
     private void RotateCameraAroundTarget()
     {
         if (_lookAtTarget == null)
             return;
 
-        float yaw = moveInput.x * _rotationSpeed * Time.deltaTime * 10;
-        float pitch = -moveInput.y * _rotationSpeed * Time.deltaTime * 10;
+        float xAxis = -_moveInput.x * _rotationSpeed * Time.deltaTime * 10;
+        float yAxis = _moveInput.y * _rotationSpeed * Time.deltaTime * 10;
 
-        transform.RotateAround(_lookAtTarget.position, transform.up, yaw);
-        transform.RotateAround(_lookAtTarget.position, transform.right, pitch);
+        transform.RotateAround(_lookAtTarget.position, transform.up, xAxis);
+        transform.RotateAround(_lookAtTarget.position, transform.right, yAxis);
+    }
+
+    private void FocusOnPin()
+    {
+        if (_lookAtTarget == null) return;
+
     }
 }
