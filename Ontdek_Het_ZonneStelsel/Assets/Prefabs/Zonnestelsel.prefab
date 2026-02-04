@@ -1998,19 +1998,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5713139327266372606}
   m_SourcePrefab: {fileID: 100100000, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
 --- !u!114 &2729840731192369566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
   m_PrefabInstance: {fileID: 1038304570154960232}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7256171841050360608}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!1 &7256171841050360608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+  m_PrefabInstance: {fileID: 1038304570154960232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5713139327266372606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256171841050360608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 2729840731192369566}
+  useSimulationDistance: 1
 --- !u!4 &8068420235378549146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7030125571582436594, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
@@ -2079,14 +2101,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4337618496880057656}
   m_SourcePrefab: {fileID: 100100000, guid: d24296af07984e244813943ceea24815, type: 3}
 --- !u!114 &2575764437282539950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
   m_PrefabInstance: {fileID: 2096161034111098474}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7921802012341462837}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2097,6 +2122,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8913532972407399397, guid: d24296af07984e244813943ceea24815, type: 3}
   m_PrefabInstance: {fileID: 2096161034111098474}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7921802012341462837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
+  m_PrefabInstance: {fileID: 2096161034111098474}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4337618496880057656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7921802012341462837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 2575764437282539950}
+  useSimulationDistance: 1
 --- !u!1001 &3984374763708621689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2168,19 +2212,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7530006709364181099}
   m_SourcePrefab: {fileID: 100100000, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
 --- !u!114 &284459675062968975 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
   m_PrefabInstance: {fileID: 3984374763708621689}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8345910078512204571}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!1 &8345910078512204571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+  m_PrefabInstance: {fileID: 3984374763708621689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7530006709364181099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345910078512204571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 284459675062968975}
+  useSimulationDistance: 1
 --- !u!4 &8690100461793104289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
@@ -2253,14 +2319,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6925951883964801597}
   m_SourcePrefab: {fileID: 100100000, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
 --- !u!114 &151031725359356011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
   m_PrefabInstance: {fileID: 4049415275704053280}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2075430243565468409}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2271,6 +2340,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3437603171248328291, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
   m_PrefabInstance: {fileID: 4049415275704053280}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2075430243565468409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+  m_PrefabInstance: {fileID: 4049415275704053280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6925951883964801597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075430243565468409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 151031725359356011}
+  useSimulationDistance: 1
 --- !u!1001 &4160255988942793584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2334,14 +2422,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2851556820283916994}
   m_SourcePrefab: {fileID: 100100000, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
 --- !u!114 &1488261023253041697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
   m_PrefabInstance: {fileID: 4160255988942793584}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7556502224373398417}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2352,6 +2443,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6496993144350542427, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
   m_PrefabInstance: {fileID: 4160255988942793584}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7556502224373398417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+  m_PrefabInstance: {fileID: 4160255988942793584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2851556820283916994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556502224373398417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 1488261023253041697}
+  useSimulationDistance: 1
 --- !u!1001 &5127077876021874768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2462,19 +2572,63 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4234034120304657567, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       insertIndex: 0
       addedObject: {fileID: 3607269199892872494}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1235622450141205343}
+    - targetCorrespondingSourceObject: {fileID: 1132490003437760953, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8533085560970454061}
   m_SourcePrefab: {fileID: 100100000, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
 --- !u!114 &2388899363994558803 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
   m_PrefabInstance: {fileID: 5127077876021874768}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 5228788575740027369}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!1 &4723754038768199405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+  m_PrefabInstance: {fileID: 5127077876021874768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1235622450141205343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723754038768199405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 7137723784330589748}
+  useSimulationDistance: 1
+--- !u!1 &5228788575740027369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1132490003437760953, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+  m_PrefabInstance: {fileID: 5127077876021874768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8533085560970454061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228788575740027369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 2388899363994558803}
+  useSimulationDistance: 1
 --- !u!4 &5387982913879424087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1000643267960007687, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
@@ -2485,7 +2639,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
   m_PrefabInstance: {fileID: 5127077876021874768}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4723754038768199405}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2652,19 +2806,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7726882991728571155}
   m_SourcePrefab: {fileID: 100100000, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
 --- !u!4 &1309164110321202271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5336398026519803231, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
   m_PrefabInstance: {fileID: 6351663621338841344}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1828678597675773669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+  m_PrefabInstance: {fileID: 6351663621338841344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7726882991728571155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828678597675773669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 2533507393391374668}
+  useSimulationDistance: 1
 --- !u!114 &2533507393391374668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
   m_PrefabInstance: {fileID: 6351663621338841344}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1828678597675773669}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}

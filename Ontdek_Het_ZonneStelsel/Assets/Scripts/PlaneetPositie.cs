@@ -5,14 +5,12 @@ public class PlaneetPositie : MonoBehaviour
     [SerializeField] private PlaneetInformatie planeetInfo;
     [SerializeField] private bool useSimulationDistance = true;
 
-    private float originalY;
-    private float originalZ;
+    private Vector3 orbitDirection;
 
     private void Awake()
     {
-        // Bewaar Y en Z, die veranderen we nooit
-        originalY = transform.position.y;
-        originalZ = transform.position.z;
+        // Sla originele richting op (t.o.v. zon)
+        orbitDirection = (transform.position - Vector3.zero).normalized;
     }
 
     private void Start()
@@ -24,11 +22,11 @@ public class PlaneetPositie : MonoBehaviour
     {
         if (planeetInfo == null) return;
 
-        float x = useSimulationDistance
+        float distance = useSimulationDistance
             ? planeetInfo.simulatieAfstand
             : planeetInfo.afstandTotZon;
 
-        transform.position = new Vector3(x, originalY, originalZ);
+        transform.localPosition = orbitDirection * distance;
     }
 
     public void SwitchDistanceMode(bool simulation)
