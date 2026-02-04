@@ -10,6 +10,10 @@ public class UI_manager : MonoBehaviour
     public PlayerInput playerInput;
     public PlaneetInformatie planeetInformatie;
     public PlaneetAfstandVerandering planeetAfstandVerandering;
+    public GameObject landenOpPlaneet;
+    public GameObject verlaatPlaneet;
+    public bool opPlaneet = false;
+    public bool planeetIsSelected = false;
 
     public string selectedPlaneet;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,19 +29,19 @@ public class UI_manager : MonoBehaviour
     public void OnPause(InputAction.CallbackContext context)
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);
+
+        if (planeetIsSelected == true)
+        {
+            landenOpPlaneet.SetActive(!landenOpPlaneet.activeSelf);
+        }
+        if (opPlaneet == true)
+        {
+            verlaatPlaneet.SetActive(!verlaatPlaneet.activeSelf);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 
-    public void BackButton()
-    {
-
-    }
-    public void ChangeVolume()
+        public void ChangeVolume()
     {
 
     }
@@ -63,9 +67,13 @@ public class UI_manager : MonoBehaviour
         planeetAfstandVerandering.ToggleModeSimulationMode();
 
     }
-    public void LandOpPlaneet()
+    public void LandOpPlaneet(string selectedPlanet)
     {
-        SceneManager.LoadScene(1);
-        //SceneManager.LoadScene(selectedPlaneet);
+        SceneManager.LoadScene(selectedPlanet);
+        //SceneManager.LoadScene(selectedPlanet);
+    }
+    public void VerlaatPlaneet()
+    {
+        SceneManager.LoadScene("Zonnestelsel");
     }
 }
