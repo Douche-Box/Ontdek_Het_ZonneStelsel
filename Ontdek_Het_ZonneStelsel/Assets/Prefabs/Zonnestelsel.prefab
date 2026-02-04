@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8410982386234480389}
   - component: {fileID: 4749593026819801164}
   m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
+  m_Name: Line_Renderer_Jupiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 3518684261572646930}
   - component: {fileID: 8213430280814422073}
   m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
+  m_Name: Line_Renderer_Neptunus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 4246127043165985932}
   - component: {fileID: 7843302424870681029}
   m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
+  m_Name: Line_Renderer_Mars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 4807945833357247779}
   - component: {fileID: 2051160032965331020}
   m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
+  m_Name: Line_Renderer_Saturnus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 7273198082699457990}
   - component: {fileID: 1956460760659430525}
   m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
+  m_Name: Line_Renderer_Uranus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
