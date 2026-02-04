@@ -281,7 +281,9 @@ MonoBehaviour:
   _planeetNaam: Saturnus
   _omZonDraaiTijd: 10759
   _asDraaiSnelheid: 0.45
+  _simulatieAfstand: 0
   _afstandTotZon: 1430
+  _afstandTotAarde: 0
   _massa: 570
   _simulatieGrootte: 1
   _wareGrootte: 9.5
