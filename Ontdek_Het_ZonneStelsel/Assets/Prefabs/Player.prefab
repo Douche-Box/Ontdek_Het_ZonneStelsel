@@ -193,9 +193,10 @@ MonoBehaviour:
   _minYClamp: -80
   _maxYClamp: 80
   _lookAtDefaultOffset: 2
-  _parentDistance: 5
+  _parentDistance: 10
   _isParented: 0
   _distanceFromTarget: 0
+  _focusSmoothSpeed: 1
   _zoomSpeed: 2
   _currentZoom: 0
   _targetZoom: 0

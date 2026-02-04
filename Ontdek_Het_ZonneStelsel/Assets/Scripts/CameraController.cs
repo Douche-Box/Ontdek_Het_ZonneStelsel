@@ -34,7 +34,6 @@ public class CameraController : MonoBehaviour
     #endregion
 
     [Header("Settings")]
-    #region Settings
 
     [Header("Camera")]
     #region Camera
@@ -45,12 +44,20 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _minYClamp = -89.9f;
     [SerializeField] private float _maxYClamp = 89.9f;
 
+    [Header("Look At Target")]
+    #region Look At Target
+
     [SerializeField] private float _lookAtDefaultOffset = 2.0f;
 
     [SerializeField] private float _parentDistance = 5f;
     [SerializeField] private bool _isParented = false;
 
     [SerializeField] private float _distanceFromTarget;
+    [SerializeField] private float _focusSmoothSpeed = 5.0f;
+
+    [SerializeField] private Transform _targetPin;
+
+    #endregion
 
     #endregion
 
@@ -76,7 +83,6 @@ public class CameraController : MonoBehaviour
 
     #endregion
 
-    #endregion
 
     #region Subscriptions
 
@@ -139,6 +145,7 @@ public class CameraController : MonoBehaviour
 
     #endregion
 
+
     /// <summary>
     /// Adds a new target for the camera to look at
     /// </summary>
@@ -149,6 +156,7 @@ public class CameraController : MonoBehaviour
             return;
 
         _lookAtTarget = newTarget;
+        _targetPin = _lookAtTarget.GetChild(0);
 
         Vector3 dir = (transform.position - _lookAtTarget.position).normalized;
 
@@ -169,7 +177,9 @@ public class CameraController : MonoBehaviour
         }
 
         _lookAtTarget = null;
+        _targetPin = null;
     }
+
 
     private void Update()
     {
@@ -206,14 +216,20 @@ public class CameraController : MonoBehaviour
             {
                 RotateCameraAroundTarget();
             }
-            else
-            {
-                FocusOnPin();
-            }
+
         }
 
         _cameraInput = Vector2.zero;
     }
+
+    void LateUpdate()
+    {
+        if (!_isMoving && _lookAtTarget != null)
+        {
+            FocusOnPinConstantSpeed();
+        }
+    }
+
 
     /// <summary>
     /// Handles camera rotation based on player input
@@ -231,7 +247,6 @@ public class CameraController : MonoBehaviour
 
         _orientation.forward = transform.forward;
     }
-
 
     /// <summary>
     /// Handles camera zooming
@@ -298,9 +313,34 @@ public class CameraController : MonoBehaviour
         transform.RotateAround(_lookAtTarget.position, transform.right, yAxis);
     }
 
-    private void FocusOnPin()
+    /// <summary>
+    /// Focuses the camera on a pin of the target at a constant speed around the target itself
+    /// </summary>
+    private void FocusOnPinConstantSpeed()
     {
-        if (_lookAtTarget == null) return;
+        if (_lookAtTarget == null || _lookAtTarget.childCount == 0) return;
 
+        // Calculate directions relative to the center of the target
+        Vector3 currentDir = (transform.position - _lookAtTarget.position).normalized;
+        Vector3 targetDir = (_targetPin.position - _lookAtTarget.position).normalized;
+
+        // Determine the angle between the current and target directions
+        float angleBetween = Vector3.Angle(currentDir, targetDir);
+
+        // If close to the angle stop to prevent jitter
+        if (angleBetween < 0.01f) return;
+
+        // Calculate how much to move this per step
+        float moveStep = _focusSmoothSpeed * 100 * Time.deltaTime;
+
+        // Devide the steps to get a linear value to move across the angle
+        float t = Mathf.Min(moveStep / angleBetween, 1.0f);
+
+        // Use slerp to smoothly interpolate between directions and maintain radius around the target
+        float currentRadius = Vector3.Distance(transform.position, _lookAtTarget.position);
+        Vector3 newRelativePos = Vector3.Slerp(currentDir, targetDir, t) * currentRadius;
+
+        transform.position = _lookAtTarget.position + newRelativePos;
+        transform.LookAt(_lookAtTarget.position);
     }
 }
