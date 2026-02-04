@@ -41,27 +41,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 228
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.00002960996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.000043559936
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.60876137
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7933534
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 2.842171e-14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -111,6 +111,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3978579339831362528}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3642979616045445128}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6249738875602679956}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
 --- !u!1 &8140515466153261407 stripped
 GameObject:
@@ -153,7 +159,9 @@ MonoBehaviour:
   _planeetNaam: Mars
   _omZonDraaiTijd: 687
   _asDraaiSnelheid: 1025
+  _simulatieAfstand: 200
   _afstandTotZon: 228
+  _afstandTotAarde: 56
   _massa: 0.64
   _simulatieGrootte: 1
   _wareGrootte: 0.53
@@ -172,13 +180,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
   rotateType: 0
-  rotationAxis: {x: 0, y: -1, z: 0}
+  rotationAxis: {x: 0, y: 0, z: -1}
   axisSpace: 1
   rotationSpeed: 10000
   orbitObject: {fileID: 8913532972407399397}
   planeetInfo: {fileID: 4515416358333863876}
   useManualSpeed: 0
   manualSpeed: 10
+--- !u!114 &3642979616045445128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140515466153261407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 4515416358333863876}
+  useSimulationDistance: 1
+--- !u!114 &6249738875602679956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140515466153261407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
+  planeetInformatie: {fileID: 4515416358333863876}
+  useSimulationScale: 0
+  schaal: 1000
 --- !u!4 &8913532972407399397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

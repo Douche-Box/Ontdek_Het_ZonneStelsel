@@ -173,7 +173,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -245,6 +245,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 1488261023253041697}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &2906987861976024711
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +334,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -404,6 +406,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 151031725359356011}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &2923875335586157502
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +495,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -563,6 +567,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 2575764437282539950}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &3234821421219939344
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +818,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -884,6 +890,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 284459675062968975}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &4186196156531574329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1033,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1097,6 +1105,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 2729840731192369566}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &4529342055407600511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1194,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1256,6 +1266,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 2533507393391374668}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &4621010428681732023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1503,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1563,6 +1575,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 1614855793203875985}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1 &7527633322121745736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,165 +1631,6 @@ MonoBehaviour:
   planeetInfo: {fileID: 2729840731192369566}
   useManualSpeed: 0
   manualSpeed: 10
---- !u!1 &7690662510868500586
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3607269199892872494}
-  - component: {fileID: 1950583871350679290}
-  - component: {fileID: 789871686802081632}
-  m_Layer: 0
-  m_Name: Line_Renderer_Mercurius
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3607269199892872494
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7690662510868500586}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9071733648967390415}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!120 &1950583871350679290
-LineRenderer:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7690662510868500586}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 087b441437dc6064c803854a903b425e, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
-  m_Parameters:
-    serializedVersion: 3
-    widthMultiplier: 1
-    widthCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    colorGradient:
-      serializedVersion: 2
-      key0: {r: 0.11955606, g: 0.30206048, b: 0.9748427, a: 1}
-      key1: {r: 0.11955606, g: 0.30206048, b: 0.9748427, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
-      ctime4: 0
-      ctime5: 0
-      ctime6: 0
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_ColorSpace: 0
-      m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
-    alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
-    shadowBias: 0.5
-    generateLightingData: 0
-  m_UseWorldSpace: 1
-  m_Loop: 0
-  m_ApplyActiveColorSpace: 1
---- !u!114 &789871686802081632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7690662510868500586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 8198495707058742238}
-  planeetInfo: {fileID: 2388899363994558803}
-  segments: 100
-  useSimulationDistance: 1
 --- !u!1 &8601236468474944883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,7 +1718,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.001
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1935,6 +1790,8 @@ MonoBehaviour:
   planeetInfo: {fileID: 7137723784330589748}
   segments: 100
   useSimulationDistance: 1
+  simulationLineWidth: 0.75
+  realisticLineWidth: 0.001
 --- !u!1001 &1038304570154960232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1943,26 +1800,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4116690808908585429}
     m_Modifications:
-    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 1280
-      objectReference: {fileID: 0}
-    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5163604326598327079, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5163604326598327079, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5163604326598327079, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7030125571582436594, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1430
@@ -2010,59 +1847,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5713139327266372606}
-    - targetCorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1072995628796563440}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
 --- !u!114 &2729840731192369566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
   m_PrefabInstance: {fileID: 1038304570154960232}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7256171841050360608}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
---- !u!1 &7256171841050360608 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
-  m_PrefabInstance: {fileID: 1038304570154960232}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5713139327266372606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7256171841050360608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 2729840731192369566}
-  useSimulationDistance: 1
---- !u!114 &1072995628796563440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7256171841050360608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 2729840731192369566}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!4 &8068420235378549146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7030125571582436594, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
@@ -2076,22 +1873,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6166077771586350671}
     m_Modifications:
-    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
-      propertyPath: rotationAxis.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
       propertyPath: m_Name
       value: Mars
@@ -2139,20 +1920,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4337618496880057656}
-    - targetCorrespondingSourceObject: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3034799980337738561}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24296af07984e244813943ceea24815, type: 3}
 --- !u!114 &2575764437282539950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
   m_PrefabInstance: {fileID: 2096161034111098474}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7921802012341462837}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2163,40 +1938,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8913532972407399397, guid: d24296af07984e244813943ceea24815, type: 3}
   m_PrefabInstance: {fileID: 2096161034111098474}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7921802012341462837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
-  m_PrefabInstance: {fileID: 2096161034111098474}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4337618496880057656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7921802012341462837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 2575764437282539950}
-  useSimulationDistance: 1
---- !u!114 &3034799980337738561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7921802012341462837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 2575764437282539950}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!1001 &3984374763708621689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2205,26 +1946,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7275794063600998384}
     m_Modifications:
-    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      propertyPath: orbitObject
-      value: 
-      objectReference: {fileID: 8690100461793104289}
-    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      propertyPath: planeetInfo
-      value: 
-      objectReference: {fileID: 284459675062968975}
-    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      propertyPath: _simulatieGrootte
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_Name
       value: Venus
@@ -2243,23 +1964,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2272,59 +1993,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7530006709364181099}
-    - targetCorrespondingSourceObject: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3651018880198454166}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
 --- !u!114 &284459675062968975 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
   m_PrefabInstance: {fileID: 3984374763708621689}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345910078512204571}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
---- !u!1 &8345910078512204571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
-  m_PrefabInstance: {fileID: 3984374763708621689}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7530006709364181099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345910078512204571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 284459675062968975}
-  useSimulationDistance: 1
---- !u!114 &3651018880198454166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345910078512204571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 284459675062968975}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!4 &8690100461793104289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
@@ -2338,18 +2019,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5586785679437551098}
     m_Modifications:
-    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-      propertyPath: _sceneNaam
-      value: Neptunus
-      objectReference: {fileID: 0}
-    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 4350
-      objectReference: {fileID: 0}
-    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: m_Name
       value: Neptunus
@@ -2397,20 +2066,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6925951883964801597}
-    - targetCorrespondingSourceObject: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4120093138620302075}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
 --- !u!114 &151031725359356011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
   m_PrefabInstance: {fileID: 4049415275704053280}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075430243565468409}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2421,40 +2084,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3437603171248328291, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
   m_PrefabInstance: {fileID: 4049415275704053280}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2075430243565468409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
-  m_PrefabInstance: {fileID: 4049415275704053280}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6925951883964801597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075430243565468409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 151031725359356011}
-  useSimulationDistance: 1
---- !u!114 &4120093138620302075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075430243565468409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 151031725359356011}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!1001 &4160255988942793584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2463,14 +2092,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8128954485233105465}
     m_Modifications:
-    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 628
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 250
-      objectReference: {fileID: 0}
     - target: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
       propertyPath: m_Name
       value: Jupiter
@@ -2518,20 +2139,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2851556820283916994}
-    - targetCorrespondingSourceObject: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6369540220383784385}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
 --- !u!114 &1488261023253041697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
   m_PrefabInstance: {fileID: 4160255988942793584}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7556502224373398417}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -2542,40 +2157,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6496993144350542427, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
   m_PrefabInstance: {fileID: 4160255988942793584}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7556502224373398417 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
-  m_PrefabInstance: {fileID: 4160255988942793584}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2851556820283916994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7556502224373398417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 1488261023253041697}
-  useSimulationDistance: 1
---- !u!114 &6369540220383784385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7556502224373398417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 1488261023253041697}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!1001 &5127077876021874768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2584,18 +2165,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8198495707058742238}
     m_Modifications:
-    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: m_Name
       value: Aarde
@@ -2640,149 +2209,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1000643267960007687, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotateType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationSpeed
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: rotationAxis.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: _sceneNaam
-      value: Maan
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: _afstandTotZon
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 15
-      objectReference: {fileID: 0}
+    - target: {fileID: 2555835395939598631, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: centerObject
+      value: 
+      objectReference: {fileID: 8198495707058742238}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4234034120304657567, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 3607269199892872494}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1235622450141205343}
-    - targetCorrespondingSourceObject: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8718131743418528761}
-    - targetCorrespondingSourceObject: {fileID: 1132490003437760953, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8533085560970454061}
-    - targetCorrespondingSourceObject: {fileID: 1132490003437760953, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3312323604087379831}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
---- !u!114 &2388899363994558803 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-  m_PrefabInstance: {fileID: 5127077876021874768}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228788575740027369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
---- !u!1 &4723754038768199405 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-  m_PrefabInstance: {fileID: 5127077876021874768}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1235622450141205343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4723754038768199405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 7137723784330589748}
-  useSimulationDistance: 1
---- !u!114 &8718131743418528761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4723754038768199405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 7137723784330589748}
-  useSimulationScale: 0
-  schaal: 1000
---- !u!1 &5228788575740027369 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1132490003437760953, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-  m_PrefabInstance: {fileID: 5127077876021874768}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8533085560970454061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228788575740027369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 2388899363994558803}
-  useSimulationDistance: 1
---- !u!114 &3312323604087379831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228788575740027369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 2388899363994558803}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!4 &5387982913879424087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1000643267960007687, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
@@ -2793,17 +2228,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
   m_PrefabInstance: {fileID: 5127077876021874768}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4723754038768199405}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
---- !u!4 &9071733648967390415 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4234034120304657567, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
-  m_PrefabInstance: {fileID: 5127077876021874768}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5962781800146167450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2812,30 +2242,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7686690884127379350}
     m_Modifications:
-    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: orbitObject
-      value: 
-      objectReference: {fileID: 4289438564079297769}
-    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: planeetInfo
-      value: 
-      objectReference: {fileID: 7271524649221202412}
-    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: rotationAxis.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: _wareGrootte
-      value: 109
-      objectReference: {fileID: 0}
-    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      propertyPath: _simulatieGrootte
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7065298430492334281, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: m_Name
       value: Zon
@@ -2880,54 +2286,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 671146278325297151, guid: 21510b54bc30dec4ab34cfd31f8d32fe, type: 3}
-      propertyPath: orbitObject
-      value: 
-      objectReference: {fileID: 7686690884127379350}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7065298430492334281, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7614366988144880917}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
---- !u!1 &3516454829473840723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7065298430492334281, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-  m_PrefabInstance: {fileID: 5962781800146167450}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7614366988144880917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3516454829473840723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 7271524649221202412}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!4 &4289438564079297769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7586080277050327667, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
   m_PrefabInstance: {fileID: 5962781800146167450}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7271524649221202412 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
-  m_PrefabInstance: {fileID: 5962781800146167450}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3516454829473840723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
 --- !u!1001 &6351663621338841344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2936,14 +2304,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 619697276378695026}
     m_Modifications:
-    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      propertyPath: rotationAxis.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      propertyPath: rotationAxis.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: m_Name
       value: Uranus
@@ -2988,74 +2348,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -29.147003
       objectReference: {fileID: 0}
-    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      propertyPath: _omZonDraaiTijd
-      value: 30687
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 2720
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 350
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7726882991728571155}
-    - targetCorrespondingSourceObject: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1322792838860734843}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
 --- !u!4 &1309164110321202271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5336398026519803231, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
   m_PrefabInstance: {fileID: 6351663621338841344}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1828678597675773669 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
-  m_PrefabInstance: {fileID: 6351663621338841344}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7726882991728571155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828678597675773669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 2533507393391374668}
-  useSimulationDistance: 1
---- !u!114 &1322792838860734843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828678597675773669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 2533507393391374668}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!114 &2533507393391374668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
   m_PrefabInstance: {fileID: 6351663621338841344}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828678597675773669}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
@@ -3113,74 +2421,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-      propertyPath: _afstandTotZon
-      value: 58
-      objectReference: {fileID: 0}
-    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-      propertyPath: _afstandTotAarde
-      value: 77
-      objectReference: {fileID: 0}
-    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-      propertyPath: _simulatieAfstand
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5870353804855805480, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4957135973047008634}
-    - targetCorrespondingSourceObject: {fileID: 5870353804855805480, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2954911577480311851}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
 --- !u!114 &1614855793203875985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
   m_PrefabInstance: {fileID: 8579173621856618179}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2772237539675816171}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
---- !u!1 &2772237539675816171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5870353804855805480, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
-  m_PrefabInstance: {fileID: 8579173621856618179}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4957135973047008634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2772237539675816171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 1614855793203875985}
-  useSimulationDistance: 1
---- !u!114 &2954911577480311851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2772237539675816171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 1614855793203875985}
-  useSimulationScale: 0
-  schaal: 1000
 --- !u!4 &3256990893635344977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6502211609773694098, guid: 2b20fca213946464d8f906c7670ae147, type: 3}

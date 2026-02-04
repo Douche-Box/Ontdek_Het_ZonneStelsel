@@ -10,6 +10,9 @@ public class BaanVisualisatie : MonoBehaviour
     [Header("Visual Settings")]
     [SerializeField] private int segments = 100;
     [SerializeField] private bool useSimulationDistance = true;
+    [SerializeField] private float simulationLineWidth = 0.75f;
+    [SerializeField] private float realisticLineWidth = 0.001f;
+
 
     private LineRenderer lineRenderer;
 
@@ -32,8 +35,15 @@ public class BaanVisualisatie : MonoBehaviour
         float radius = useSimulationDistance
             ? planeetInfo.simulatieAfstand
             : planeetInfo.afstandTotZon;
+        
+        float lineWidth = useSimulationDistance
+            ? simulationLineWidth
+            : realisticLineWidth;
 
         lineRenderer.positionCount = segments;
+        lineRenderer.startWidth = lineWidth;
+        lineRenderer.endWidth = lineWidth;
+
 
         for (int i = 0; i < segments; i++)
         {

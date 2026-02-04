@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22,23 +22,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -73,6 +73,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5652107861827791007}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7873997901220546475}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5161489765718336825}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
 --- !u!1 &4943253936370919522 stripped
 GameObject:
@@ -115,9 +121,11 @@ MonoBehaviour:
   _planeetNaam: Venus
   _omZonDraaiTijd: 225
   _asDraaiSnelheid: 243
+  _simulatieAfstand: 100
   _afstandTotZon: 108
+  _afstandTotAarde: 38
   _massa: 4.87
-  _simulatieGrootte: 0
+  _simulatieGrootte: 1
   _wareGrootte: 0.95
   viewPoint: {fileID: 0}
   _sceneNaam: Venus
@@ -134,9 +142,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
   rotateType: 0
-  rotationAxis: {x: 0, y: 1, z: 0}
+  rotationAxis: {x: 0, y: 0, z: 1}
+  axisSpace: 1
   rotationSpeed: 10000
-  orbitObject: {fileID: 4582197014625211345, guid: da425b1ec4abe7941bd4a97a1a10c207, type: 3}
-  planeetInfo: {fileID: 0}
+  orbitObject: {fileID: 5751703582181225176}
+  planeetInfo: {fileID: 3799293357980582390}
   useManualSpeed: 0
   manualSpeed: 10
+--- !u!114 &7873997901220546475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943253936370919522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 3799293357980582390}
+  useSimulationDistance: 1
+--- !u!114 &5161489765718336825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943253936370919522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
+  planeetInformatie: {fileID: 3799293357980582390}
+  useSimulationScale: 0
+  schaal: 1000
+--- !u!4 &5751703582181225176 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+  m_PrefabInstance: {fileID: 5213090920127108403}
+  m_PrefabAsset: {fileID: 0}

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -77,6 +77,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1191429030092648986}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3691381214581737054}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7083112869497385455}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
 --- !u!1 &5870353804855805480 stripped
 GameObject:
@@ -119,7 +125,9 @@ MonoBehaviour:
   _planeetNaam: Mercurius
   _omZonDraaiTijd: 88
   _asDraaiSnelheid: 59
-  _afstandTotZon: 77
+  _simulatieAfstand: 50
+  _afstandTotZon: 58
+  _afstandTotAarde: 77
   _massa: 0.0033
   _simulatieGrootte: 1
   _wareGrootte: 0.38
@@ -145,6 +153,35 @@ MonoBehaviour:
   planeetInfo: {fileID: 7018374300739327570}
   useManualSpeed: 0
   manualSpeed: 10
+--- !u!114 &3691381214581737054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870353804855805480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
+  planeetInfo: {fileID: 7018374300739327570}
+  useSimulationDistance: 0
+--- !u!114 &7083112869497385455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870353804855805480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
+  planeetInformatie: {fileID: 7018374300739327570}
+  useSimulationScale: 0
+  schaal: 1000
 --- !u!4 &6502211609773694098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
