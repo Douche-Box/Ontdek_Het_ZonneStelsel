@@ -15,9 +15,17 @@ public class PlaneetInformatie : MonoBehaviour
     [SerializeField] private float _asDraaiSnelheid;
     public float asDraaiSnelheid => _asDraaiSnelheid; // in uren
 
+    [Tooltip("Simulatie afstand")]
+    [SerializeField] private float _simulatieAfstand;
+    public float simulatieAfstand => _simulatieAfstand;
+    
     [Tooltip("Afstand tot de zon in miljoenen kilometers")]
     [SerializeField] private float _afstandTotZon;
-    public float afstandTotZon => _afstandTotZon;
+    public float afstandTotZon => _afstandTotZon;    
+
+    [Tooltip("Afstand tot de aarde in miljoenen kilometers")]
+    [SerializeField] private float _afstandTotAarde;
+    public float afstandTotAarde => _afstandTotAarde;
     
     [Tooltip("Massa in 10^24 kilogram")]
     [SerializeField] private float _massa;

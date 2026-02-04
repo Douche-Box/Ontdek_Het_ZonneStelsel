@@ -6,8 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Zonnestelsel.unity
+    guid: c8d1ecf08271e4c439c4e284b9820edb
+  - enabled: 1
+    path: Assets/Scenes/Zon.unity
+    guid: 25425e724f83f304b9f06874b371e904
+  - enabled: 1
+    path: Assets/Scenes/Mercurius.unity
+    guid: 8875869b5abdbd74c9850e2c2119b369
+  - enabled: 1
+    path: Assets/Scenes/Venus.unity
+    guid: 6044f71b1aae02147898a885dcad570b
+  - enabled: 1
+    path: Assets/Scenes/Aarde.unity
+    guid: daa64c17575de2d4e9e86934d7be6f2f
+  - enabled: 1
+    path: Assets/Scenes/Maan.unity
+    guid: cfaffaf5c9d8c9e4c95a15c62cab878b
+  - enabled: 1
+    path: Assets/Scenes/Mars.unity
+    guid: 17decd25ae9752e48a6b56cd7a2d4b2d
+  - enabled: 1
+    path: Assets/Scenes/Jupiter.unity
+    guid: add8461cf1eecb247b4b105846ac1c18
+  - enabled: 1
+    path: Assets/Scenes/Saturnus.unity
+    guid: 538890958d10b4e4ba2fe60fcab81847
+  - enabled: 1
+    path: Assets/Scenes/Uranus.unity
+    guid: 73691550940f2524c85f9eb6bfdbeae7
+  - enabled: 1
+    path: Assets/Scenes/Neptunus.unity
+    guid: 7d47956e52fa1eb40b64388fc897e1c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
