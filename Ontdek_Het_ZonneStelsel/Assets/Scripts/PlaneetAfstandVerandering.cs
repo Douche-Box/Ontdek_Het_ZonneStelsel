@@ -4,7 +4,9 @@ public class PlaneetAfstandVerandering : MonoBehaviour
 {
     [SerializeField] private BaanVisualisatie[] baanVisualisatie;
     [SerializeField] private PlaneetPositie[] afstands;
-    [SerializeField] private bool simulationMode = false;
+    [SerializeField] private PlaneetScale[] planeetScale;
+    [SerializeField] private bool normalMode = false;
+
 
     private void Start()
     {
@@ -12,15 +14,19 @@ public class PlaneetAfstandVerandering : MonoBehaviour
     }
     public void ToggleModeSimulationMode()
     {
-        simulationMode = !simulationMode;
+        normalMode = !normalMode;
 
         foreach (var orbit in baanVisualisatie)
         {
-            orbit.SwitchDistanceMode(simulationMode);
+            orbit.SwitchDistanceMode(normalMode);
         }
         foreach (var afstand in afstands)
         {
-            afstand.SwitchDistanceMode(simulationMode);
+            afstand.SwitchDistanceMode(normalMode);
         }
+        foreach (var scale in planeetScale)
+        {
+            scale.SwitchDistanceMode(normalMode);
+        }   
     }
 }

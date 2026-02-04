@@ -1,13 +1,17 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class UI_manager : MonoBehaviour
 {
     public float volume;
     public GameObject pauseMenu;
-
     public PlayerInput playerInput;
+    public PlaneetInformatie planeetInformatie;
+    public PlaneetAfstandVerandering planeetAfstandVerandering;
+
+    public string selectedPlaneet;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,13 +19,18 @@ public class UI_manager : MonoBehaviour
     }
     public void OnEnable()
     {
-        playerInput.actions.FindAction("PauseMenu").performed += _ => pauseMenu.SetActive(!pauseMenu.activeSelf);
+       playerInput.actions.FindAction("PauseMenu").performed += OnPause;
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void BackButton()
@@ -36,6 +45,10 @@ public class UI_manager : MonoBehaviour
     {
 
     }
+    public void Terug()
+    {
+
+    }
 
     public void Quit()
     {
@@ -43,5 +56,16 @@ public class UI_manager : MonoBehaviour
         EditorApplication.isPlaying = false;
 #endif
         Application.Quit();
+    }
+
+    public void SchaalToggle()
+    {
+        planeetAfstandVerandering.ToggleModeSimulationMode();
+
+    }
+    public void LandOpPlaneet()
+    {
+        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(selectedPlaneet);
     }
 }
