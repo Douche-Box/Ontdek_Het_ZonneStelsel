@@ -536,7 +536,9 @@ MonoBehaviour:
   _planeetNaam: Zon
   _omZonDraaiTijd: 0
   _asDraaiSnelheid: 25
+  _simulatieAfstand: 0
   _afstandTotZon: 0
+  _afstandTotAarde: 0
   _massa: 1989000
   _simulatieGrootte: 0
   _wareGrootte: 0
