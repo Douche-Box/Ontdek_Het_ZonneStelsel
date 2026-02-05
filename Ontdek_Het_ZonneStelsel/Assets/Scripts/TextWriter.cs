@@ -13,7 +13,7 @@ public class TextWriter : MonoBehaviour
     public float CharactersPerSecond
     {
         get { return _charactersPerSecond; }
-        set { _charactersPerSecond; }
+        set { _charactersPerSecond = value; }
     }
 
     [SerializeField] private TMP_Text _text;

@@ -43,7 +43,7 @@ public class UI_manager : MonoBehaviour
         float savedTextSpeed = PlayerPrefs.GetFloat("TextSpeed", 0.5f);
         textSpeedSlider.value = savedTextSpeed;
         textSpeedInputField.text = savedTextSpeed.ToString("F2");
-        TextWriter.Instance.TimeToWaitForNextChar = savedTextSpeed;
+        TextWriter.Instance.CharactersPerSecond = savedTextSpeed;
     }
 
     public void OnEnable()
@@ -60,7 +60,7 @@ public class UI_manager : MonoBehaviour
     {
         float textSpeed = newTextSpeed;
         textSpeedInputField.text = textSpeed.ToString("F2");
-        TextWriter.Instance.TimeToWaitForNextChar = textSpeed;
+        TextWriter.Instance.CharactersPerSecond = textSpeed;
 
         PlayerPrefs.SetFloat("TextSpeed", textSpeed);
     }
@@ -71,7 +71,7 @@ public class UI_manager : MonoBehaviour
         float.TryParse(newTextSpeed, out textSpeed);
         textSpeedSlider.value = textSpeed;
         textSpeedInputField.text = textSpeed.ToString("F2");
-        TextWriter.Instance.TimeToWaitForNextChar = textSpeed;
+        TextWriter.Instance.CharactersPerSecond = textSpeed;
 
         PlayerPrefs.SetFloat("TextSpeed", textSpeed);
     }
