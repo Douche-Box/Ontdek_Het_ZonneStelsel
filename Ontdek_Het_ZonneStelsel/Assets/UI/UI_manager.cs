@@ -1,11 +1,15 @@
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UI_manager : MonoBehaviour
 {
-    public float volume;
+    public static UI_manager Instance { get; private set; }
+
+    public int volume;
     public GameObject pauseMenu;
     public PlayerInput playerInput;
     public PlaneetInformatie planeetInformatie;
@@ -16,14 +20,60 @@ public class UI_manager : MonoBehaviour
     public bool planeetIsSelected = false;
 
     public string selectedPlaneet;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [Header("Settings Menu")]
+    public Slider textSpeedSlider;
+    public TMP_InputField textSpeedInputField;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        
+        float savedTextSpeed = PlayerPrefs.GetFloat("TextSpeed", 0.5f);
+        textSpeedSlider.value = savedTextSpeed;
+        textSpeedInputField.text = savedTextSpeed.ToString("F2");
+        TextWriter.Instance.TimeToWaitForNextChar = savedTextSpeed;
     }
+
     public void OnEnable()
     {
-       playerInput.actions.FindAction("PauseMenu").performed += OnPause;
+        playerInput.actions.FindAction("PauseMenu").performed += OnPause;
+
+        if (textSpeedInputField != null)
+            textSpeedInputField.onEndEdit.AddListener(OnTextSpeedValueChanged);
+        if (textSpeedSlider != null)
+            textSpeedSlider.onValueChanged.AddListener(OnTextSpeedValueChanged);
+    }
+
+    private void OnTextSpeedValueChanged(float newTextSpeed)
+    {
+        float textSpeed = newTextSpeed;
+        textSpeedInputField.text = textSpeed.ToString("F2");
+        TextWriter.Instance.TimeToWaitForNextChar = textSpeed;
+
+        PlayerPrefs.SetFloat("TextSpeed", textSpeed);
+    }
+
+    private void OnTextSpeedValueChanged(string newTextSpeed)
+    {
+        float textSpeed;
+        float.TryParse(newTextSpeed, out textSpeed);
+        textSpeedSlider.value = textSpeed;
+        textSpeedInputField.text = textSpeed.ToString("F2");
+        TextWriter.Instance.TimeToWaitForNextChar = textSpeed;
+
+        PlayerPrefs.SetFloat("TextSpeed", textSpeed);
     }
 
     public void OnPause(InputAction.CallbackContext context)
@@ -40,15 +90,6 @@ public class UI_manager : MonoBehaviour
         }
     }
 
-
-        public void ChangeVolume()
-    {
-
-    }
-    public void ChangeTypingSpeed()
-    {
-
-    }
     public void Terug()
     {
 
@@ -70,8 +111,8 @@ public class UI_manager : MonoBehaviour
     public void LandOpPlaneet(string selectedPlanet)
     {
         SceneManager.LoadScene(selectedPlanet);
-        //SceneManager.LoadScene(selectedPlanet);
     }
+
     public void VerlaatPlaneet()
     {
         SceneManager.LoadScene("Zonnestelsel");
