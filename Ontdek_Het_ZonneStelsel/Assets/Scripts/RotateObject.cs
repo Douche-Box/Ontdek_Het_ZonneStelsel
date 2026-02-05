@@ -25,12 +25,11 @@ public class RotateObject : MonoBehaviour
     [Header("Overrides (optioneel)")]
     [SerializeField] private bool useManualSpeed = false;
     [SerializeField] private float manualSpeed = 10f;
-
+    public float multiplier = 1;
 
     void Update()
     {
         float speed = GetRotationSpeed();
-        float multiplier = 1f; // straks TimeManager
 
         switch (rotateType)
         {
@@ -68,7 +67,7 @@ public class RotateObject : MonoBehaviour
                 // 1:25 = 0.04 (draaisnelheid)
                 // 1:59 = 0.0167 (snelheid)
                 // 1:planeetInfo.asDraaiSnelheid
-                //nr2 is langzamer dan nr1
+                // nr2 is langzamer dan nr1
 
             case RotateType.AroundSun:
                 // dagen -> graden per seconde
@@ -77,7 +76,7 @@ public class RotateObject : MonoBehaviour
                 // 1:25 = 0.04 (draaisnelheid)
                 // 1:1 = 1 (snelheid)
                 // 1:planeetInfo.omZonDraaiTijd
-                //nr2 is sneller dan nr1
+                // nr2 is sneller dan nr1
         }
 
         return 0f;

@@ -12,6 +12,7 @@ public class BaanVisualisatie : MonoBehaviour
     [SerializeField] private bool useSimulationDistance = true;
     [SerializeField] private float simulationLineWidth = 0.75f;
     [SerializeField] private float realisticLineWidth = 0.001f;
+    [SerializeField] private float scale = 100f;
 
 
     private LineRenderer lineRenderer;
@@ -35,6 +36,11 @@ public class BaanVisualisatie : MonoBehaviour
         float radius = useSimulationDistance
             ? planeetInfo.simulatieAfstand
             : planeetInfo.afstandTotZon;
+
+        // Gebruikt de scale alleen wanneer we de realistische afstand tonen.
+        float effectiveRadius = useSimulationDistance 
+            ? radius 
+            : radius * scale;
         
         float lineWidth = useSimulationDistance
             ? simulationLineWidth
@@ -49,8 +55,8 @@ public class BaanVisualisatie : MonoBehaviour
         {
             float angle = (float)i / segments * Mathf.PI * 2f;
 
-            float x = Mathf.Cos(angle) * radius;
-            float z = Mathf.Sin(angle) * radius;
+            float x = Mathf.Cos(angle) * effectiveRadius;
+            float z = Mathf.Sin(angle) * effectiveRadius;
 
             Vector3 pos = centerObject.position + new Vector3(x, 0f, z);
             lineRenderer.SetPosition(i, pos);

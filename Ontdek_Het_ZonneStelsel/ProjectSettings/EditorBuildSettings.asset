@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Neptunus.unity
     guid: 7d47956e52fa1eb40b64388fc897e1c0
+  - enabled: 1
+    path: Assets/Scenes/Pluto.unity
+    guid: c1ee1099dc95d77499de374893203f17
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

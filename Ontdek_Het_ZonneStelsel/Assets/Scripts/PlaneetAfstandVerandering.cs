@@ -11,6 +11,7 @@ public class PlaneetAfstandVerandering : MonoBehaviour
     private void Start()
     {
         ToggleModeSimulationMode();
+        Debug.Log("Start in " + (normalMode ? "simulatie" : "realistische") + " modus.");
     }
     public void ToggleModeSimulationMode()
     {
