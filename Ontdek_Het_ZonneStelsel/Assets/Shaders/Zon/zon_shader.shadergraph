@@ -5,9 +5,6 @@
     "m_Properties": [
         {
             "m_Id": "908f23ae54134edf82da6aeef61f765d"
-        },
-        {
-            "m_Id": "1bb9efa5dacc4682b0faaa746d480edb"
         }
     ],
     "m_Keywords": [],
@@ -341,39 +338,6 @@
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
-    "m_ObjectId": "1bb9efa5dacc4682b0faaa746d480edb",
-    "m_Guid": {
-        "m_GuidSerialized": "651ba6a4-3ca3-4ec8-9249-50c539255ee4"
-    },
-    "promotedFromAssetID": "",
-    "promotedFromCategoryName": "",
-    "promotedOrdering": -1,
-    "m_Name": "beweeg_uv2",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "beweeg_uv2",
-    "m_DefaultReferenceName": "_beweeg_uv2",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_PerRendererData": false,
-    "m_customAttributes": [],
-    "m_Value": {
-        "x": -0.009999999776482582,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
 }
 
 {
@@ -1060,10 +1024,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "Beweeg_uv",
+    "m_Name": "Beweeg_snelheid",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Beweeg_uv",
-    "m_DefaultReferenceName": "_Beweeg_uv",
+    "m_RefNameGeneratedByDisplayName": "Beweeg_snelheid",
+    "m_DefaultReferenceName": "_Beweeg_snelheid",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1157,9 +1121,6 @@
     "m_ChildObjectList": [
         {
             "m_Id": "908f23ae54134edf82da6aeef61f765d"
-        },
-        {
-            "m_Id": "1bb9efa5dacc4682b0faaa746d480edb"
         }
     ]
 }
@@ -1169,7 +1130,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "a5f09e31268947ec8b1f53b848987e16",
     "m_Id": 0,
-    "m_DisplayName": "Beweeg_uv",
+    "m_DisplayName": "Beweeg_snelheid",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
