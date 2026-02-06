@@ -178,7 +178,15 @@ MonoBehaviour:
   objectName: Pluto
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: "Pluto is een dwergplaneet en bevindt zich aan de rand van het zonnestelsel,
+    ver voorbij Neptunus. Door deze grote afstand draait Pluto in een zeer lange
+    en elliptische baan om de zon. Hierdoor kan de afstand tot de zon sterk vari\xEBren.  
+    In de kern van Pluto bevindt zich een rotsachtige kern, die omgeven is door lagen
+    van ijs, zoals waterijs, stikstofijs en methaanijs.   Een bijzonder kenmerk van
+    Pluto is zijn zeer dunne atmosfeer, die kan bevriezen wanneer Pluto ver van de
+    zon staat. Daarnaast vormt Pluto samen met zijn grootste maan Charon bijna een
+    dubbel-planetensysteem. Pluto is veel kleiner dan de aarde en is ongeveer vijf
+    keer kleiner in diameter. "
 --- !u!1001 &6802779967058639988
 PrefabInstance:
   m_ObjectHideFlags: 0

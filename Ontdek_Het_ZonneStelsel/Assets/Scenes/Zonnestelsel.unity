@@ -511,8 +511,6 @@ MonoBehaviour:
   cameraController: {fileID: 1099039529}
   playerInput: {fileID: 1099039528}
   targetObject: {fileID: 0}
-  outlineLayerName: Outline
-  outlineLayer: 0
   highlight: 0
   highlightMaterial: {fileID: 2100000, guid: c6ced123f9bb8ea40aa896b3396b95ce, type: 2}
   originalMaterials: []
@@ -835,6 +833,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8480515505768708618, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: _headerTxt
+      value: 
+      objectReference: {fileID: 1755510938}
+    - target: {fileID: 8480515505768708618, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: _informationTxt
+      value: 
+      objectReference: {fileID: 1755510939}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -843,6 +849,28 @@ PrefabInstance:
       addedObject: {fileID: 2083994820}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+--- !u!114 &1755510938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3653410905116980841, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+  m_PrefabInstance: {fileID: 1755510937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1755510939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+  m_PrefabInstance: {fileID: 1755510937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &1845090301 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8541201204217927934, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}

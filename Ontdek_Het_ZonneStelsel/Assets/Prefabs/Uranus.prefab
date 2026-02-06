@@ -347,7 +347,15 @@ MonoBehaviour:
   objectName: Uranus
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: "Uranus is de zevende planeet van ons zonnestelsel en bevindt zich ver van
+    de zon. Door deze grote afstand is Uranus een zeer koude planeet. Uranus draait
+    langzaam om de zon en heeft \xE9\xE9n van de langste omlooptijden van alle planeten.  
+    In de kern van Uranus bevindt zich een vaste kern van gesteente en ijs, die omgeven
+    is door dikke lagen gas en ijs.   Wat Uranus uniek maakt, is dat Uranus bijna
+    volledig op zijn zij ligt. De planeet heeft een kanteling van ongeveer 98 graden,
+    waardoor de polen lange periodes van licht en duisternis ervaren. Uranus heeft
+    een lichtblauwe kleur door het methaan in de atmosfeer en is ongeveer vier keer
+    zo groot als de aarde."
 --- !u!4 &5336398026519803231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

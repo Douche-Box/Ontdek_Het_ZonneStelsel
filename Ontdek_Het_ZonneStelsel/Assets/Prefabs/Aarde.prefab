@@ -429,7 +429,11 @@ MonoBehaviour:
   objectName: Aarde
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: 'De Aarde staat op ongeveer 150 miljoen kilometer afstand van de zon.   De
+    kern van de Aarde bestaat uit ijzer en nikkel. Wat de Aarde bijzonder maakt,
+    is dat er veel water aanwezig is en dat er leven mogelijk is. Daarnaast heeft
+    de Aarde een atmosfeer die zorgt voor lucht om te ademen en bescherming tegen
+    schadelijke straling. '
 --- !u!4 &1000643267960007687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

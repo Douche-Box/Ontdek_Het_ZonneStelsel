@@ -553,7 +553,15 @@ MonoBehaviour:
   objectName: Zon
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: "De zon is de ster van ons zonnestelsel en wordt ook wel Sol genoemd.  De
+    zon staat in het midden van het zonnestelsel en door zijn enorme massa zorgt
+    hij voor de zwaartekracht die ervoor zorgt dat alle planeten om hem heen blijven
+    draaien. De zon heeft geen vast oppervlak, maar bestaat volledig uit heet gas
+    en plasma.   In de kern van de zon vindt kernfusie plaats. Daar is het extreem
+    heet: de temperatuur loopt op tot ongeveer 15 miljoen graden Celsius. Hierbij
+    wordt energie geproduceerd in de vorm van licht en warmte.   De zon is ongeveer
+    109 keer zo groot als de aarde. In totaal past de aarde wel zo\u2019n 1,3 miljoen
+    keer in de zon voordat die helemaal gevuld zou zijn. "
 --- !u!4 &7586080277050327667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

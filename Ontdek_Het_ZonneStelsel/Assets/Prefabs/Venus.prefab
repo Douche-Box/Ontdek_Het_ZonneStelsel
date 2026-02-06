@@ -263,7 +263,13 @@ MonoBehaviour:
   objectName: Venus
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: "Venus is een planeet die zich op ongeveer 108 miljoen kilometer van de zon
+    bevindt. De planeet is bijna net zo groot als de aarde, want Venus is ongeveer
+    0,95 keer zo groot.   De kern van Venus bestaat uit ijzer en nikkel. Rondom de
+    planeet zit een zeer dichte atmosfeer die vooral uit koolstofdioxide bestaat.
+    Hierdoor ontstaat een extreem broeikaseffect, waardoor Venus \xE9\xE9n van de
+    heetste planeten in het zonnestelsel is.   Door deze dichte atmosfeer heeft Venus
+    een heel heet en onvriendelijk klimaat."
 --- !u!4 &5751703582181225176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

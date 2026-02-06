@@ -449,7 +449,15 @@ MonoBehaviour:
   objectName: Jupiter
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: Jupiter is de vijfde planeet van ons zonnestelsel en is de grootste planeet
+    in het zonnestelsel. Jupiter bevindt zich op grote afstand van de zon en heeft
+    een enorme massa, waardoor Jupiter veel invloed heeft op de banen van andere
+    planeten.   In de kern van Jupiter bevindt zich waarschijnlijk een vaste kern
+    van gesteente en ijs, die omgeven is door dikke lagen gas. Jupiter heeft geen
+    vast oppervlak.   Een bekend kenmerk van Jupiter is de Grote Rode Vlek, een gigantische
+    storm die al honderden jaren woedt. Daarnaast heeft Jupiter zeer sterke winden
+    en het grootste aantal manen van alle planeten. Jupiter is ongeveer elf keer
+    zo groot als de aarde.
 --- !u!4 &6496993144350542427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

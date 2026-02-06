@@ -363,7 +363,15 @@ MonoBehaviour:
   objectName: Saturnus
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: "Saturnus is de zesde planeet van ons zonnestelsel en bevindt zich op grote
+    afstand van de zon. Saturnus draait langzaam om de zon en heeft daardoor een
+    lange omlooptijd. Saturnus is \xE9\xE9n van de grootste planeten in het zonnestelsel.  
+    In de kern van Saturnus bevindt zich een vaste kern van gesteente en ijs, die
+    omgeven is door dikke lagen gas. De planeet heeft geen vast oppervlak.   Het
+    meest opvallende kenmerk van Saturnus is zijn grote en duidelijke ringenstelsel,
+    dat bestaat uit ijs, steen en stof. Daarnaast heeft Saturnus een lage dichtheid:
+    als het mogelijk zou zijn, zou Saturnus zelfs kunnen drijven op water. Saturnus
+    is ongeveer negen keer zo groot als de aarde."
 --- !u!1001 &8767693211336128820
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -267,7 +267,14 @@ MonoBehaviour:
   objectName: Mercurius
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: Mercurius is de kleinste planeet van ons zonnestelsel en staat het dichtst
+    bij de zon. De afstand tot de zon is ongeveer 58 miljoen kilometer. Omdat Mercurius
+    zo dichtbij staat, heeft de planeet te maken met enorme temperatuurverschillen.  
+    Het oppervlak van Mercurius lijkt een beetje op dat van de maan en zit vol met
+    kraters. De planeet heeft bijna geen atmosfeer, waardoor warmte niet wordt vastgehouden.
+    Mercurius bestaat vooral uit gesteente en metalen en heeft een grote kern gemaakt
+    van ijzer en nikkel.   Mercurius is ongeveer 0.38 keer zo groot als de aarde
+    wat het de kleinste planeet maakt die rond onze zon draait.
 --- !u!4 &6502211609773694098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

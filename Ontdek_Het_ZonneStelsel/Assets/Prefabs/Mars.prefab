@@ -267,7 +267,14 @@ MonoBehaviour:
   objectName: Mars
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: Mars is de vierde planeet van ons zonnestelsel en wordt ook wel de rode planeet
+    genoemd. Mars bevindt zich verder van de zon dan de aarde en is daardoor een
+    stuk kouder. Mars heeft een dunne atmosfeer, waardoor warmte moeilijk wordt vastgehouden.  
+    In de kern van Mars bevindt zich een kern van ijzer, nikkel en zwavel. De rode
+    kleur van de planeet wordt veroorzaakt door ijzeroxide (roest) in het oppervlak.  
+    Een opvallend kenmerk van Mars is dat er sporen zijn gevonden die wijzen op de
+    aanwezigheid van water in het verleden. Daarnaast heeft Mars grote vulkanen en
+    diepe kloven. Mars is ongeveer half zo groot als de aarde.
 --- !u!4 &8913532972407399397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

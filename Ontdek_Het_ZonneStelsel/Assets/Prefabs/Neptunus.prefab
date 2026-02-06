@@ -289,7 +289,15 @@ MonoBehaviour:
   objectName: Neptunus
   isHighlighted: 0
   isSelected: 0
-  info: 
+  info: 'Neptunus is de achtste en meest verre planeet van ons zonnestelsel. Neptunus
+    bevindt zich helemaal aan de rand van het zonnestelsel en draait op een enorme
+    afstand om de zon. Door deze grote afstand ontvangt Neptunus maar weinig zonlicht
+    en is het er extreem koud.   In de kern van Neptunus bevindt zich een vaste kern
+    van gesteente en ijs, die omgeven is door dikke lagen gas en ijs.   De planeet
+    staat bekend om zijn diepe blauwe kleur, die wordt veroorzaakt door methaan in
+    de atmosfeer. Daarnaast heeft Neptunus de krachtigste winden van alle planeten
+    in het zonnestelsel, met windsnelheden tot meer dan 2.000 kilometer per uur.
+    Neptunus is ongeveer vier keer zo groot als de aarde. '
 --- !u!4 &3437603171248328291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
