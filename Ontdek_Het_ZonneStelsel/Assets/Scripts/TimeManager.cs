@@ -1,41 +1,30 @@
 using UnityEngine;
 
-public class PlaneetVersnellen : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
+    public static TimeManager Instance { get; private set; }
+
     [SerializeField] private RotateObject[] rotateObjects;
-    [SerializeField] private int VermenigvuldegingsFactor = 10;
-    [SerializeField] private float multiplier = 1f;
-    [SerializeField] private float minMultiplier = 0.01f;
-    [SerializeField] private float maxMultiplier = 100f;
+    [SerializeField] private int[] VermenigvuldegingsFactoren = { 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000 };
 
-    public void VersnelTijd()
+    private void Awake()
     {
-        if (rotateObjects == null) return;
-
-        multiplier *= VermenigvuldegingsFactor;
-        float min = Mathf.Min(minMultiplier, maxMultiplier);
-        float max = Mathf.Max(minMultiplier, maxMultiplier);
-        multiplier = Mathf.Clamp(multiplier, min, max);
-
-        foreach (RotateObject ro in rotateObjects)
+        if (Instance == null)
         {
-            if (ro == null) continue;
-            ro.multiplier = multiplier;
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
-    public void VersloomTijd()
+
+    public void ChangeTimeScale(int index)
     {
-        if (rotateObjects == null) return;
-
-        multiplier /= VermenigvuldegingsFactor;
-        float min2 = Mathf.Min(minMultiplier, maxMultiplier);
-        float max2 = Mathf.Max(minMultiplier, maxMultiplier);
-        multiplier = Mathf.Clamp(multiplier, min2, max2);
-
         foreach (RotateObject ro in rotateObjects)
         {
             if (ro == null) continue;
-            ro.multiplier = multiplier;
+            ro.multiplier = VermenigvuldegingsFactoren[index];
         }
     }
 }

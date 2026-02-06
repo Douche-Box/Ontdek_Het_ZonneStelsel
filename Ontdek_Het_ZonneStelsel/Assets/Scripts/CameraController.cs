@@ -3,12 +3,15 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
+    public static CameraController Instance { get; private set; }
+
     [Header("References")]
-    #region Refrences
+    #region References
 
     [SerializeField] private Camera _camera;
 
     [SerializeField] private PlayerInput _playerInput;
+    public PlayerInput PlayerInput => _playerInput;
 
     [SerializeField] private Transform _orientation;
 
@@ -30,6 +33,8 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private Vector2 _moveInput;
     [SerializeField] private bool _isMoving;
+
+    [SerializeField] private float _upDownInput;
 
     #endregion
 
@@ -83,6 +88,21 @@ public class CameraController : MonoBehaviour
 
     #endregion
 
+    [Header("Movement")]
+    #region Movement
+
+    [SerializeField] private float _currentFlySpeed;
+
+    [SerializeField] private float _minFlySpeed = 1f;
+    [SerializeField] private float _maxFlySpeed = 20f;
+
+    [SerializeField] private float _flySpeedMultiplier = 1f;
+
+    [SerializeField] private float _flySpeedChangeRate = 1f;
+
+    private Vector3 _previousMoveDirection;
+
+    #endregion
 
     #region Subscriptions
 
@@ -93,8 +113,11 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("Zoom").performed += OnZoom;
 
-        _playerInput.actions.FindAction("Rotate").performed += OnMove;
-        _playerInput.actions.FindAction("Rotate").canceled += OnMove;
+        _playerInput.actions.FindAction("Move").performed += OnMove;
+        _playerInput.actions.FindAction("Move").canceled += OnMove;
+
+        _playerInput.actions.FindAction("MoveUpDown").performed += OnMoveUpDown;
+        _playerInput.actions.FindAction("MoveUpDown").canceled += OnMoveUpDown;
     }
 
     private void OnDisable()
@@ -104,8 +127,11 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("Zoom").performed -= OnZoom;
 
-        _playerInput.actions.FindAction("Rotate").performed -= OnMove;
-        _playerInput.actions.FindAction("Rotate").canceled -= OnMove;
+        _playerInput.actions.FindAction("Move").performed -= OnMove;
+        _playerInput.actions.FindAction("Move").canceled -= OnMove;
+
+        _playerInput.actions.FindAction("MoveUpDown").performed -= OnMoveUpDown;
+        _playerInput.actions.FindAction("MoveUpDown").canceled -= OnMoveUpDown;
     }
 
     #endregion
@@ -143,8 +169,31 @@ public class CameraController : MonoBehaviour
         _isMoving = _moveInput != Vector2.zero;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="context"></param>
+    private void OnMoveUpDown(InputAction.CallbackContext context)
+    {
+        _upDownInput = context.ReadValue<float>();
+    }
+
     #endregion
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     /// <summary>
     /// Adds a new target for the camera to look at
@@ -186,26 +235,15 @@ public class CameraController : MonoBehaviour
         _currentZoom = _camera.transform.localPosition.z;
         _currentFOV = _camera.fieldOfView;
 
-        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _planetMask))
-            {
-                AddTarget(hit.transform);
-            }
-            else
-            {
-                RemoveTarget();
-            }
-        }
-
-        if (_lookAtTarget == null)
-            RotateCamera();
-
         HandleZoom();
 
-        if (_lookAtTarget != null)
+        if (_lookAtTarget == null)
+        {
+            RotateCamera();
+
+            FreeFly();
+        }
+        else
         {
             if (!_isParented && !_isMoving)
             {
@@ -216,12 +254,15 @@ public class CameraController : MonoBehaviour
             {
                 RotateCameraAroundTarget();
             }
-
         }
 
         _cameraInput = Vector2.zero;
     }
 
+    /// <summary>
+    /// Late Update is used to ensure the camera movement is applied after all other updates.
+    /// Preventing jitter when focussing on a target while it is moving.
+    /// </summary>
     void LateUpdate()
     {
         if (!_isMoving && _lookAtTarget != null)
@@ -342,5 +383,33 @@ public class CameraController : MonoBehaviour
 
         transform.position = _lookAtTarget.position + newRelativePos;
         transform.LookAt(_lookAtTarget.position);
+    }
+
+    private void FreeFly()
+    {
+        if (_moveInput == Vector2.zero && _upDownInput == 0)
+        {
+            _currentFlySpeed = _minFlySpeed;
+            return;
+        }
+
+        Vector3 upDownDirection = _camera.transform.up * _upDownInput;
+        transform.position += upDownDirection * _currentFlySpeed * Time.deltaTime;
+
+        Vector3 moveDirection = _camera.transform.forward * _moveInput.y + _camera.transform.right * _moveInput.x;
+
+        if (Mathf.Approximately(moveDirection.magnitude, _previousMoveDirection.magnitude))
+        {
+            _currentFlySpeed = Mathf.MoveTowards(_currentFlySpeed, _moveSpeed * _flySpeedMultiplier, _flySpeedChangeRate * Time.deltaTime);
+            _currentFlySpeed = Mathf.Clamp(_currentFlySpeed, _minFlySpeed, _maxFlySpeed);
+        }
+        else
+        {
+            _currentFlySpeed = _minFlySpeed;
+        }
+
+        transform.position += moveDirection * _currentFlySpeed * Time.deltaTime;
+
+        _previousMoveDirection = moveDirection;
     }
 }

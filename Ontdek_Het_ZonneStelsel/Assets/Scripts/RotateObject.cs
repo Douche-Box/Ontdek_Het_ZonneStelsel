@@ -64,10 +64,10 @@ public class RotateObject : MonoBehaviour
                 // uren -> graden per seconde
                 return (1f / 360f / planeetInfo.asDraaiSnelheid) * rotationSpeed;
 
-                // 1:25 = 0.04 (draaisnelheid)
-                // 1:59 = 0.0167 (snelheid)
-                // 1:planeetInfo.asDraaiSnelheid
-                // nr2 is langzamer dan nr1
+            // 1:25 = 0.04 (draaisnelheid)
+            // 1:59 = 0.0167 (snelheid)
+            // 1:planeetInfo.asDraaiSnelheid
+            // nr2 is langzamer dan nr1
 
             case RotateType.AroundSun:
                 // dagen -> graden per seconde
