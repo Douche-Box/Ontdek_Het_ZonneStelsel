@@ -188,6 +188,7 @@ MonoBehaviour:
   _zoomInput: 0
   _moveInput: {x: 0, y: 0}
   _isMoving: 0
+  _upDownInput: 0
   _rotationSpeed: 10
   _moveSpeed: 5
   _minYClamp: -80
@@ -197,6 +198,7 @@ MonoBehaviour:
   _isParented: 0
   _distanceFromTarget: 0
   _focusSmoothSpeed: 1
+  _targetPin: {fileID: 0}
   _zoomSpeed: 2
   _currentZoom: 0
   _targetZoom: 0
@@ -205,6 +207,11 @@ MonoBehaviour:
   _currentFOV: 0
   _zoomedOutFOV: 90
   _zoomedInFOV: 30
+  _currentFlySpeed: 0
+  _minFlySpeed: 30
+  _maxFlySpeed: 500
+  _flySpeedMultiplier: 8
+  _flySpeedChangeRate: 10
 --- !u!114 &3683473649468578192
 MonoBehaviour:
   m_ObjectHideFlags: 0

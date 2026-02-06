@@ -13,7 +13,6 @@ public class UI_manager : MonoBehaviour
     public GameObject pauseMenu;
     public PlayerInput playerInput;
     public PlaneetInformatie planeetInformatie;
-    public PlaneetAfstandVerandering planeetAfstandVerandering;
     public GameObject landenOpPlaneet;
     public GameObject verlaatPlaneet;
     public bool opPlaneet = false;
@@ -132,7 +131,6 @@ public class UI_manager : MonoBehaviour
         PlayerPrefs.SetFloat("TextSpeed", textSpeed);
     }
 
-
     public void OnPlanetSpeedSlider(float newSpeed)
     {
         int index = (int)newSpeed;
@@ -188,8 +186,6 @@ public class UI_manager : MonoBehaviour
     {
         _popupPanel.SetActive(true);
 
-
-
         TextWriter.Instance.WriteText(content, header);
     }
 
@@ -215,9 +211,9 @@ public class UI_manager : MonoBehaviour
 
     public void SchaalToggle()
     {
-        planeetAfstandVerandering.ToggleModeSimulationMode();
-
+        PlaneetAfstandVerandering.Instance.ToggleModeSimulationMode();
     }
+
     public void LandOpPlaneet(string selectedPlanet)
     {
         SceneManager.LoadScene(selectedPlanet);
