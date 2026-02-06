@@ -330,6 +330,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5595018926566630565}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5951367424345799487}
   m_SourcePrefab: {fileID: 100100000, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
 --- !u!1 &5864289775616905441 stripped
 GameObject:
@@ -431,6 +434,22 @@ MonoBehaviour:
   planeetInformatie: {fileID: 3250313895330380113}
   useSimulationScale: 0
   schaal: 1000
+--- !u!114 &5951367424345799487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864289775616905441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Jupiter
+  isHighlighted: 0
+  isSelected: 0
+  info: 
 --- !u!4 &6496993144350542427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

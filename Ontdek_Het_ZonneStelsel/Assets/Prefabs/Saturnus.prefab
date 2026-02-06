@@ -260,6 +260,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3996115958908005442}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884818318343213731}
   m_SourcePrefab: {fileID: 100100000, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
 --- !u!4 &7030125571582436594 stripped
 Transform:
@@ -314,6 +317,7 @@ MonoBehaviour:
   planeetInfo: {fileID: 3137490720422454518}
   useManualSpeed: 0
   manualSpeed: 10
+  multiplier: 1
 --- !u!114 &2280829131244919042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
   planeetInfo: {fileID: 3137490720422454518}
   useSimulationDistance: 0
+  scale: 10
 --- !u!114 &3996115958908005442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +348,22 @@ MonoBehaviour:
   planeetInformatie: {fileID: 3137490720422454518}
   useSimulationScale: 0
   schaal: 1000
+--- !u!114 &884818318343213731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699982567595834952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Saturnus
+  isHighlighted: 0
+  isSelected: 0
+  info: 
 --- !u!1001 &8767693211336128820
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -164,6 +164,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6020321601466129813}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2576049746492922503}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}
 --- !u!4 &8606294227991799913 stripped
 Transform:
@@ -270,3 +273,19 @@ MonoBehaviour:
   planeetInformatie: {fileID: 1554607724448576105}
   useSimulationScale: 0
   schaal: 1000
+--- !u!114 &-2576049746492922503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8945384350405522131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Maan
+  isHighlighted: 0
+  isSelected: 0
+  info: 

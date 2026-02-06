@@ -198,7 +198,11 @@ public class UI_manager : MonoBehaviour
 
     public void Terug()
     {
-
+        CameraController.Instance.RemoveTarget();
+        landenOpPlaneet.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        HidePopup();
     }
 
     public void Quit()
@@ -222,5 +226,9 @@ public class UI_manager : MonoBehaviour
     public void VerlaatPlaneet()
     {
         SceneManager.LoadScene("Zonnestelsel");
+    }
+    public void SelectPlaneet()
+    {
+        landenOpPlaneet.SetActive(true);
     }
 }

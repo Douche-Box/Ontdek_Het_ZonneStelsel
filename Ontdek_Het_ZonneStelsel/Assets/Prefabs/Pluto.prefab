@@ -75,6 +75,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2271915404907592629}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7177612231237849168}
   m_SourcePrefab: {fileID: 100100000, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
 --- !u!4 &2500852409876351153 stripped
 Transform:
@@ -129,6 +132,7 @@ MonoBehaviour:
   planeetInfo: {fileID: 6848101434591693384}
   useManualSpeed: 0
   manualSpeed: 10
+  multiplier: 1
 --- !u!114 &1258971207714967549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
   planeetInfo: {fileID: 0}
   useSimulationDistance: 0
+  scale: 10
 --- !u!114 &2271915404907592629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +163,22 @@ MonoBehaviour:
   planeetInformatie: {fileID: 0}
   useSimulationScale: 0
   schaal: 1000
+--- !u!114 &7177612231237849168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026138199877243403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Pluto
+  isHighlighted: 0
+  isSelected: 0
+  info: 
 --- !u!1001 &6802779967058639988
 PrefabInstance:
   m_ObjectHideFlags: 0
