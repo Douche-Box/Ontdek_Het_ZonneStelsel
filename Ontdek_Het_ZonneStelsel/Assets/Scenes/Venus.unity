@@ -322,6 +322,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3195058281369626082, guid: c7d9aabb8b4920d4a8cdff8cce37ae4d, type: 3}
   m_PrefabInstance: {fileID: 373122089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &981104210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.24617657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8793945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.024752794
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.40675527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -155.617
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 53.018997
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -15.526001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_Name
+      value: Telescoop model_fbx
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!1001 &1132356576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -699,3 +756,4 @@ SceneRoots:
   - {fileID: 85221166}
   - {fileID: 1764675126}
   - {fileID: 1548505386071791911}
+  - {fileID: 981104210}

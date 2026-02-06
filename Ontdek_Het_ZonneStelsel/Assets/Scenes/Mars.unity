@@ -305,6 +305,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 414920114}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &555647950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 714931286}
+    m_Modifications:
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8355492
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000000074505797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5494156
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000074505797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 66.654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_Name
+      value: Telescoop model_fbx
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!4 &555647951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 555647950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &714931283
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +462,7 @@ Transform:
   - {fileID: 414920115}
   - {fileID: 1899273677}
   - {fileID: 239268284}
+  - {fileID: 555647951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 16.231, y: 0, z: 0}
 --- !u!114 &714931287

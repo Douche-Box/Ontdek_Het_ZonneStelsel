@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5426217730882102479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 160153018451605099}
-  m_Layer: 6
-  m_Name: Viewpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &160153018451605099
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5426217730882102479}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 7586080277050327667}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8865738292630416563
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +426,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 160153018451605099}
+      addedObject: {fileID: 8951934164854762467}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7385878036317223611}
@@ -467,9 +436,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2337858177258567684}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8951934164854762467}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
@@ -553,6 +519,7 @@ MonoBehaviour:
   planeetInfo: {fileID: 3902838912492750710}
   useManualSpeed: 0
   manualSpeed: 10
+  multiplier: 1
 --- !u!114 &3858469983264854432
 MonoBehaviour:
   m_ObjectHideFlags: 0

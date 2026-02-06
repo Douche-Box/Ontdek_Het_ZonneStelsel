@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3756824311607640653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 833336316224713356}
-  m_Layer: 0
-  m_Name: Viewpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &833336316224713356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3756824311607640653}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6496993144350542427}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &50281017725002923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,9 +310,6 @@ PrefabInstance:
       addedObject: {fileID: 9167928356101046698}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 833336316224713356}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5013537560150073594}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
       insertIndex: -1
@@ -434,6 +400,7 @@ MonoBehaviour:
   planeetInfo: {fileID: 3250313895330380113}
   useManualSpeed: 0
   manualSpeed: 10
+  multiplier: 1
 --- !u!114 &6382737787649520606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,6 +415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
   planeetInfo: {fileID: 3250313895330380113}
   useSimulationDistance: 0
+  scale: 10
 --- !u!114 &5595018926566630565
 MonoBehaviour:
   m_ObjectHideFlags: 0

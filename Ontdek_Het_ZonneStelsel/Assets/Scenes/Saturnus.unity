@@ -258,6 +258,7 @@ Transform:
   - {fileID: 427127807}
   - {fileID: 512799404}
   - {fileID: 1427135392}
+  - {fileID: 1980176944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -23.228, y: -55.162, z: 55.444}
 --- !u!1001 &427127806
@@ -634,6 +635,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1427135391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1980176943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 402914241}
+    m_Modifications:
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5397801
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.72637767
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4522245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.65148795
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.11955458
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.57981265
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4744339
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -126.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      propertyPath: m_Name
+      value: Telescoop model_fbx
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!4 &1980176944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 1980176943}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2069334407
 PrefabInstance:

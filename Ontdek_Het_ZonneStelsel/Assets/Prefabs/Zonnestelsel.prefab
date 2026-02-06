@@ -243,7 +243,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 8235543066346307092}
   planeetInfo: {fileID: 1614855793203875985}
   useManualSpeed: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 8198495707058742238}
   planeetInfo: {fileID: 7137723784330589748}
   useManualSpeed: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 5586785679437551098}
   planeetInfo: {fileID: 151031725359356011}
   useManualSpeed: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 6166077771586350671}
   planeetInfo: {fileID: 2575764437282539950}
   useManualSpeed: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 7275794063600998384}
   planeetInfo: {fileID: 284459675062968975}
   useManualSpeed: 0
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 8128954485233105465}
   planeetInfo: {fileID: 1488261023253041697}
   useManualSpeed: 0
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 619697276378695026}
   planeetInfo: {fileID: 2533507393391374668}
   useManualSpeed: 0
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 4116690808908585429}
   planeetInfo: {fileID: 2729840731192369566}
   useManualSpeed: 0
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   rotateType: 1
   rotationAxis: {x: 0, y: -1, z: 0}
   axisSpace: 1
-  rotationSpeed: 10000
+  rotationSpeed: 1
   orbitObject: {fileID: 5638850246910055388}
   planeetInfo: {fileID: 81607720598494697}
   useManualSpeed: 0
@@ -2034,6 +2034,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4116690808908585429}
     m_Modifications:
+    - target: {fileID: -3664506694598330170, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: _simulatieAfstand
       value: 300
@@ -2115,6 +2119,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6166077771586350671}
     m_Modifications:
+    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6249738875602679956, guid: d24296af07984e244813943ceea24815, type: 3}
       propertyPath: schaal
       value: 100
@@ -2192,6 +2200,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7275794063600998384}
     m_Modifications:
+    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_Name
       value: Venus
@@ -2269,6 +2281,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5586785679437551098}
     m_Modifications:
+    - target: {fileID: -2086150946834743201, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: m_Name
       value: Neptunus
@@ -2394,6 +2410,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7903731544131113277, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2423,6 +2443,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8198495707058742238}
     m_Modifications:
+    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 388967902552751045, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: scale
       value: 100
@@ -2479,9 +2503,17 @@ PrefabInstance:
       propertyPath: centerObject
       value: 
       objectReference: {fileID: 8198495707058742238}
+    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5362354065253980553, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: schaal
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: _afstandTotZon
@@ -2516,6 +2548,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7686690884127379350}
     m_Modifications:
+    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1568696866865967746, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: m_Intensity
       value: 1000
@@ -2586,6 +2622,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 619697276378695026}
     m_Modifications:
+    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: m_Name
       value: Uranus
@@ -2663,14 +2703,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5638850246910055388}
     m_Modifications:
-    - target: {fileID: 3800382173740883116, guid: 4153d1a31c05174459c573ca95f0e41c, type: 3}
-      propertyPath: planeetInfo
-      value: 
-      objectReference: {fileID: 151031725359356011}
-    - target: {fileID: 4197952785364805860, guid: 4153d1a31c05174459c573ca95f0e41c, type: 3}
-      propertyPath: planeetInformatie
-      value: 
-      objectReference: {fileID: 151031725359356011}
     - target: {fileID: 1258971207714967549, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: planeetInfo
       value: 
@@ -2719,6 +2751,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3289807772468973496, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800382173740883116, guid: 4153d1a31c05174459c573ca95f0e41c, type: 3}
+      propertyPath: planeetInfo
+      value: 
+      objectReference: {fileID: 151031725359356011}
+    - target: {fileID: 4197952785364805860, guid: 4153d1a31c05174459c573ca95f0e41c, type: 3}
+      propertyPath: planeetInformatie
+      value: 
+      objectReference: {fileID: 151031725359356011}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2748,6 +2792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8235543066346307092}
     m_Modifications:
+    - target: {fileID: 1191429030092648986, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5870353804855805480, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
       propertyPath: m_Name
       value: Mercurius
