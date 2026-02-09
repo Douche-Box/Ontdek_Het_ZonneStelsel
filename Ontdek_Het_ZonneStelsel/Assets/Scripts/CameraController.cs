@@ -102,6 +102,9 @@ public class CameraController : MonoBehaviour
 
     private Vector3 _previousMoveDirection;
 
+    [SerializeField] private bool _sameMoveDirection;
+    [SerializeField] private float _moveDirectionDiffTolerance = 0.99f;
+
     #endregion
 
     #region Subscriptions
@@ -390,29 +393,49 @@ public class CameraController : MonoBehaviour
     /// </summary>
     private void FreeFly()
     {
-        if (_moveInput == Vector2.zero && _upDownInput == 0)
+        if (_moveInput == Vector2.zero && _upDownInput == 0f)
         {
             _currentFlySpeed = _minFlySpeed;
+            _previousMoveDirection = Vector3.zero;
             return;
         }
 
-        Vector3 upDownDirection = _camera.transform.up * _upDownInput;
-        transform.position += upDownDirection * _currentFlySpeed * Time.deltaTime;
+        Transform cam = _camera.transform;
 
-        Vector3 moveDirection = _camera.transform.forward * _moveInput.y + _camera.transform.right * _moveInput.x;
+        Vector3 moveDirection = cam.forward * _moveInput.y + cam.right * _moveInput.x;
 
-        if (Mathf.Approximately(moveDirection.magnitude, _previousMoveDirection.magnitude))
+        Vector3 verticalDirection = cam.up * _upDownInput;
+
+        if (moveDirection != Vector3.zero && _previousMoveDirection != Vector3.zero)
         {
-            _currentFlySpeed = Mathf.MoveTowards(_currentFlySpeed, _moveSpeed * _flySpeedMultiplier, _flySpeedChangeRate * Time.deltaTime);
-            _currentFlySpeed = Mathf.Clamp(_currentFlySpeed, _minFlySpeed, _maxFlySpeed);
+            float dot = Vector3.Dot
+            (
+                moveDirection.normalized,
+                _previousMoveDirection.normalized
+            );
+
+            _sameMoveDirection = dot > _moveDirectionDiffTolerance;
         }
         else
         {
-            _currentFlySpeed = _minFlySpeed;
+            _sameMoveDirection = false;
         }
 
-        transform.position += moveDirection * _currentFlySpeed * Time.deltaTime;
+        float targetSpeed = _sameMoveDirection ? _moveSpeed * _flySpeedMultiplier : _minFlySpeed;
+
+        // Do the Move towards inside the clamp to clamp the speed before increasing it beyoned the max or min
+        _currentFlySpeed = Mathf.Clamp
+        (
+            Mathf.MoveTowards(_currentFlySpeed, targetSpeed, _flySpeedChangeRate * Time.deltaTime),
+
+            _minFlySpeed,
+            _maxFlySpeed
+        );
+
+        Vector3 movement = (moveDirection + verticalDirection) * _currentFlySpeed * Time.deltaTime;
+        transform.position += movement;
 
         _previousMoveDirection = moveDirection;
     }
+
 }
