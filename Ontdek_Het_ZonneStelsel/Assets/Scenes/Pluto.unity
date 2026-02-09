@@ -362,8 +362,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 614850197}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!1 &614850196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 614850195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614850197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614850196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: Pluto staat op een enorme gemiddelde van afstand 5,7 miljard km van de aarde
+    vandaan maar dit nummer schommelt redelijk veel door de verre afstand van de
+    zon waardoor de baan van Pluto niet heel rond is.
 --- !u!1001 &753130672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,13 +445,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 753130675}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &753130673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 753130672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &753130674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 753130672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &753130675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753130674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: Pluto's dagen duren wel 6,4 aarddagen Pluto draait niet heel snel om zijn
+    eigen as en door de afstand van de zon duurt het ook ongeveer 248 aardjaren voordat
+    Pluto volledig rond de zon is gegaan.
 --- !u!1001 &1101413033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,13 +533,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2359064390452993634, guid: 2b04e76c42d3c9f4487d248620da6c00, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1101413036}
   m_SourcePrefab: {fileID: 100100000, guid: 2b04e76c42d3c9f4487d248620da6c00, type: 3}
 --- !u!4 &1101413034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167935153796875480, guid: 2b04e76c42d3c9f4487d248620da6c00, type: 3}
   m_PrefabInstance: {fileID: 1101413033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1101413035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2359064390452993634, guid: 2b04e76c42d3c9f4487d248620da6c00, type: 3}
+  m_PrefabInstance: {fileID: 1101413033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1101413036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101413035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Pluto bestaat uit rotsen maar ook uit waterijs, stikstofijs en methaanijs
+    . '
 --- !u!1001 &1575717465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,13 +620,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1575717468}
   m_SourcePrefab: {fileID: 100100000, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
 --- !u!4 &1575717466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 1575717465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1575717467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+  m_PrefabInstance: {fileID: 1575717465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1575717468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575717467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op Pluto is een koude \u2013230 \xB0C. "
 --- !u!1 &1588993603
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,13 +847,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1872458241}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1872458239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1872458238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1872458240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1872458238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1872458241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872458240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Pluto weegt ongeveer 1,3 x 10\xB2\xB2 kg dat is ongeveer 0,2% dat van de
+    aarde. De zwaartekracht op Pluto is daarom ook een stuk minder ongeveer 0,62
+    m/s\xB2 dat is maar 6% van de Aarde."
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

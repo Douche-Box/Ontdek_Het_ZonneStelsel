@@ -33,6 +33,11 @@ public class TextWriter : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts typing the provided message with the specified header. If a typing coroutine is already running, it will be stopped before starting a new one.
+    /// </summary>
+    /// <param name="message">The message to be typed out.</param>
+    /// <param name="header">The header to be displayed above the message.</param>
     public void WriteText(string message, string header)
     {
         if (_isWriting && _typingCoroutine != null)
@@ -45,6 +50,9 @@ public class TextWriter : MonoBehaviour
         _typingCoroutine = StartCoroutine(TypeText(message));
     }
 
+    /// <summary>
+    /// Removes the current text and header, and stops any ongoing typing coroutine.
+    /// </summary>
     public void RemoveText()
     {
         _headerTxt.text = "";
@@ -56,6 +64,11 @@ public class TextWriter : MonoBehaviour
         _isWriting = false;
     }
 
+    /// <summary>
+    /// Types the text character by character based on the specified characters per second.
+    /// </summary>
+    /// <param name="message"></param>
+    /// <returns></returns>/
     private IEnumerator TypeText(string message)
     {
         _isWriting = true;

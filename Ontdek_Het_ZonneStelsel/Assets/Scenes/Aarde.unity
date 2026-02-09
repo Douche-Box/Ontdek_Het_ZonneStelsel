@@ -765,13 +765,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2535483253676882651, guid: 3378c1b9023ac954a8e76979d657ad52, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 434609814}
   m_SourcePrefab: {fileID: 100100000, guid: 3378c1b9023ac954a8e76979d657ad52, type: 3}
 --- !u!4 &434609812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2910460302106353761, guid: 3378c1b9023ac954a8e76979d657ad52, type: 3}
   m_PrefabInstance: {fileID: 434609811}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &434609813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2535483253676882651, guid: 3378c1b9023ac954a8e76979d657ad52, type: 3}
+  m_PrefabInstance: {fileID: 434609811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &434609814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434609813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: het oppervlakte van de Aarde bestaat vooral uit water ongeveer 70%  waarvan
+    de andere 30% vooral uit gesteente bestaat.
 --- !u!1001 &482981424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,13 +1008,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 581631262}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &581631260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 581631259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &581631261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 581631259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &581631262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581631261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De aarde duurt er ongeveer 24 uur over om rond zijn eigen as te draaien
+    dit is vergeleken met andere planeten in ons zonnestelsel niet eens de snelste
+    planeet. De aarde draait om de zon heen in 365 aarddagen. '
 --- !u!1001 &631768882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2487,13 +2538,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1445175455}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1445175453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1445175452}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1445175454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1445175452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1445175455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445175454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "De Aarde weegt ongeveer 5,9 x 10\xB2\u2074 kg dit zorgt voor de zwaartekracht
+    op de aarde deze is ongeveer 9,81 m /s\xB2. "
 --- !u!1001 &1453298701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3000,13 +3076,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787826008}
   m_SourcePrefab: {fileID: 100100000, guid: de830b4387caf324b962cc4050801267, type: 3}
 --- !u!4 &1787826006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8733440433646108658, guid: de830b4387caf324b962cc4050801267, type: 3}
   m_PrefabInstance: {fileID: 1787826005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1787826007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+  m_PrefabInstance: {fileID: 1787826005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1787826008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787826007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op aarde verschilt enigzins wel door de aanwezig heid van
+    water en wind en kan van \u201388 \xB0C tot + 58 \xB0C worden. "
 --- !u!1001 &1800405182
 PrefabInstance:
   m_ObjectHideFlags: 0

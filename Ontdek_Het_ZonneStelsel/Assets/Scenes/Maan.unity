@@ -301,13 +301,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6416441912945275541, guid: 3e8fc343920f5c4489268965bec84a95, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 771331300}
   m_SourcePrefab: {fileID: 100100000, guid: 3e8fc343920f5c4489268965bec84a95, type: 3}
 --- !u!4 &771331298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5926762673629276207, guid: 3e8fc343920f5c4489268965bec84a95, type: 3}
   m_PrefabInstance: {fileID: 771331297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &771331299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6416441912945275541, guid: 3e8fc343920f5c4489268965bec84a95, type: 3}
+  m_PrefabInstance: {fileID: 771331297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &771331300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771331299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De maan bestaat uit veel verschillende soorten gesteente door de botsing
+    tussen de aarde en een protoplaneet genaamd Theia ter groote van ongeveer mars. '
 --- !u!1001 &778703326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,13 +388,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 778703329}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &778703327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 778703326}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &778703328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 778703326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &778703329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778703328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De maan duurt er ongeveer 27,3 aarddagen om zijn eigen as te draaien en
+    doordat de maan in dezelfde baan ligt als de aarde duurt het ongeveer even lang
+    als de aarde om rond de zon te gaan. '
 --- !u!1001 &1227676193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,13 +476,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1227676196}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1227676194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1227676193}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1227676195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1227676193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1227676196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227676195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Het gewicht van de maan is ongeveer 7,3 x 10\xB2\xB2 kg dat is ongeveer
+    1% het gewicht van de Aarde. De zwaartekracht op de maan is daardoor ook een
+    stuk lager ongeveer 1,62 m/s\xB2 dat is bijna 17% de zwaartekracht van de Aarde "
 --- !u!1 &1488518021
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,13 +706,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1574223968}
   m_SourcePrefab: {fileID: 100100000, guid: de830b4387caf324b962cc4050801267, type: 3}
 --- !u!4 &1574223966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8733440433646108658, guid: de830b4387caf324b962cc4050801267, type: 3}
   m_PrefabInstance: {fileID: 1574223965}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1574223967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+  m_PrefabInstance: {fileID: 1574223965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1574223968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574223967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De maan heeft een groot tempratuur verschil per kant van de maan omdat de
+    maan vanaf de aarde altijd alleen aan een kant zichtbaar is is de verlichte kant
+    met de hoge tempratuur rond +127 \xB0C en de donkere kant is rond \u2013173 \xB0C. "
 --- !u!1001 &2051923780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -691,13 +794,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2051923783}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!4 &2051923781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
   m_PrefabInstance: {fileID: 2051923780}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2051923782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 2051923780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2051923783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051923782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand vanaf de maan naar de Aarde is ongeveer 384.400 km en zorgt voor
+    eb en vloed van het water. '
 --- !u!1001 &2837618479138926119
 PrefabInstance:
   m_ObjectHideFlags: 0

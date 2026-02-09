@@ -174,8 +174,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 74327938}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!1 &74327937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 74327936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74327938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74327937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: De afstand van Neptunus naar de aarde is ongeveer 4,3 miljard km de verste
+    planeet van de aarde vandaan.
 --- !u!1001 &107953221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,13 +256,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 107953224}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &107953222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 107953221}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &107953223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 107953221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &107953224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107953223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Het duurt ongeveer 16 uur voor neptunus om om zijn eigen as te draaien de
+    dagen op neptunus zijn dus korter dan die van de Aarde. De jaren daarentegen
+    duren wat langer ongeveer 165 aardjaren om rond de zon te draaien. '
 --- !u!1001 &172555649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293,13 +344,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 172555652}
   m_SourcePrefab: {fileID: 100100000, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
 --- !u!4 &172555650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1314066294931527840, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
   m_PrefabInstance: {fileID: 172555649}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &172555651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+  m_PrefabInstance: {fileID: 172555649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &172555652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172555651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Het oppervlakte van Neptunus bestaat uit ongeveer 80% waterstof, 19% helium
+    en ongeveer 1,5% methaan. '
 --- !u!1 &403117891
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,13 +631,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1135582131}
   m_SourcePrefab: {fileID: 100100000, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
 --- !u!4 &1135582129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 1135582128}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1135582130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+  m_PrefabInstance: {fileID: 1135582128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1135582131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135582130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur van Neptunus is consistent ongeveer \u2013214 \xB0C."
 --- !u!1 &1136408304
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,13 +858,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1877342873}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1877342871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1877342870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1877342872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1877342870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1877342873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877342872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Neptunus weegt ongeveer 1,0 x 10\xB2\u2076 kg dat is ongeveer 17 keer zwaarder
+    dan de aarde. De zwaartekracht van Neptunus is vergelijkbaar met de aarde rond
+    11,2 m/s\xB2 ongeveer 10% meer dan de Aarde. "
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -174,13 +174,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 99627244}
   m_SourcePrefab: {fileID: 100100000, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
 --- !u!4 &99627242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 99627241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &99627243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+  m_PrefabInstance: {fileID: 99627241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &99627244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99627243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op Jupiter is altijd rond de \u2013145 \xB0C."
 --- !u!1001 &116459628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,13 +260,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 116459631}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &116459629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 116459628}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &116459630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 116459628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &116459631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116459630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De dagen op Jupiter zijn zo voorbij ze duren namelijk ongeveer 10 uur voor
+    een volledige rotatie om zijn eigen as. Jaren daarentegen duren ongeveer 11,9
+    aardjaren. '
 --- !u!1001 &247108795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,13 +348,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247108798}
   m_SourcePrefab: {fileID: 100100000, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
 --- !u!4 &247108796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1314066294931527840, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
   m_PrefabInstance: {fileID: 247108795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &247108797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+  m_PrefabInstance: {fileID: 247108795}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &247108798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247108797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Jupiter is zo groot omdat het uit gas bestaat vooral uit waterstof en helium
+    dit maakt het de grootste planeet in het zonnestelsel. '
 --- !u!1001 &669289732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,13 +435,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 669289735}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &669289733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 669289732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &669289734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 669289732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &669289735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669289734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Jupiter weegt ongeveer 1,9 x 10\xB2\u2077 kg dat is bijna 320 keer zwaarder
+    dan de aarde. De zwaartekracht is ook veel sterker bijna wel 2,5 keer zwaarder
+    ongeveer 24, 8 m/s\xB2. "
 --- !u!1001 &1064747411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -622,13 +723,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451224237}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!4 &1451224235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
   m_PrefabInstance: {fileID: 1451224234}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1451224236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 1451224234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1451224237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451224236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand vanaf Jupiter tot de aarde is ongeveer 628 miljoen km. '
 --- !u!1 &2110595469
 GameObject:
   m_ObjectHideFlags: 0

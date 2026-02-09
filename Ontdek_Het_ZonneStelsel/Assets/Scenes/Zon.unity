@@ -174,13 +174,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 479668016}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &479668014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 479668013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &479668015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 479668013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &479668016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479668015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "De zon weegt rond 1,9 x 10\xB3\u2070 kg dat is rond 333.000 keer zwaarder
+    dan de aarde hierdoor is de zwaartekracht ook veel groter vergeleken met de aarde
+    is het wel 28 keer sterker of rond 274 m/s\xB2. "
 --- !u!1001 &610268776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,8 +336,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 780325753}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!1 &780325752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 780325751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &780325753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780325752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand van de aarde tot de zon is rond 150 miljoen km door deze afstand
+    duurt het ongeveer 8 seconde voordat nieuw licht de aarde raakt vanaf de zon. '
 --- !u!1 &943531134
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,13 +545,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1539987677827426479, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1115609319}
   m_SourcePrefab: {fileID: 100100000, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
 --- !u!4 &1115609317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2167623465397498389, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
   m_PrefabInstance: {fileID: 1115609316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1115609318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1539987677827426479, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
+  m_PrefabInstance: {fileID: 1115609316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1115609319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115609318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur van de zon gaat van 5.500 \xB0C op het oppervlakte naar 15
+    miljoen \xB0C in de kern van de zon.  "
 --- !u!1001 &1730913312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -556,13 +632,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1730913315}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &1730913313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 1730913312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730913314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 1730913312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1730913315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730913314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De zon draait ook om zijn eigen as dit duurt ongeveer 25 aard dagen voordat
+    de zon 1 keer gedraaid is om zijn eigen as. '
 --- !u!1 &2018410031
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,13 +860,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2075363032}
   m_SourcePrefab: {fileID: 100100000, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
 --- !u!4 &2075363030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1314066294931527840, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
   m_PrefabInstance: {fileID: 2075363029}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2075363031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+  m_PrefabInstance: {fileID: 2075363029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2075363032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075363031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De materialen waar de zon uit bestaat vooral uit waterstof rond 74% en helium
+    rond 25% met een kleine hoeveelheid extra stoffen zoals zuurstof, koolstof en
+    ijzer. De vorm waar deze stoffen in zit is plasma een elektrisch geladen gas. '
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -174,13 +174,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 198014147}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &198014145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 198014144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &198014146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 198014144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &198014147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198014146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: Mars draait om zijn eigen as in ongeveer 24,6 uur bijna net zo snel als een
+    dag op de Aarde. De jaren op Mars daarentegen duuren wel 687 aarddagen.
 --- !u!1001 &239268283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,13 +261,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4924471868756776704, guid: c44316ea2e6508e4e964c85dbf98073c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239268286}
   m_SourcePrefab: {fileID: 100100000, guid: c44316ea2e6508e4e964c85dbf98073c, type: 3}
 --- !u!4 &239268284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5700692629735771578, guid: c44316ea2e6508e4e964c85dbf98073c, type: 3}
   m_PrefabInstance: {fileID: 239268283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &239268285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4924471868756776704, guid: c44316ea2e6508e4e964c85dbf98073c, type: 3}
+  m_PrefabInstance: {fileID: 239268283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &239268286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239268285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Mars bestaat uit ijzeroxide en gesteente wat het de rode kleur geeft door
+    de roest. '
 --- !u!1001 &414920114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,13 +348,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 414920117}
   m_SourcePrefab: {fileID: 100100000, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
 --- !u!4 &414920115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 414920114}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &414920116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+  m_PrefabInstance: {fileID: 414920114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414920117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414920116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op Mars blijft vrijwel hetzelfde rond de \u201360 \xB0C door
+    de dunne atmosfeer. "
 --- !u!1001 &555647950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,13 +435,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555647953}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!4 &555647951 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
   m_PrefabInstance: {fileID: 555647950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &555647952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 555647950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &555647953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555647952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand van mars naar de aarde is ongeveer 56 miljoen km en zou ongeveer
+    6 tot 9 maanden duren om te overleggen met huidige rakketen. '
 --- !u!1 &714931283
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,13 +791,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1899273679}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1899273677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1899273676}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899273678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1899273676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1899273679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899273678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Mars weegt ongeveer 6,4 x 10\xB2\xB3 kg dat is ongeveer 11% van de aarde
+    hierdoor is de zwaarte kracht ook een stuk lager namelijk ongeveer 3,7 m/s\xB2
+    bijna 40% dat van de aarde. "
 --- !u!1001 &4718179361649018237
 PrefabInstance:
   m_ObjectHideFlags: 0

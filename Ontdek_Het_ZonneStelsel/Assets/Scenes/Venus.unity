@@ -315,13 +315,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2818391593139355480, guid: c7d9aabb8b4920d4a8cdff8cce37ae4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 373122092}
   m_SourcePrefab: {fileID: 100100000, guid: c7d9aabb8b4920d4a8cdff8cce37ae4d, type: 3}
 --- !u!4 &373122090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3195058281369626082, guid: c7d9aabb8b4920d4a8cdff8cce37ae4d, type: 3}
   m_PrefabInstance: {fileID: 373122089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &373122091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2818391593139355480, guid: c7d9aabb8b4920d4a8cdff8cce37ae4d, type: 3}
+  m_PrefabInstance: {fileID: 373122089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &373122092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373122091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Venus is niet heel bijzonder en bestaat vooral uit gesteente met een vulkaan
+    achtig oppervlakte. '
 --- !u!1001 &981104210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -377,8 +402,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981104212}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+--- !u!1 &981104211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 981104210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &981104212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981104211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: 
+  isHighlighted: 0
+  isSelected: 0
+  info: 
 --- !u!1001 &1132356576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,13 +483,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1539987677827426479, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1132356579}
   m_SourcePrefab: {fileID: 100100000, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
 --- !u!4 &1132356577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2167623465397498389, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
   m_PrefabInstance: {fileID: 1132356576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1132356578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1539987677827426479, guid: 8e0d746f58571834bbae60fc4eddc6d7, type: 3}
+  m_PrefabInstance: {fileID: 1132356576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1132356579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132356578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op venus blijft grotendeels hetzelfde namelijk rond de 465
+    \xB0C dit komt opdat Venus een dichte atmosfeer heeft met een extreem broeikaseffect. "
 --- !u!1001 &1192193863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,13 +570,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1192193866}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1192193864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1192193863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1192193865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1192193863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1192193866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192193865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Het gewicht van Venus is rond de 4,8 x 10\xB2\u2074 kg dit is ongeveer 20%
+    lichter dan de aarde. Doordat de gewichten redelijk vergelijkbaar zijn is de
+    zwaartekracht op venus ook vergelijkbaar met de aarde 8,87 m/s\xB2 dat is zon
+    10% lichter dan de zwaartekracht op de aarde. "
 --- !u!1001 &1701559144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,13 +659,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1701559147}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &1701559145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 1701559144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1701559146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 1701559144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1701559147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701559146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Venus draait sneller om de zon dan om zijn eigen as dagen op venus duren
+    dus langer dan jaren op venus. Een dag op venus duur ongeveer 243 aarddagen terwijl
+    een jaar op venus 225 aarddagen duurt. '
 --- !u!1 &1764675124
 GameObject:
   m_ObjectHideFlags: 0

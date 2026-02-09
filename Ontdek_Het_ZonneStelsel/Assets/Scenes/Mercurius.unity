@@ -443,13 +443,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 656796048364531106, guid: 0f3e3019202ce3a4294d2cb11094da1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 234594789}
   m_SourcePrefab: {fileID: 100100000, guid: 0f3e3019202ce3a4294d2cb11094da1d, type: 3}
 --- !u!4 &234594787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 168524527307175704, guid: 0f3e3019202ce3a4294d2cb11094da1d, type: 3}
   m_PrefabInstance: {fileID: 234594786}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &234594788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 656796048364531106, guid: 0f3e3019202ce3a4294d2cb11094da1d, type: 3}
+  m_PrefabInstance: {fileID: 234594786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &234594789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234594788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De opperste laag van Mercurius bestaat uit gesteente rotsachtige korst en
+    kraters de lagen van mercurius zijn goed te vergelijken met onze eigen maan. '
 --- !u!1001 &354076068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,13 +530,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 354076071}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &354076069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 354076068}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &354076070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 354076068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &354076071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354076070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Mercurius weegt ongeveer 3,3 x 10\xB2\xB3 kg dat is 0,055 keer het gewicht
+    van de aarde of de Aarde is ongeveer 18 keer zwaarder dan Mercurius. Door dit
+    verschil in gewicht is de zwaartekracht op Mercurius ook een stuk lichter 3,7
+    m/s\xB2 bijna 2/5 dat van de Aarde. "
 --- !u!1001 &812721922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -624,13 +676,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1138667799}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &1138667797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 1138667796}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1138667798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 1138667796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1138667799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138667798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: 'Voor Mercurius duurt het ongeveer 59 dagen voordat de planeet een rotatie
+    om zijn eigen as heeft gedaan een dag op mercurius is dus ongeveer 59 keer langer.
+    Mercurius is wel sneller als het gaat om een baan rond de zon te doen door de
+    afstand gebaseerd op de zon het duurt namelijk maar ongeveer 88 aard dagen voor
+    een heel jaar op Mercurius. '
 --- !u!1001 &1386554457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -686,13 +766,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386554460}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!4 &1386554458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
   m_PrefabInstance: {fileID: 1386554457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1386554459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 1386554457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1386554460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386554459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand tussen Mercurius en de Aarde is rond 77 miljoen km dat is rond
+    afgerond ongeveer 50% van de afstand van de aarde tot de zon. '
 --- !u!1001 &2058886535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -748,13 +853,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2058886538}
   m_SourcePrefab: {fileID: 100100000, guid: de830b4387caf324b962cc4050801267, type: 3}
 --- !u!4 &2058886536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8733440433646108658, guid: de830b4387caf324b962cc4050801267, type: 3}
   m_PrefabInstance: {fileID: 2058886535}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2058886537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248546547553412424, guid: de830b4387caf324b962cc4050801267, type: 3}
+  m_PrefabInstance: {fileID: 2058886535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2058886538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058886537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur van Mercurius verandert veel s \u2019nachts kan het rond \u2013180
+    \xB0C worden en s \u2018ochtents wel 430 \xB0C dit komt omdat Mercurius geen
+    atmosfeer waardoor het geen tempratuur kan vasthouden. "
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

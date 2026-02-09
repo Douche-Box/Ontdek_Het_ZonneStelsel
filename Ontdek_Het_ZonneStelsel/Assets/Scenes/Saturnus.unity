@@ -316,13 +316,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 427127809}
   m_SourcePrefab: {fileID: 100100000, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
 --- !u!4 &427127807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396742079931604877, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
   m_PrefabInstance: {fileID: 427127806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &427127808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2623476801556546871, guid: fa58470f35fc3d94b95b4af0632735fa, type: 3}
+  m_PrefabInstance: {fileID: 427127806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &427127809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427127808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tempratuur
+  isHighlighted: 0
+  isSelected: 0
+  info: "De tempratuur op Saturnus is altijd rond de \u2013178 \xB0C. "
 --- !u!1001 &512799403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,13 +402,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 512799406}
   m_SourcePrefab: {fileID: 100100000, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
 --- !u!4 &512799404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270180966982746605, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
   m_PrefabInstance: {fileID: 512799403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &512799405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6651808896218061655, guid: 8decad128be68a74596a08e7a0b4ec47, type: 3}
+  m_PrefabInstance: {fileID: 512799403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &512799406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512799405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Tijd
+  isHighlighted: 0
+  isSelected: 0
+  info: Een dag op Saturnus duurt ongeveer 10,7 uur op aarde. Een jaar duurt wel
+    29,5 aardjaren voordat Saturnus een volledige baan rond de zon heeft gedaan.
 --- !u!1 &888487221
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,13 +616,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1335401845}
   m_SourcePrefab: {fileID: 100100000, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
 --- !u!4 &1335401843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1314066294931527840, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
   m_PrefabInstance: {fileID: 1335401842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1335401844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835024407211622938, guid: 5e3bbfea012b4894a941c3ae6329c782, type: 3}
+  m_PrefabInstance: {fileID: 1335401842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1335401845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335401844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Materiaal
+  isHighlighted: 0
+  isSelected: 0
+  info: Saturnus is gemaakt uit waterstof en helium en is daardoor ook bijna 10 keer
+    groter dan de aarde.
 --- !u!1001 &1427135391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,13 +703,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1427135394}
   m_SourcePrefab: {fileID: 100100000, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
 --- !u!4 &1427135392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3089180923886405024, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
   m_PrefabInstance: {fileID: 1427135391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1427135393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419885464515895066, guid: 27b4bdbaded21a74e9429f4a34eb74e8, type: 3}
+  m_PrefabInstance: {fileID: 1427135391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1427135394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427135393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Gewicht
+  isHighlighted: 0
+  isSelected: 0
+  info: "Saturnus weegt ongeveer 5,7 x 10\xB2\u2076 kg dat is ongeveer 95 keer zwaarder
+    dan de Aarde. De zwaartekracht daarentegen is wel te vergelijken met die van
+    de Aarde deze is namelijk 10,4 m/s\xB2 maar ongeveer 8% meer dan de Aarde. "
 --- !u!1001 &1980176943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -691,13 +791,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980176946}
   m_SourcePrefab: {fileID: 100100000, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
 --- !u!4 &1980176944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3814059499324417975, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
   m_PrefabInstance: {fileID: 1980176943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1980176945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4586232619319950605, guid: 4efbed783ccf1874ea8a01b7a19566ef, type: 3}
+  m_PrefabInstance: {fileID: 1980176943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1980176946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980176945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7bb05663e1b2046890b579acbe5151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetObject
+  objectName: Afstand
+  isHighlighted: 0
+  isSelected: 0
+  info: 'De afstand van de aarde tot Saturnus is wel 1,2 miljard km daar doet licht
+    zon 80 minuten over om Saturnus te bereiken. '
 --- !u!1001 &2069334407
 PrefabInstance:
   m_ObjectHideFlags: 0

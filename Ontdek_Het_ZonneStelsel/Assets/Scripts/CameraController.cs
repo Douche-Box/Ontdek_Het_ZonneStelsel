@@ -385,6 +385,9 @@ public class CameraController : MonoBehaviour
         transform.LookAt(_lookAtTarget.position);
     }
 
+    /// <summary>
+    /// Handles free flying movement of the camera when not focussing on a target.
+    /// </summary>
     private void FreeFly()
     {
         if (_moveInput == Vector2.zero && _upDownInput == 0)
