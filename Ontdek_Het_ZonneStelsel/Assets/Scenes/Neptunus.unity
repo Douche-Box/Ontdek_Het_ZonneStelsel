@@ -511,6 +511,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2086150946834743201, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: m_Name
       value: Neptunus
@@ -570,6 +578,18 @@ PrefabInstance:
     - target: {fileID: 3437603171248328291, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921064507472486073, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731974575195506886, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738529739113910859, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

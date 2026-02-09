@@ -357,6 +357,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826187733276656782, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: m_Name
       value: Uranus
@@ -416,6 +424,18 @@ PrefabInstance:
     - target: {fileID: 5336398026519803231, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551204170735087353, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657451766315651302, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

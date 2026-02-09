@@ -215,6 +215,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5516433473691012252, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858469983264854432, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7065298430492334281, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: m_Name
       value: Zon
