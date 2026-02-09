@@ -270,17 +270,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Uranus
-  _omZonDraaiTijd: 30687
-  _asDraaiSnelheid: 0.7
-  _simulatieAfstand: 350
-  _afstandTotZon: 2870
-  _afstandTotAarde: 2720
-  _massa: 87
-  _simulatieGrootte: 1
-  _wareGrootte: 4
-  viewPoint: {fileID: 0}
-  _sceneNaam: Uranus
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &-1869374939891801129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,14 +293,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: 0, z: 1}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 5336398026519803231}
-  planeetInfo: {fileID: 8866875063040176204}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &1826187733276656782
 MonoBehaviour:
@@ -314,9 +314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 8866875063040176204}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &8657451766315651302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,9 +329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 8866875063040176204}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &7551204170735087353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,15 +347,15 @@ MonoBehaviour:
   objectName: Uranus
   isHighlighted: 0
   isSelected: 0
-  info: "Uranus is de zevende planeet van ons zonnestelsel en bevindt zich ver van
-    de zon. Door deze grote afstand is Uranus een zeer koude planeet. Uranus draait
-    langzaam om de zon en heeft \xE9\xE9n van de langste omlooptijden van alle planeten.  
-    In de kern van Uranus bevindt zich een vaste kern van gesteente en ijs, die omgeven
-    is door dikke lagen gas en ijs.   Wat Uranus uniek maakt, is dat Uranus bijna
-    volledig op zijn zij ligt. De planeet heeft een kanteling van ongeveer 98 graden,
-    waardoor de polen lange periodes van licht en duisternis ervaren. Uranus heeft
-    een lichtblauwe kleur door het methaan in de atmosfeer en is ongeveer vier keer
-    zo groot als de aarde."
+  info: "Uranus is de zevende planeet van ons zonnestelsel, op ongeveer 2,87 miljard
+    km van de zon en bevindt zich ver van de zon. Door deze grote afstand is Uranus
+    een zeer koude planeet. Uranus draait langzaam om de zon en heeft \xE9\xE9n van
+    de langste omlooptijden van alle planeten.   In de kern van Uranus bevindt zich
+    een vaste kern van gesteente en ijs, die omgeven is door dikke lagen gas en ijs.  
+    Wat Uranus uniek maakt, is dat Uranus bijna volledig op zijn zij ligt. De planeet
+    heeft een kanteling van ongeveer 98 graden, waardoor de polen lange periodes
+    van licht en duisternis ervaren. Uranus heeft een lichtblauwe kleur door het
+    methaan in de atmosfeer en is ongeveer vier keer zo groot als de aarde. "
 --- !u!4 &5336398026519803231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

@@ -190,17 +190,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Mars
-  _omZonDraaiTijd: 687
-  _asDraaiSnelheid: 1025
-  _simulatieAfstand: 200
-  _afstandTotZon: 228
-  _afstandTotAarde: 56
-  _massa: 0.64
-  _simulatieGrootte: 1
-  _wareGrootte: 0.53
-  viewPoint: {fileID: 0}
-  _sceneNaam: Mars
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &3978579339831362528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,14 +213,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: 0, z: -1}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 8913532972407399397}
-  planeetInfo: {fileID: 4515416358333863876}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &3642979616045445128
 MonoBehaviour:
@@ -234,9 +234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 4515416358333863876}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &6249738875602679956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 4515416358333863876}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &8625434246658368981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,14 +267,15 @@ MonoBehaviour:
   objectName: Mars
   isHighlighted: 0
   isSelected: 0
-  info: Mars is de vierde planeet van ons zonnestelsel en wordt ook wel de rode planeet
-    genoemd. Mars bevindt zich verder van de zon dan de aarde en is daardoor een
-    stuk kouder. Mars heeft een dunne atmosfeer, waardoor warmte moeilijk wordt vastgehouden.  
-    In de kern van Mars bevindt zich een kern van ijzer, nikkel en zwavel. De rode
-    kleur van de planeet wordt veroorzaakt door ijzeroxide (roest) in het oppervlak.  
-    Een opvallend kenmerk van Mars is dat er sporen zijn gevonden die wijzen op de
-    aanwezigheid van water in het verleden. Daarnaast heeft Mars grote vulkanen en
-    diepe kloven. Mars is ongeveer half zo groot als de aarde.
+  info: 'Mars is de vierde planeet van ons zonnestelsel, op ongeveer 228 miljoen
+    km van de zon en wordt ook wel de rode planeet genoemd. Mars bevindt zich verder
+    van de zon dan de aarde en is daardoor een stuk kouder. Mars heeft een dunne
+    atmosfeer, waardoor warmte moeilijk wordt vastgehouden.   In de kern van Mars
+    bevindt zich een kern van ijzer, nikkel en zwavel. De rode kleur van de planeet
+    wordt veroorzaakt door ijzeroxide (roest) in het oppervlak.   Een opvallend kenmerk
+    van Mars is dat er sporen zijn gevonden die wijzen op de aanwezigheid van water
+    in het verleden. Daarnaast heeft Mars grote vulkanen en diepe kloven. Mars is
+    ongeveer half zo groot als de aarde. '
 --- !u!4 &8913532972407399397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ed02a6420097f846abaf2405517d2f4, type: 3}

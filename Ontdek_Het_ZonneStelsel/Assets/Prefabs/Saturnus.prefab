@@ -286,17 +286,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Saturnus
-  _omZonDraaiTijd: 10759
-  _asDraaiSnelheid: 0.45
-  _simulatieAfstand: 0
-  _afstandTotZon: 1430
-  _afstandTotAarde: 0
-  _massa: 570
-  _simulatieGrootte: 1
-  _wareGrootte: 9.5
-  viewPoint: {fileID: 0}
-  _sceneNaam: Saturnus
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &-3664506694598330170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,14 +309,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: 0, z: -1}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 7030125571582436594}
-  planeetInfo: {fileID: 3137490720422454518}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &2280829131244919042
 MonoBehaviour:
@@ -330,9 +330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 3137490720422454518}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &3996115958908005442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,9 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 3137490720422454518}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &884818318343213731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,15 +363,16 @@ MonoBehaviour:
   objectName: Saturnus
   isHighlighted: 0
   isSelected: 0
-  info: "Saturnus is de zesde planeet van ons zonnestelsel en bevindt zich op grote
-    afstand van de zon. Saturnus draait langzaam om de zon en heeft daardoor een
-    lange omlooptijd. Saturnus is \xE9\xE9n van de grootste planeten in het zonnestelsel.  
-    In de kern van Saturnus bevindt zich een vaste kern van gesteente en ijs, die
-    omgeven is door dikke lagen gas. De planeet heeft geen vast oppervlak.   Het
-    meest opvallende kenmerk van Saturnus is zijn grote en duidelijke ringenstelsel,
-    dat bestaat uit ijs, steen en stof. Daarnaast heeft Saturnus een lage dichtheid:
-    als het mogelijk zou zijn, zou Saturnus zelfs kunnen drijven op water. Saturnus
-    is ongeveer negen keer zo groot als de aarde."
+  info: "Saturnus is de zesde planeet van ons zonnestelsel, op ongeveer 1,43 miljard
+    km van de zon en bevindt zich op grote afstand van de zon. Saturnus draait langzaam
+    om de zon en heeft daardoor een lange omlooptijd. Saturnus is \xE9\xE9n van de
+    grootste planeten in het zonnestelsel.   In de kern van Saturnus bevindt zich
+    een vaste kern van gesteente en ijs, die omgeven is door dikke lagen gas. De
+    planeet heeft geen vast oppervlak.   Het meest opvallende kenmerk van Saturnus
+    is zijn grote en duidelijke ringenstelsel, dat bestaat uit ijs, steen en stof.
+    Daarnaast heeft Saturnus een lage dichtheid: als het mogelijk zou zijn, zou Saturnus
+    zelfs kunnen drijven op water. Saturnus is ongeveer negen keer zo groot als de
+    aarde. "
 --- !u!1001 &8767693211336128820
 PrefabInstance:
   m_ObjectHideFlags: 0

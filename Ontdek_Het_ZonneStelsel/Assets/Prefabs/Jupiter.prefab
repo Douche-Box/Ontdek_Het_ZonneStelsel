@@ -372,17 +372,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Jupiter
-  _omZonDraaiTijd: 4333
-  _asDraaiSnelheid: 0.4
-  _simulatieAfstand: 250
-  _afstandTotZon: 778
-  _afstandTotAarde: 628
-  _massa: 1900
-  _simulatieGrootte: 1
-  _wareGrootte: 11
-  viewPoint: {fileID: 0}
-  _sceneNaam: Jupiter
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &7903731544131113277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,14 +395,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: 0, z: 1}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 6496993144350542427}
-  planeetInfo: {fileID: 3250313895330380113}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &6382737787649520606
 MonoBehaviour:
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 3250313895330380113}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &5595018926566630565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,9 +431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 3250313895330380113}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &5951367424345799487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,15 +449,15 @@ MonoBehaviour:
   objectName: Jupiter
   isHighlighted: 0
   isSelected: 0
-  info: Jupiter is de vijfde planeet van ons zonnestelsel en is de grootste planeet
-    in het zonnestelsel. Jupiter bevindt zich op grote afstand van de zon en heeft
-    een enorme massa, waardoor Jupiter veel invloed heeft op de banen van andere
-    planeten.   In de kern van Jupiter bevindt zich waarschijnlijk een vaste kern
-    van gesteente en ijs, die omgeven is door dikke lagen gas. Jupiter heeft geen
-    vast oppervlak.   Een bekend kenmerk van Jupiter is de Grote Rode Vlek, een gigantische
-    storm die al honderden jaren woedt. Daarnaast heeft Jupiter zeer sterke winden
-    en het grootste aantal manen van alle planeten. Jupiter is ongeveer elf keer
-    zo groot als de aarde.
+  info: 'Jupiter is de vijfde planeet van ons zonnestelsel, op ongeveer 778 miljoen
+    km van de zon en is de grootste planeet in het zonnestelsel. Jupiter bevindt
+    zich op grote afstand van de zon en heeft een enorme massa, waardoor Jupiter
+    veel invloed heeft op de banen van andere planeten.   In de kern van Jupiter
+    bevindt zich waarschijnlijk een vaste kern van gesteente en ijs, die omgeven
+    is door dikke lagen gas. Jupiter heeft geen vast oppervlak.   Een bekend kenmerk
+    van Jupiter is de Grote Rode Vlek, een gigantische storm die al honderden jaren
+    woedt. Daarnaast heeft Jupiter zeer sterke winden en het grootste aantal manen
+    van alle planeten. Jupiter is ongeveer elf keer zo groot als de aarde. '
 --- !u!4 &6496993144350542427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}

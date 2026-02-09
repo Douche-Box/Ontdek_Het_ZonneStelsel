@@ -101,17 +101,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Pluto
-  _omZonDraaiTijd: 90500
-  _asDraaiSnelheid: 6.4
-  _simulatieAfstand: 450
-  _afstandTotZon: 5900
-  _afstandTotAarde: 5750
-  _massa: 0.0131
-  _simulatieGrootte: 1
-  _wareGrootte: 0.18
-  viewPoint: {fileID: 0}
-  _sceneNaam: Pluto
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &3289807772468973496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,14 +124,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 2500852409876351153}
-  planeetInfo: {fileID: 6848101434591693384}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &1258971207714967549
 MonoBehaviour:
@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: 0}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &2271915404907592629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,9 +160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: 0}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &7177612231237849168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,14 +179,14 @@ MonoBehaviour:
   isHighlighted: 0
   isSelected: 0
   info: "Pluto is een dwergplaneet en bevindt zich aan de rand van het zonnestelsel,
-    ver voorbij Neptunus. Door deze grote afstand draait Pluto in een zeer lange
-    en elliptische baan om de zon. Hierdoor kan de afstand tot de zon sterk vari\xEBren.  
-    In de kern van Pluto bevindt zich een rotsachtige kern, die omgeven is door lagen
-    van ijs, zoals waterijs, stikstofijs en methaanijs.   Een bijzonder kenmerk van
-    Pluto is zijn zeer dunne atmosfeer, die kan bevriezen wanneer Pluto ver van de
-    zon staat. Daarnaast vormt Pluto samen met zijn grootste maan Charon bijna een
-    dubbel-planetensysteem. Pluto is veel kleiner dan de aarde en is ongeveer vijf
-    keer kleiner in diameter. "
+    ver voorbij Neptunus, op ongeveer 5,9 miljard km van de zon. Door deze grote
+    afstand draait Pluto in een zeer lange en elliptische baan om de zon. Hierdoor
+    kan de afstand tot de zon sterk vari\xEBren.   In de kern van Pluto bevindt zich
+    een rotsachtige kern, die omgeven is door lagen van ijs, zoals waterijs, stikstofijs
+    en methaanijs.   Een bijzonder kenmerk van Pluto is zijn zeer dunne atmosfeer,
+    die kan bevriezen wanneer Pluto ver van de zon staat. Daarnaast vormt Pluto samen
+    met zijn grootste maan Charon bijna een dubbel-planetensysteem. Pluto is veel
+    kleiner dan de aarde en is ongeveer vijf keer kleiner in diameter. "
 --- !u!1001 &6802779967058639988
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -212,17 +212,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
-  _planeetNaam: Neptunus
-  _omZonDraaiTijd: 60190
-  _asDraaiSnelheid: 0.66
-  _simulatieAfstand: 400
-  _afstandTotZon: 4500
-  _afstandTotAarde: 4350
-  _massa: 100
-  _simulatieGrootte: 1
-  _wareGrootte: 3.9
-  viewPoint: {fileID: 0}
-  _sceneNaam: Neptunus
+  _planetName: 
+  _orbitalPeriodDays: 0
+  _rotationPeriodDays: 0
+  _simulationDistance: 0
+  _distanceToSunMillionsKm: 0
+  _distanceToEarthMillionsKm: 0
+  _mass10e24Kg: 0
+  _simulationScale: 0
+  _actualSize: 0
+  _viewPoint: {fileID: 0}
+  _sceneName: 
 --- !u!114 &-2086150946834743201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,14 +235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 0
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 10000
-  orbitObject: {fileID: 3437603171248328291}
-  planeetInfo: {fileID: -5031933446772312501}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1000
+  _orbitObject: {fileID: 0}
+  _planetInfo: {fileID: 0}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!114 &7738529739113910859
 MonoBehaviour:
@@ -256,9 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d361c071ca4d39e4980758d28ca3b29d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetPositie
-  planeetInfo: {fileID: -5031933446772312501}
-  useSimulationDistance: 0
-  scale: 10
+  _planeetInfo: {fileID: 0}
+  _useSimulationDistance: 1
+  _scale: 10
 --- !u!114 &5921064507472486073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,9 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6498be6a868247148b5c4a94af10870c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetScale
-  planeetInformatie: {fileID: -5031933446772312501}
-  useSimulationScale: 0
-  schaal: 1000
+  _planetInfo: {fileID: 0}
+  _useSimulationScale: 0
+  scale: 0
 --- !u!114 &6731974575195506886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,15 +289,16 @@ MonoBehaviour:
   objectName: Neptunus
   isHighlighted: 0
   isSelected: 0
-  info: 'Neptunus is de achtste en meest verre planeet van ons zonnestelsel. Neptunus
-    bevindt zich helemaal aan de rand van het zonnestelsel en draait op een enorme
-    afstand om de zon. Door deze grote afstand ontvangt Neptunus maar weinig zonlicht
-    en is het er extreem koud.   In de kern van Neptunus bevindt zich een vaste kern
-    van gesteente en ijs, die omgeven is door dikke lagen gas en ijs.   De planeet
-    staat bekend om zijn diepe blauwe kleur, die wordt veroorzaakt door methaan in
-    de atmosfeer. Daarnaast heeft Neptunus de krachtigste winden van alle planeten
-    in het zonnestelsel, met windsnelheden tot meer dan 2.000 kilometer per uur.
-    Neptunus is ongeveer vier keer zo groot als de aarde. '
+  info: 'Neptunus is de achtste en meest verre planeet van ons zonnestelsel, op ongeveer
+    4,5 miljard km van de zon. Neptunus bevindt zich helemaal aan de rand van het
+    zonnestelsel en draait op een enorme afstand om de zon. Door deze grote afstand
+    ontvangt Neptunus maar weinig zonlicht en is het er extreem koud.   In de kern
+    van Neptunus bevindt zich een vaste kern van gesteente en ijs, die omgeven is
+    door dikke lagen gas en ijs.   De planeet staat bekend om zijn diepe blauwe kleur,
+    die wordt veroorzaakt door methaan in de atmosfeer. Daarnaast heeft Neptunus
+    de krachtigste winden van alle planeten in het zonnestelsel, met windsnelheden
+    tot meer dan 2.000 kilometer per uur. Neptunus is ongeveer vier keer zo groot
+    als de aarde. '
 --- !u!4 &3437603171248328291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb43beae0a236b4f84a425c3d6f3da1, type: 3}
