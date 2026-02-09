@@ -23,6 +23,7 @@ public class UI_manager : MonoBehaviour
     [SerializeField] private GameObject _popupPanel;
 
     [SerializeField] private GameObject _tabMenu;
+    [SerializeField] private GameObject _ScaleToggle;
 
     [Header("Settings Menu")]
     [SerializeField] private Slider _textSpeedSlider;
@@ -216,6 +217,7 @@ public class UI_manager : MonoBehaviour
     public void SchaalToggle()
     {
         PlanetSimulationChange.Instance.ToggleModeSimulationMode();
+        _ScaleToggle.SetActive(!_ScaleToggle.activeSelf);
     }
 
     public void LandOpPlaneet(string selectedPlanet)
