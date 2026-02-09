@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 1409494069}
   - component: {fileID: 1409494070}
   m_Layer: 0
-  m_Name: Planeet Manager
+  m_Name: Planet Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -630,18 +630,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f6e7ca93481b04a8013c64d5d9ed36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetAfstandVerandering
-  baanVisualisatie:
-  - {fileID: 627318385}
-  - {fileID: 685479808}
+  _orbitRenderer:
   - {fileID: 1845090301}
+  - {fileID: 2016913938}
   - {fileID: 5347422683425871348}
   - {fileID: 931874597}
-  - {fileID: 2016913938}
-  - {fileID: 422371580}
-  - {fileID: 518474892}
+  - {fileID: 627318385}
   - {fileID: 452632886}
   - {fileID: 500864976}
-  afstands:
+  - {fileID: 422371580}
+  - {fileID: 518474892}
+  - {fileID: 685479808}
+  _distance:
   - {fileID: 5347422683425871370}
   - {fileID: 5347422683425871369}
   - {fileID: 5347422683425871368}
@@ -652,7 +652,7 @@ MonoBehaviour:
   - {fileID: 5347422683425871364}
   - {fileID: 5347422683425871363}
   - {fileID: 1347339767}
-  planeetScale:
+  _planetScale:
   - {fileID: 5347422683425871362}
   - {fileID: 5347422683425871361}
   - {fileID: 5347422683425871360}
@@ -664,7 +664,7 @@ MonoBehaviour:
   - {fileID: 5347422683425871355}
   - {fileID: 5347422683425871349}
   - {fileID: 1347339766}
-  normalMode: 0
+  _normalMode: 0
 --- !u!114 &1409494070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80da11fd67a365e418af939cd1885f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  rotateObjects:
+  _rotateObjects:
   - {fileID: 158332914}
   - {fileID: 1620739729}
   - {fileID: 274209125}
@@ -699,7 +699,7 @@ MonoBehaviour:
   - {fileID: 5347422683425871371}
   - {fileID: 663294366}
   - {fileID: 1347339768}
-  VermenigvuldegingsFactoren: 010000000a00000064000000e803000010270000a086010040420f008096980000e1f505
+  _Multiply: 010000000a00000064000000e803000010270000a086010040420f008096980000e1f505
 --- !u!114 &1507422107 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6187277103991918371, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
@@ -745,10 +745,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1051451339391132070, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontSize
+      value: 18.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051451339391132070, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 1051451339391132070, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2386200176038705495, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200159817339298216, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontSize
+      value: 15.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200159817339298216, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3200159817339298216, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5645076398457687761, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: _popupPanel
       value: 
@@ -871,6 +895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!4 &1769191105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8198495707058742238, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+  m_PrefabInstance: {fileID: 5347422683425871347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1845090301 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8541201204217927934, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
@@ -995,6 +1024,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 151031725359356011, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 60190
+      objectReference: {fileID: 0}
+    - target: {fileID: 330296063756821665, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 330296063756821665, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 459332509475658366, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 459332509475658366, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 487789968365581336, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487789968365581336, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 597494886863803013, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 597494886863803013, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597494886863803013, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 776290379638844985, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 776290379638844985, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283506668754639978, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488261023253041697, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 4333
+      objectReference: {fileID: 0}
     - target: {fileID: 1497152363379798978, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1035,9 +1120,321 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28640053
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21976647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933532
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6087617
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956460760659430525, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956460760659430525, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051160032965331020, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051160032965331020, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388899363994558803, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 27.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388899363994558803, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _simulationDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388899363994558803, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388899363994558803, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533507393391374668, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 30687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729840731192369566, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 10759
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035935833748037002, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035935833748037002, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110101616647806513, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110101616647806513, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110101616647806513, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429906671849549410, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212878020039030321, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212878020039030321, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479675408506626775, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479675408506626775, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4621010428681732023, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
       propertyPath: m_Name
       value: Zonnestelsel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715911441747395982, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749593026819801164, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749593026819801164, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4774640337192954773, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849745760602602926, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849745760602602926, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914891039860031645, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085477009071643882, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085477009071643882, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319002507889963340, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319002507889963340, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396341574880313791, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396341574880313791, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715201614127962204, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005178953630694507, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005178953630694507, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 5347422683425871374}
+    - target: {fileID: 6058330170293254733, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058330170293254733, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187277103991918371, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187277103991918371, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488940373087233234, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501948712262381751, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501948712262381751, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574949213425331839, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 5347422683425871374}
+    - target: {fileID: 6574949213425331839, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 5347422683425871372}
+    - target: {fileID: 6574949213425331839, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574949213425331839, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749915481743594870, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000908245479954606, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232548909029380471, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232548909029380471, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _centerObject
+      value: 
+      objectReference: {fileID: 1769191105}
+    - target: {fileID: 7232548909029380471, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437829702127406767, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: scale
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460096885545039065, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645336943281270937, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 5347422683425871374}
+    - target: {fileID: 7692242462875682050, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692242462875682050, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843302424870681029, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843302424870681029, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7952580153013343996, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7952580153013343996, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070433361064535118, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070433361064535118, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070433361064535118, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213430280814422073, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213430280814422073, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326879252130076697, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541201204217927934, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8541201204217927934, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690089933773768281, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690089933773768281, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836411965498985181, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _scale
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836411965498985181, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: _realisticLineWidth
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1253,6 +1650,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
+--- !u!4 &5347422683425871372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1695245049075474499, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+  m_PrefabInstance: {fileID: 5347422683425871347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5347422683425871374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 151031725359356011, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+  m_PrefabInstance: {fileID: 5347422683425871347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
 --- !u!114 &5347422683425871377 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5452881957065729790, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}

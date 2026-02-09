@@ -155,13 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 5638850246910055388}
-  planeetInfo: {fileID: 81607720598494697}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.001
-  scale: 0.1
+  _centerObject: {fileID: 5638850246910055388}
+  _planeetInfo: {fileID: 81607720598494697}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &2346299946663687807
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,14 +240,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 8235543066346307092}
-  planeetInfo: {fileID: 1614855793203875985}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 8235543066346307092}
+  _planetInfo: {fileID: 1614855793203875985}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &2660954905737725582
 GameObject:
@@ -404,13 +404,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 8128954485233105465}
-  planeetInfo: {fileID: 1488261023253041697}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 8128954485233105465}
+  _planeetInfo: {fileID: 1488261023253041697}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &2906987861976024711
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,13 +566,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 5586785679437551098}
-  planeetInfo: {fileID: 151031725359356011}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 5586785679437551098}
+  _planeetInfo: {fileID: 151031725359356011}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &2923875335586157502
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,13 +728,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 6166077771586350671}
-  planeetInfo: {fileID: 2575764437282539950}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.001
-  scale: 0.1
+  _centerObject: {fileID: 6166077771586350671}
+  _planeetInfo: {fileID: 2575764437282539950}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &3234821421219939344
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,14 +781,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 8198495707058742238}
-  planeetInfo: {fileID: 7137723784330589748}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 8198495707058742238}
+  _planetInfo: {fileID: 7137723784330589748}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &3374752160826112366
 GameObject:
@@ -836,14 +836,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 5586785679437551098}
-  planeetInfo: {fileID: 151031725359356011}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 5586785679437551098}
+  _planetInfo: {fileID: 151031725359356011}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &3394563504140522787
 GameObject:
@@ -891,14 +891,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 6166077771586350671}
-  planeetInfo: {fileID: 2575764437282539950}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 6166077771586350671}
+  _planetInfo: {fileID: 2575764437282539950}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &3422111948241180645
 GameObject:
@@ -1055,13 +1055,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 7275794063600998384}
-  planeetInfo: {fileID: 284459675062968975}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 7275794063600998384}
+  _planeetInfo: {fileID: 284459675062968975}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &4186196156531574329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,14 +1108,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 7275794063600998384}
-  planeetInfo: {fileID: 284459675062968975}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 7275794063600998384}
+  _planetInfo: {fileID: 284459675062968975}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &4411286628601682828
 GameObject:
@@ -1272,13 +1272,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 4116690808908585429}
-  planeetInfo: {fileID: 2729840731192369566}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 4116690808908585429}
+  _planeetInfo: {fileID: 2729840731192369566}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &4529342055407600511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,13 +1434,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 619697276378695026}
-  planeetInfo: {fileID: 2533507393391374668}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 619697276378695026}
+  _planeetInfo: {fileID: 2533507393391374668}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &4621010428681732023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,14 +1528,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 8128954485233105465}
-  planeetInfo: {fileID: 1488261023253041697}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 8128954485233105465}
+  _planetInfo: {fileID: 1488261023253041697}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &6230709171257887438
 GameObject:
@@ -1583,14 +1583,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 619697276378695026}
-  planeetInfo: {fileID: 2533507393391374668}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 619697276378695026}
+  _planetInfo: {fileID: 2533507393391374668}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &6430621230421597985
 GameObject:
@@ -1747,13 +1747,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 8235543066346307092}
-  planeetInfo: {fileID: 1614855793203875985}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 8235543066346307092}
+  _planeetInfo: {fileID: 1614855793203875985}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1 &7527633322121745736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,14 +1800,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 4116690808908585429}
-  planeetInfo: {fileID: 2729840731192369566}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 4116690808908585429}
+  _planetInfo: {fileID: 2729840731192369566}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &8074334201388729290
 GameObject:
@@ -1855,14 +1855,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b96dd8d3ce804499a8765251ff6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
-  rotateType: 1
-  rotationAxis: {x: 0, y: -1, z: 0}
-  axisSpace: 1
-  rotationSpeed: 1
-  orbitObject: {fileID: 5638850246910055388}
-  planeetInfo: {fileID: 81607720598494697}
-  useManualSpeed: 0
-  manualSpeed: 10
+  _rotateType: 0
+  _rotationAxis: {x: 0, y: 1, z: 0}
+  _axisSpace: 1
+  _rotationSpeed: 1
+  _orbitObject: {fileID: 5638850246910055388}
+  _planetInfo: {fileID: 81607720598494697}
+  _useManualSpeed: 0
+  _manualSpeed: 10
   multiplier: 1
 --- !u!1 &8601236468474944883
 GameObject:
@@ -2019,13 +2019,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5c18a5aee67b4284e1ddfe907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaanVisualisatie
-  centerObject: {fileID: 8198495707058742238}
-  planeetInfo: {fileID: 7137723784330589748}
-  segments: 100
-  useSimulationDistance: 1
-  simulationLineWidth: 0.75
-  realisticLineWidth: 0.01
-  scale: 0.1
+  _centerObject: {fileID: 8198495707058742238}
+  _planeetInfo: {fileID: 7137723784330589748}
+  _segments: 100
+  _useSimulationDistance: 1
+  _simulationLineWidth: 0.75
+  _realisticLineWidth: 0.001
+  _scale: 100
 --- !u!1001 &1038304570154960232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2035,17 +2035,89 @@ PrefabInstance:
     m_TransformParent: {fileID: 4116690808908585429}
     m_Modifications:
     - target: {fileID: -3664506694598330170, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2729840731192369566}
+    - target: {fileID: -3664506694598330170, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 8068420235378549146}
+    - target: {fileID: -3664506694598330170, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3664506694598330170, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280829131244919042, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280829131244919042, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 2729840731192369566}
+    - target: {fileID: 2280829131244919042, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _useSimulationDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _sceneName
+      value: Saturnus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _actualSize
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _planetName
+      value: Saturnus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 570
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _simulationScale
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: _simulatieAfstand
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 10.757
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _simulationDistance
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 1430
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996115958908005442, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3996115958908005442, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3996115958908005442, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2729840731192369566}
     - target: {fileID: 7030125571582436594, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1430
@@ -2119,14 +2191,82 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6166077771586350671}
     m_Modifications:
+    - target: {fileID: 3642979616045445128, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642979616045445128, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 2575764437282539950}
+    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2575764437282539950}
+    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 7396094049002077583}
     - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
       propertyPath: rotationSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3978579339831362528, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _sceneName
+      value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _actualSize
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _planetName
+      value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 1.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _simulationDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515416358333863876, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249738875602679956, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: scale
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6249738875602679956, guid: d24296af07984e244813943ceea24815, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6249738875602679956, guid: d24296af07984e244813943ceea24815, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2575764437282539950}
     - target: {fileID: 8140515466153261407, guid: d24296af07984e244813943ceea24815, type: 3}
       propertyPath: m_Name
       value: Mars
@@ -2201,17 +2341,81 @@ PrefabInstance:
     m_TransformParent: {fileID: 7275794063600998384}
     m_Modifications:
     - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 284459675062968975}
+    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 8690100461793104289}
+    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: rotationSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5652107861827791007, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _rotationAxis.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _sceneName
+      value: Venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _actualSize
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _planetName
+      value: Venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 4.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 243
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _simulationDistance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799293357980582390, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 4943253936370919522, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_Name
       value: Venus
       objectReference: {fileID: 0}
     - target: {fileID: 5161489765718336825, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161489765718336825, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5161489765718336825, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 284459675062968975}
     - target: {fileID: 5751703582181225176, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
       propertyPath: m_LocalPosition.x
       value: 108
@@ -2252,6 +2456,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7873997901220546475, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873997901220546475, guid: bb525dd0372c13447a5ef2168ebd3546, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 284459675062968975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2281,8 +2493,52 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5586785679437551098}
     m_Modifications:
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _sceneName
+      value: Neptunus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _actualSize
+      value: 3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _planetName
+      value: Neptunus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 60.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _simulationDistance
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 4350
+      objectReference: {fileID: 0}
     - target: {fileID: -2086150946834743201, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2086150946834743201, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _rotationSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2665851095304312025, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
@@ -2330,7 +2586,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5921064507472486073, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921064507472486073, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: schaal
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738529739113910859, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
+      propertyPath: _scale
       value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2362,14 +2626,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8128954485233105465}
     m_Modifications:
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _sceneName
+      value: Jupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _actualSize
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _planetName
+      value: Jupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 1900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 4332.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _simulationDistance
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250313895330380113, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 628
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595018926566630565, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5595018926566630565, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5595018926566630565, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 1488261023253041697}
     - target: {fileID: 5864289775616905441, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
       propertyPath: m_Name
       value: Jupiter
       objectReference: {fileID: 0}
+    - target: {fileID: 6382737787649520606, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382737787649520606, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 1488261023253041697}
     - target: {fileID: 6496993144350542427, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 778
@@ -2411,7 +2731,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7903731544131113277, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 1488261023253041697}
+    - target: {fileID: 7903731544131113277, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 7175859354221535531}
+    - target: {fileID: 7903731544131113277, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
       propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903731544131113277, guid: 3d7761a2a8902c340bfe4c763315edfd, type: 3}
+      propertyPath: _rotationSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2443,14 +2775,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8198495707058742238}
     m_Modifications:
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _sceneName
+      value: Aarde
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _actualSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetName
+      value: Aarde
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 5.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 365
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _simulationDistance
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: -6617683551885334940, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 7137723784330589748}
+    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 5387982913879424087}
     - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6279994476215995362, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _rotationSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 388967902552751045, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: scale
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 388967902552751045, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 388967902552751045, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 2388899363994558803}
     - target: {fileID: 479966979400414909, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: m_Name
       value: Aarde
@@ -2495,35 +2883,147 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1912779111876576550, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912779111876576550, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 7137723784330589748}
+    - target: {fileID: 2314692553626820351, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314692553626820351, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2388899363994558803}
     - target: {fileID: 2555835395939598631, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: scale
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2555835395939598631, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 2388899363994558803}
+    - target: {fileID: 2555835395939598631, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: centerObject
       value: 
       objectReference: {fileID: 8198495707058742238}
+    - target: {fileID: 2555835395939598631, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _centerObject
+      value: 
+      objectReference: {fileID: 9071733648967390415}
+    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2388899363994558803}
+    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 4889698826365614931}
     - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: rotationSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717778248201243182, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362354065253980553, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: scale
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5362354065253980553, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5362354065253980553, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 7137723784330589748}
+    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2388899363994558803}
+    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 9071733648967390415}
     - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5723424520022082261, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _sceneName
+      value: Maan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _actualSize
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _planetName
+      value: Maan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 0.0735
+      objectReference: {fileID: 0}
     - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
       propertyPath: _afstandTotZon
       value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _simulationScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 27.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 27.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _simulationDistance
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+--- !u!114 &2388899363994558803 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7349902601414062339, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+  m_PrefabInstance: {fileID: 5127077876021874768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!4 &4889698826365614931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 359365501209996035, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+  m_PrefabInstance: {fileID: 5127077876021874768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5387982913879424087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1000643267960007687, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
@@ -2540,6 +3040,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!4 &9071733648967390415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4234034120304657567, guid: ac8cd4ff58cfd94419401d259b179cbf, type: 3}
+  m_PrefabInstance: {fileID: 5127077876021874768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5962781800146167450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2549,7 +3054,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 7686690884127379350}
     m_Modifications:
     - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 7271524649221202412}
+    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 4289438564079297769}
+    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -438746348531386197, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _rotationSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1568696866865967746, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
@@ -2557,8 +3074,44 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3858469983264854432, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858469983264854432, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: schaal
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858469983264854432, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 7271524649221202412}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _sceneName
+      value: Zon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _actualSize
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _planetName
+      value: Zon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 1989000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7065298430492334281, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
       propertyPath: m_Name
@@ -2614,6 +3167,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7586080277050327667, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
   m_PrefabInstance: {fileID: 5962781800146167450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7271524649221202412 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3902838912492750710, guid: 1fd5da9753b778b4586c91b47e154165, type: 3}
+  m_PrefabInstance: {fileID: 5962781800146167450}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
 --- !u!1001 &6351663621338841344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2623,9 +3187,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 619697276378695026}
     m_Modifications:
     - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2533507393391374668}
+    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 1309164110321202271}
+    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1869374939891801129, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826187733276656782, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826187733276656782, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 2533507393391374668}
     - target: {fileID: 4703272140835565541, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: m_Name
       value: Uranus
@@ -2671,8 +3255,56 @@ PrefabInstance:
       value: -7.268982
       objectReference: {fileID: 0}
     - target: {fileID: 8657451766315651302, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657451766315651302, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
       propertyPath: schaal
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657451766315651302, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 2533507393391374668}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _sceneName
+      value: Uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _actualSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _planetName
+      value: Uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 30.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _simulationDistance
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 2870
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866875063040176204, guid: f8f913eca3e5e9442a46f14f80f952aa, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 2720
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2704,13 +3336,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 5638850246910055388}
     m_Modifications:
     - target: {fileID: 1258971207714967549, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258971207714967549, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: planeetInfo
       value: 
       objectReference: {fileID: 81607720598494697}
+    - target: {fileID: 1258971207714967549, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 81607720598494697}
+    - target: {fileID: 2271915404907592629, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2271915404907592629, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2271915404907592629, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 81607720598494697}
     - target: {fileID: 2271915404907592629, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: planeetInformatie
       value: 
@@ -2752,8 +3400,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3289807772468973496, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 81607720598494697}
+    - target: {fileID: 3289807772468973496, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 8979168539541872400}
+    - target: {fileID: 3289807772468973496, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: rotationSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289807772468973496, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _sceneName
+      value: Pluto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _actualSize
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _planetName
+      value: Pluto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 0.0131
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 90520
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _simulationDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 5900
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 5750
       objectReference: {fileID: 0}
     - target: {fileID: 3800382173740883116, guid: 4153d1a31c05174459c573ca95f0e41c, type: 3}
       propertyPath: planeetInfo
@@ -2793,9 +3493,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 8235543066346307092}
     m_Modifications:
     - target: {fileID: 1191429030092648986, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 1614855793203875985}
+    - target: {fileID: 1191429030092648986, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _orbitObject
+      value: 
+      objectReference: {fileID: 3256990893635344977}
+    - target: {fileID: 1191429030092648986, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1191429030092648986, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691381214581737054, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _scale
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691381214581737054, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _planeetInfo
+      value: 
+      objectReference: {fileID: 1614855793203875985}
     - target: {fileID: 5870353804855805480, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
       propertyPath: m_Name
       value: Mercurius
@@ -2840,10 +3560,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _sceneName
+      value: Mercurius
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _actualSize
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _planetName
+      value: Mercurius
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _mass10e24Kg
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _simulationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _orbitalPeriodDays
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _rotationPeriodDays
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _simulationDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _distanceToSunMillionsKm
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018374300739327570, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _distanceToEarthMillionsKm
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083112869497385455, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: scale
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7083112869497385455, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
       propertyPath: schaal
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7083112869497385455, guid: 2b20fca213946464d8f906c7670ae147, type: 3}
+      propertyPath: _planetInfo
+      value: 
+      objectReference: {fileID: 1614855793203875985}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

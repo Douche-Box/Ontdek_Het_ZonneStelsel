@@ -38,10 +38,6 @@ public class PlanetInfo : MonoBehaviour
     [SerializeField] private float _actualSize;
     public float ActualSize => _actualSize;
 
-    [Tooltip("Planet view point (empty GameObject)")]
-    [SerializeField] private GameObject _viewPoint;
-    public GameObject ViewPoint => _viewPoint;
-
     [Tooltip("Planet scene name")]
     [SerializeField] private string _sceneName;
     public string SceneName => _sceneName;

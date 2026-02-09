@@ -64,7 +64,7 @@ public class RotateObject : MonoBehaviour
         {
             case RotateType.AroundSelf:
                 // Days -> degrees per second
-                return 1f / 360f / _planetInfo.RotationPeriodDays * _rotationSpeed;
+                return (1f / 360f / _planetInfo.RotationPeriodDays) * _rotationSpeed;
 
             // 1:25 = 0.04 (draaisnelheid)
             // 1:59 = 0.0167 (snelheid)
@@ -73,7 +73,7 @@ public class RotateObject : MonoBehaviour
 
             case RotateType.AroundSun:
                 // Days -> degrees per second
-                return 1f / 360f / _planetInfo.OrbitalPeriodDays * _rotationSpeed;
+                return (1f / 360f / _planetInfo.OrbitalPeriodDays) * _rotationSpeed;
 
                 // 1:25 = 0.04 (draaisnelheid)
                 // 1:1 = 1 (snelheid)
