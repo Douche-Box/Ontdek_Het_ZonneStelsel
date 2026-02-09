@@ -12,7 +12,7 @@ public class UI_manager : MonoBehaviour
     public int volume;
     public GameObject pauseMenu;
     public PlayerInput playerInput;
-    public PlaneetInformatie planeetInformatie;
+    public PlanetInfo planeetInformatie;
     public GameObject landenOpPlaneet;
     public GameObject verlaatPlaneet;
     public bool opPlaneet = false;
@@ -215,7 +215,7 @@ public class UI_manager : MonoBehaviour
 
     public void SchaalToggle()
     {
-        PlaneetAfstandVerandering.Instance.ToggleModeSimulationMode();
+        PlanetSimulationChange.Instance.ToggleModeSimulationMode();
     }
 
     public void LandOpPlaneet(string selectedPlanet)
