@@ -2543,7 +2543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: _simulationDistance
-      value: 450
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: -5031933446772312501, guid: 71d458ef728bd304d982b3abf68d5281, type: 3}
       propertyPath: _distanceToSunMillionsKm
@@ -3549,7 +3549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: _simulationDistance
-      value: 500
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
       propertyPath: _distanceToSunMillionsKm

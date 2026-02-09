@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5309975026408385692}
   m_Father: {fileID: 6314935457196296176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7286008678069017072
@@ -139,6 +140,7 @@ GameObject:
   - component: {fileID: 6314935457196296176}
   - component: {fileID: 1220792824039030181}
   - component: {fileID: 3683473649468578192}
+  - component: {fileID: 2175299047598406780}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -242,3 +244,98 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2175299047598406780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7461004206170290819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e95a7215243544ea9a48f4bff57cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Controller
+  _camera: {fileID: 7286008678069017072}
+  lastHighlightedObject: {fileID: 0}
+  currentSelectedObject: {fileID: 0}
+  cameraController: {fileID: 1220792824039030181}
+  playerInput: {fileID: 3683473649468578192}
+  targetObject: {fileID: 0}
+  highlight: 0
+  highlightMaterial: {fileID: 2100000, guid: c6ced123f9bb8ea40aa896b3396b95ce, type: 2}
+  originalMaterials: []
+--- !u!1001 &7145912850796128080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2023029283089907425}
+    m_Modifications:
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504825514195426271, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504825514195426271, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: ShapeModule.type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504825514195426271, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984895979025828907, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+      propertyPath: m_Name
+      value: LightBeams
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+--- !u!4 &5309975026408385692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3070245241029020620, guid: c583d9ad16ba824419d5519a11f17efb, type: 3}
+  m_PrefabInstance: {fileID: 7145912850796128080}
+  m_PrefabAsset: {fileID: 0}
