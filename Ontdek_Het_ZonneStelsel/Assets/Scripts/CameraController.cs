@@ -36,6 +36,8 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private float _upDownInput;
 
+    [SerializeField] private bool _speedUpInput;
+
     #endregion
 
     [Header("Settings")]
@@ -96,7 +98,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _minFlySpeed = 1f;
     [SerializeField] private float _maxFlySpeed = 20f;
 
-    [SerializeField] private float _flySpeedMultiplier = 1f;
+    [SerializeField] private float _defaultSpeedMultiplier = 1f;
+    [SerializeField] private float _currentFlySpeedMultiplier = 1f;
 
     [SerializeField] private float _flySpeedChangeRate = 1f;
 
@@ -104,6 +107,8 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private bool _sameMoveDirection;
     [SerializeField] private float _moveDirectionDiffTolerance = 0.99f;
+
+    [SerializeField] private float _speedUpExtraSpeed = 10f;
 
     #endregion
 
@@ -121,6 +126,9 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("MoveUpDown").performed += OnMoveUpDown;
         _playerInput.actions.FindAction("MoveUpDown").canceled += OnMoveUpDown;
+
+        _playerInput.actions.FindAction("SpeedUp").performed += OnSpeedUp;
+        _playerInput.actions.FindAction("SpeedUp").canceled += OnSpeedUp;
     }
 
     private void OnDisable()
@@ -135,6 +143,9 @@ public class CameraController : MonoBehaviour
 
         _playerInput.actions.FindAction("MoveUpDown").performed -= OnMoveUpDown;
         _playerInput.actions.FindAction("MoveUpDown").canceled -= OnMoveUpDown;
+
+        _playerInput.actions.FindAction("SpeedUp").performed -= OnSpeedUp;
+        _playerInput.actions.FindAction("SpeedUp").canceled -= OnSpeedUp;
     }
 
     #endregion
@@ -179,6 +190,24 @@ public class CameraController : MonoBehaviour
     private void OnMoveUpDown(InputAction.CallbackContext context)
     {
         _upDownInput = context.ReadValue<float>();
+    }
+
+    /// <summary>
+    /// Handles speed up input for free flying movement when not focussing on a target.
+    /// </summary>
+    /// <param name="context"></param>
+    private void OnSpeedUp(InputAction.CallbackContext context)
+    {
+        _speedUpInput = context.ReadValueAsButton();
+
+        if (_speedUpInput)
+        {
+            _flySpeedChangeRate = _speedUpExtraSpeed;
+        }
+        else
+        {
+            _flySpeedChangeRate = _defaultSpeedMultiplier;
+        }
     }
 
     #endregion
@@ -421,7 +450,7 @@ public class CameraController : MonoBehaviour
             _sameMoveDirection = false;
         }
 
-        float targetSpeed = _sameMoveDirection ? _moveSpeed * _flySpeedMultiplier : _minFlySpeed;
+        float targetSpeed = _sameMoveDirection ? _maxFlySpeed : _minFlySpeed;
 
         // Do the Move towards inside the clamp to clamp the speed before increasing it beyoned the max or min
         _currentFlySpeed = Mathf.Clamp
@@ -437,5 +466,4 @@ public class CameraController : MonoBehaviour
 
         _previousMoveDirection = moveDirection;
     }
-
 }
