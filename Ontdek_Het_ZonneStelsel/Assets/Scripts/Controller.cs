@@ -1,26 +1,46 @@
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Controller : MonoBehaviour
 {
+    public static Controller Instance { get; private set; }
+
     [SerializeField] private Camera _camera;
 
     [SerializeField] private GameObject lastHighlightedObject;
+    private GameObject currentHighlightedObject;
     [SerializeField] private GameObject currentSelectedObject;
-    public CameraController cameraController;
     [SerializeField] private PlayerInput playerInput;
     public TargetObject targetObject;
 
     public bool highlight = false;
     public Material highlightMaterial;
     public Material[] originalMaterials;
-    Material[] allMaterials;
+    public Material[] allMaterials;
 
+    [SerializeField] private bool _isOnPlanet = false;
+    public bool IsOnPlanet
+    {
+        get => _isOnPlanet;
+        set => _isOnPlanet = value;
+    }
 
+    [SerializeField] private Ray _highlightRay;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
-    private GameObject currentHighlightedObject;
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void OnEnable()
     {
@@ -30,95 +50,132 @@ public class Controller : MonoBehaviour
     {
         playerInput.actions.FindAction("Click").started -= OnClick;
     }
+
+    public void GetCamera()
+    {
+        _camera = FindAnyObjectByType<Camera>();
+
+        if (_camera == null)
+        {
+            Debug.LogError("Camera not found in the scene.");
+        }
+    }
+
     void Update()
     {
         HandleHighlight();
-        /*
-        Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+
+        if (_camera == null)
         {
-            currentSelectedObject = hit.transform.gameObject;
-            currentSelectedObject.TryGetComponent(out Renderer renderer);
-            originalMaterials = new Material[renderer.materials.Length + 1];
-            allMaterials = originalMaterials;
-            allMaterials[allMaterials.Length -1] = highlightMaterial;
-
-            var mats = renderer.materials;
-            allMaterials = new Material[mats.Length + 1];
-            mats.CopyTo(allMaterials, 0);
-            allMaterials[allMaterials.Length - 1] = highlightMaterial;
-            renderer.materials = allMaterials;
-
-
-
-
-            highlight = true;
-            Debug.Log("highlight true");
-            currentSelectedObject = hit.transform.gameObject;
-            //UI_manager.Instance.ShowPopup(currentObject.ObjectName, currentObject.Info);
+            GetCamera();
         }
-        else
-        {
-            highlight = false;
-            clearHighlight();
-        }
-        */
     }
+
     public void AddTarget(Transform newTarget)
     {
-        if (currentSelectedObject != newTarget.gameObject)
+        if (currentSelectedObject == newTarget.gameObject && !IsOnPlanet)
         {
-            Debug.Log("addtarget");
-            
+            RemoveTarget();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
 
-            
+            currentSelectedObject = null;
+            return;
         }
-        else
+
+        currentSelectedObject = newTarget.gameObject;
+
+        if (currentSelectedObject.TryGetComponent(out TargetObject targetObj))
+        {
+            if (CameraController.Instance != null)
+                CameraController.Instance.AddTarget(newTarget);
+
+            UI_manager.Instance.ShowPopup(targetObj.ObjectName, targetObj.Info);
+
+            if (IsOnPlanet)
+            {
+                UI_manager.Instance.ShowLeaveButton();
+            }
+            else
+            {
+                UI_manager.Instance.ShowLandButton(targetObj.ObjectName);
+            }
+        }
+    }
+
+    public void RemoveTarget()
+    {
+        CameraController.Instance.RemoveTarget();
+        UI_manager.Instance.HidePopup();
+    }
+
+    public void clearHighlight()
+    {
+        if (currentSelectedObject != null)
         {
             currentSelectedObject.TryGetComponent(out Renderer renderer);
             originalMaterials = new Material[renderer.materials.Length - 1];
             currentSelectedObject = null;
         }
     }
-    public void RemoveTarget()
-    {
 
-    }
-
-    public void SelectObject()
-    {
-
-    }
-    public void Move()
-    {
-
-    }
-    public void clearHighlight()
-    {
-        Debug.Log("clearnHIghliight");
-        currentSelectedObject.TryGetComponent(out Renderer renderer);
-        originalMaterials = new Material[renderer.materials.Length - 1];
-        currentSelectedObject = null;
-    }
+    /// <summary>
+    /// Handles the click input to select or deselect objects in the scene.
+    /// If the cursor is visible and unlocked, it uses the mouse position.
+    /// Otherwise it casts a ray from the center of the screen. If an object is hit, it becomes the current selected object. 
+    /// </summary>
+    /// <param name="context"></param>
     public void OnClick(InputAction.CallbackContext context)
     {
-        Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        // If clicking UI, ignore interaction
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            return;
+
+        Ray ray;
+
+        if (Cursor.visible && Cursor.lockState == CursorLockMode.None)
+        {
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            ray = _camera.ScreenPointToRay(mousePos);
+        }
+        else
+        {
+            ray = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        }
+
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
         {
-            Debug.Log("cliCK");
             AddTarget(hit.transform);
         }
         else
         {
-            Debug.Log("other click");
             clearHighlight();
         }
     }
 
     public void HandleHighlight()
     {
-        Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f));
-        if (!Physics.Raycast(ray, out RaycastHit hit))
+        if (_camera == null || !highlight)
+        {
+            ClearHighlight();
+            return;
+        }
+
+        if (_isOnPlanet)
+        {
+            highlightMaterial.SetFloat("_Scale", 0.01f);
+
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            _highlightRay = _camera.ScreenPointToRay(mousePos);
+        }
+        else
+        {
+            highlightMaterial.SetFloat("_Scale", 1f);
+
+            _highlightRay = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        }
+
+        if (!Physics.Raycast(_highlightRay, out RaycastHit hit))
         {
             ClearHighlight();
             return;
@@ -126,14 +183,13 @@ public class Controller : MonoBehaviour
 
         GameObject hitObject = hit.collider.gameObject;
 
-        // Do nothing if already highlighted
         if (hitObject == currentHighlightedObject)
             return;
 
         ClearHighlight();
         HighlightObject(hitObject);
-        HighlightObject(hitObject);
     }
+
     public void ClearHighlight()
     {
         if (currentHighlightedObject == null)
@@ -146,9 +202,8 @@ public class Controller : MonoBehaviour
 
         currentHighlightedObject = null;
         originalMaterials = null;
-        originalMaterials = null;
     }
- 
+
     private void HighlightObject(GameObject obj)
     {
         if (!obj.TryGetComponent(out Renderer renderer))
@@ -157,10 +212,10 @@ public class Controller : MonoBehaviour
         currentHighlightedObject = obj;
         originalMaterials = renderer.materials;
 
-        Material[] newMaterials = new Material[originalMaterials.Length + 1];
-        originalMaterials.CopyTo(newMaterials, 0);
-        newMaterials[newMaterials.Length - 1] = highlightMaterial;
+        allMaterials = new Material[originalMaterials.Length + 1];
+        originalMaterials.CopyTo(allMaterials, 0);
+        allMaterials[allMaterials.Length - 1] = highlightMaterial;
 
-        renderer.materials = newMaterials;
+        renderer.materials = allMaterials;
     }
 }

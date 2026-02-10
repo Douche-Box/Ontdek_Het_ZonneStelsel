@@ -140,7 +140,6 @@ GameObject:
   - component: {fileID: 6314935457196296176}
   - component: {fileID: 1220792824039030181}
   - component: {fileID: 3683473649468578192}
-  - component: {fileID: 2175299047598406780}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -191,6 +190,7 @@ MonoBehaviour:
   _moveInput: {x: 0, y: 0}
   _isMoving: 0
   _upDownInput: 0
+  _speedUpInput: 0
   _rotationSpeed: 10
   _moveSpeed: 5
   _minYClamp: -80
@@ -212,8 +212,12 @@ MonoBehaviour:
   _currentFlySpeed: 0
   _minFlySpeed: 30
   _maxFlySpeed: 500
-  _flySpeedMultiplier: 8
+  _defaultSpeedMultiplier: 1
+  _currentFlySpeedMultiplier: 1
   _flySpeedChangeRate: 10
+  _sameMoveDirection: 0
+  _moveDirectionDiffTolerance: 0.99
+  _speedUpExtraSpeed: 10
 --- !u!114 &3683473649468578192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,27 +248,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &2175299047598406780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7461004206170290819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e95a7215243544ea9a48f4bff57cc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Controller
-  _camera: {fileID: 7286008678069017072}
-  lastHighlightedObject: {fileID: 0}
-  currentSelectedObject: {fileID: 0}
-  cameraController: {fileID: 1220792824039030181}
-  playerInput: {fileID: 3683473649468578192}
-  targetObject: {fileID: 0}
-  highlight: 0
-  highlightMaterial: {fileID: 2100000, guid: c6ced123f9bb8ea40aa896b3396b95ce, type: 2}
-  originalMaterials: []
 --- !u!1001 &7145912850796128080
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -25,6 +25,9 @@ public class UI_manager : MonoBehaviour
     [SerializeField] private GameObject _tabMenu;
     [SerializeField] private GameObject _ScaleToggle;
 
+    [SerializeField] private GameObject _landPanel;
+    [SerializeField] private Button _landLeaveButton;
+
     [Header("Settings Menu")]
     [SerializeField] private Slider _textSpeedSlider;
     [SerializeField] private TMP_InputField _textSpeedInputField;
@@ -156,6 +159,7 @@ public class UI_manager : MonoBehaviour
         {
             landenOpPlaneet.SetActive(!landenOpPlaneet.activeSelf);
         }
+
         if (opPlaneet == true)
         {
             verlaatPlaneet.SetActive(!verlaatPlaneet.activeSelf);
@@ -185,24 +189,57 @@ public class UI_manager : MonoBehaviour
 
     public void ShowPopup(string header, string content)
     {
-        _popupPanel.SetActive(true);
+        if (_popupPanel != null)
+            _popupPanel.SetActive(true);
+
+        if (_landPanel != null)
+            _landPanel.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         TextWriter.Instance.WriteText(content, header);
     }
 
+    public void ShowLandButton(string planetToLandOn)
+    {
+        if (_landLeaveButton != null)
+        {
+            _landLeaveButton.gameObject.SetActive(true);
+            _landLeaveButton.GetComponentInChildren<TextMeshProUGUI>().text = "Land op " + planetToLandOn;
+
+            _landLeaveButton.onClick.RemoveAllListeners();
+            _landLeaveButton.onClick.AddListener(() => LandOpPlaneet(planetToLandOn));
+        }
+    }
+
+    public void ShowLeaveButton()
+    {
+        if (_landLeaveButton != null)
+        {
+            _landLeaveButton.gameObject.SetActive(true);
+            _landLeaveButton.GetComponentInChildren<TextMeshProUGUI>().text = "Verlaat";
+
+            _landLeaveButton.onClick.RemoveAllListeners();
+            _landLeaveButton.onClick.AddListener(LeavePlanet);
+        }
+    }
+
     public void HidePopup()
     {
-        _popupPanel.SetActive(false);
+        if (_popupPanel != null)
+            _popupPanel.SetActive(false);
 
         TextWriter.Instance.RemoveText();
     }
 
     public void Terug()
     {
-        CameraController.Instance.RemoveTarget();
         landenOpPlaneet.SetActive(false);
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
         HidePopup();
     }
 
@@ -220,15 +257,33 @@ public class UI_manager : MonoBehaviour
         _ScaleToggle.SetActive(!_ScaleToggle.activeSelf);
     }
 
-    public void LandOpPlaneet(string selectedPlanet)
+    public void LandOpPlaneet(string planetToLandOn)
     {
-        SceneManager.LoadScene(selectedPlanet);
+        SceneManager.LoadScene(planetToLandOn);
+        Controller.Instance.IsOnPlanet = true;
+
+        HidePopup();
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        ShowLeaveButton();
     }
 
-    public void VerlaatPlaneet()
+    public void LeavePlanet()
     {
         SceneManager.LoadScene("Zonnestelsel");
+        Controller.Instance.IsOnPlanet = false;
+
+        if (_landLeaveButton != null)
+            _landLeaveButton.gameObject.SetActive(false);
+
+        HidePopup();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
+
     public void SelectPlaneet()
     {
         landenOpPlaneet.SetActive(true);

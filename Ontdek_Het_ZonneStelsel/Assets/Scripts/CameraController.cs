@@ -257,6 +257,9 @@ public class CameraController : MonoBehaviour
             _isParented = false;
         }
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         _lookAtTarget = null;
         _targetPin = null;
     }
