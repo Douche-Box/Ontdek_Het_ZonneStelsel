@@ -1401,6 +1401,10 @@ PrefabInstance:
       propertyPath: _realisticLineWidth
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3011043883064756777, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4212878020039030321, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
       propertyPath: _realisticLineWidth
       value: 0.001
@@ -1413,9 +1417,29 @@ PrefabInstance:
       propertyPath: _realisticLineWidth
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5117548268539089944, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_Range
+      value: 60000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117548268539089944, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_Intensity
+      value: 5000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117548268539089944, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 183
+      objectReference: {fileID: 0}
     - target: {fileID: 5396341574880313791, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
       propertyPath: _realisticLineWidth
       value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848015534431798039, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078405523356947539, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8213430280814422073, guid: 0c14c0f09ebd11e4a97a46b491d5978c, type: 3}
       propertyPath: _realisticLineWidth
