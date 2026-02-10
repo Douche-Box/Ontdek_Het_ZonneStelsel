@@ -9,16 +9,16 @@ public class UI_manager : MonoBehaviour
 {
     public static UI_manager Instance { get; private set; }
 
-    public int volume;
-    public GameObject pauseMenu;
-    public PlayerInput playerInput;
-    public PlanetInfo planeetInformatie;
-    public GameObject landenOpPlaneet;
-    public GameObject verlaatPlaneet;
-    public bool opPlaneet = false;
-    public bool planeetIsSelected = false;
+    [SerializeField] private int _volume;
+    [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private PlayerInput _playerInput;
+    [SerializeField] private PlanetInfo _planeetInformatie;
+    [SerializeField] private GameObject _landenOpPlaneet;
+    [SerializeField] private GameObject _verlaatPlaneet;
+    [SerializeField] private bool _opPlaneet = false;
+    [SerializeField] private bool _planeetIsSelected = false;
 
-    public string selectedPlaneet;
+    [SerializeField] private string _selectedPlaneet;
 
     [SerializeField] private GameObject _popupPanel;
 
@@ -62,11 +62,11 @@ public class UI_manager : MonoBehaviour
 
     private void OnEnable()
     {
-        if (playerInput != null)
+        if (_playerInput != null)
         {
-            playerInput.actions.FindAction("PauseMenu").performed += OnPause;
+            _playerInput.actions.FindAction("PauseMenu").performed += OnPause;
 
-            playerInput.actions.FindAction("Tab").performed += OnTab;
+            _playerInput.actions.FindAction("Tab").performed += OnTab;
         }
 
 
@@ -82,11 +82,11 @@ public class UI_manager : MonoBehaviour
 
     void OnDisable()
     {
-        if (playerInput != null)
+        if (_playerInput != null)
         {
-            playerInput.actions.FindAction("PauseMenu").performed -= OnPause;
+            _playerInput.actions.FindAction("PauseMenu").performed -= OnPause;
 
-            playerInput.actions.FindAction("Tab").performed -= OnTab;
+            _playerInput.actions.FindAction("Tab").performed -= OnTab;
         }
 
 
@@ -143,26 +143,26 @@ public class UI_manager : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        _pauseMenu.SetActive(!_pauseMenu.activeSelf);
 
         _tabMenu.SetActive(false);
 
-        Cursor.lockState = pauseMenu.activeSelf ? CursorLockMode.None : CursorLockMode.Locked;
-        Cursor.visible = pauseMenu.activeSelf;
+        Cursor.lockState = _pauseMenu.activeSelf ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = _pauseMenu.activeSelf;
 
-        if (pauseMenu.activeSelf)
+        if (_pauseMenu.activeSelf)
             CameraController.Instance.PlayerInput.currentActionMap.Disable();
         else
             CameraController.Instance.PlayerInput.currentActionMap.Enable();
 
-        if (planeetIsSelected == true)
+        if (_planeetIsSelected == true)
         {
-            landenOpPlaneet.SetActive(!landenOpPlaneet.activeSelf);
+            _landenOpPlaneet.SetActive(!_landenOpPlaneet.activeSelf);
         }
 
-        if (opPlaneet == true)
+        if (_opPlaneet == true)
         {
-            verlaatPlaneet.SetActive(!verlaatPlaneet.activeSelf);
+            _verlaatPlaneet.SetActive(!_verlaatPlaneet.activeSelf);
         }
     }
 
@@ -173,7 +173,7 @@ public class UI_manager : MonoBehaviour
     /// <param name="context"></param>
     private void OnTab(InputAction.CallbackContext context)
     {
-        if (pauseMenu.activeSelf)
+        if (_pauseMenu.activeSelf)
             return;
 
         _tabMenu.SetActive(!_tabMenu.activeSelf);
@@ -238,7 +238,7 @@ public class UI_manager : MonoBehaviour
 
     public void Terug()
     {
-        landenOpPlaneet.SetActive(false);
+        _landenOpPlaneet.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -289,6 +289,6 @@ public class UI_manager : MonoBehaviour
 
     public void SelectPlaneet()
     {
-        landenOpPlaneet.SetActive(true);
+        _landenOpPlaneet.SetActive(true);
     }
 }
