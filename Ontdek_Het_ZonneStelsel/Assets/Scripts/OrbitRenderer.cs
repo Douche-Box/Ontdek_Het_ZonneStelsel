@@ -14,13 +14,13 @@ public class OrbitRenderer : MonoBehaviour
     [SerializeField] private float _realisticLineWidth = 0.001f;
     [SerializeField] private float _scale = 100f;
 
-    private LineRenderer lineRenderer;
+    private LineRenderer _lineRenderer;
 
     void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.loop = true;
-        lineRenderer.useWorldSpace = false;
+        _lineRenderer = GetComponent<LineRenderer>();
+        _lineRenderer.loop = true;
+        _lineRenderer.useWorldSpace = false;
     }
 
     void Start()
@@ -50,9 +50,9 @@ public class OrbitRenderer : MonoBehaviour
             ? _simulationLineWidth
             : _realisticLineWidth;
 
-        lineRenderer.positionCount = _segments;
-        lineRenderer.startWidth = lineWidth;
-        lineRenderer.endWidth = lineWidth;
+        _lineRenderer.positionCount = _segments;
+        _lineRenderer.startWidth = lineWidth;
+        _lineRenderer.endWidth = lineWidth;
 
 
         for (int i = 0; i < _segments; i++)
@@ -63,7 +63,7 @@ public class OrbitRenderer : MonoBehaviour
             float z = Mathf.Sin(angle) * effectiveRadius;
 
             Vector3 pos = _centerObject.position + new Vector3(x, 0f, z);
-            lineRenderer.SetPosition(i, pos);
+            _lineRenderer.SetPosition(i, pos);
         }
     }
 
