@@ -2173,19 +2173,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 9159329685534762679}
   m_SourcePrefab: {fileID: 100100000, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
 --- !u!114 &2729840731192369566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3137490720422454518, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
   m_PrefabInstance: {fileID: 1038304570154960232}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7256171841050360608}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!1 &7256171841050360608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7699982567595834952, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
+  m_PrefabInstance: {fileID: 1038304570154960232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &9159329685534762679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256171841050360608}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: -0.0000016689305, y: 0.000002145766, z: 0.000033140182}
 --- !u!4 &8068420235378549146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7030125571582436594, guid: 030059fbacffe8c47a17a7e573a8977c, type: 3}
@@ -3570,19 +3599,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3026138199877243403, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 7669428803350374759}
   m_SourcePrefab: {fileID: 100100000, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
 --- !u!114 &81607720598494697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6848101434591693384, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
   m_PrefabInstance: {fileID: 6784877566027995041}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8635575981420168618}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49104ee92254b11468357452a0969e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaneetInformatie
+--- !u!1 &8635575981420168618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3026138199877243403, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
+  m_PrefabInstance: {fileID: 6784877566027995041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &7669428803350374759
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8635575981420168618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: -0.00000166893, y: 0.0000021457672, z: 0.000033140182}
 --- !u!4 &8979168539541872400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2500852409876351153, guid: c76074ffc98fe4849a1859f2e8b201c9, type: 3}
