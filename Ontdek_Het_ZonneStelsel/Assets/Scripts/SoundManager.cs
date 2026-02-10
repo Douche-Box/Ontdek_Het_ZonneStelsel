@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
@@ -178,6 +179,14 @@ public class SoundManager : MonoBehaviour
     private const string MUSIC_VOLUME_KEY = "MUSIC_VOLUME";
     [SerializeField] private float _musicVolume = 1f;
 
+    [SerializeField] private Slider _masterSlider;
+    [SerializeField] private Slider _sfxSlider;
+    [SerializeField] private Slider _musicSlider;
+
+    [SerializeField] private InputField _masterInputField;
+    [SerializeField] private InputField _sfxInputField;
+    [SerializeField] private InputField _musicInputField;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -189,6 +198,66 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         InitializeAudioPlayers();
+
+        _masterSlider.onValueChanged.AddListener(SetMasterVolume);
+        _sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+        _musicSlider.onValueChanged.AddListener(SetMusicVolume);
+
+        _masterInputField.onEndEdit.AddListener(SetMasterVolume);
+        _sfxInputField.onEndEdit.AddListener(SetSFXVolume);
+        _musicInputField.onEndEdit.AddListener(SetMusicVolume);
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        _masterVolume = Mathf.Clamp01(volume);
+        _masterInputField.text = _masterVolume.ToString("0.00");
+        PlayerPrefs.SetFloat(MASTER_VOLUME_KEY, _masterVolume);
+        ApplyVolumes();
+    }
+
+    public void SetMasterVolume(string volume)
+    {
+        if (float.TryParse(volume, out float vol))
+        {
+            SetMasterVolume(vol);
+            _masterSlider.value = _masterVolume;
+        }
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        _sfxVolume = Mathf.Clamp01(volume);
+        _sfxInputField.text = _sfxVolume.ToString("0.00");
+        PlayerPrefs.SetFloat(SFX_VOLUME_KEY, _sfxVolume);
+        ApplyVolumes();
+    }
+
+    public void SetSFXVolume(string volume)
+    {
+        if (float.TryParse(volume, out float vol))
+        {
+            SetSFXVolume(vol);
+            _sfxSlider.value = _sfxVolume;
+        }
+
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        _musicVolume = Mathf.Clamp01(volume);
+        _musicInputField.text = _musicVolume.ToString("0.00");
+        PlayerPrefs.SetFloat(MUSIC_VOLUME_KEY, _musicVolume);
+        ApplyVolumes();
+    }
+
+    public void SetMusicVolume(string volume)
+    {
+        if (float.TryParse(volume, out float vol))
+        {
+            SetMusicVolume(vol);
+            _musicSlider.value = _musicVolume;
+        }
     }
 
     /// <summary>
