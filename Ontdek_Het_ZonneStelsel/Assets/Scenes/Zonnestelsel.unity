@@ -954,6 +954,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2386200176038705495, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2816115953625972559, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1005,6 +1009,14 @@ PrefabInstance:
     - target: {fileID: 3288337091803983093, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -185
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530252234075683771, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 385.2374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530252234075683771, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.80589
       objectReference: {fileID: 0}
     - target: {fileID: 4629747360146406053, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1185,6 +1197,26 @@ PrefabInstance:
     - target: {fileID: 7931686574029842061, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_SizeDelta.y
       value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_margin.w
+      value: 0.64424133
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954917032505259376, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8672558697753375128, guid: 5cd57b3e441df6b4892abcf84da06f75, type: 3}
       propertyPath: m_AnchorMax.y
