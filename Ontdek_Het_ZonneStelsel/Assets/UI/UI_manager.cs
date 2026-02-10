@@ -230,6 +230,9 @@ public class UI_manager : MonoBehaviour
         if (_popupPanel != null)
             _popupPanel.SetActive(false);
 
+        if (_landPanel != null)
+            _landPanel.SetActive(false);
+
         TextWriter.Instance.RemoveText();
     }
 

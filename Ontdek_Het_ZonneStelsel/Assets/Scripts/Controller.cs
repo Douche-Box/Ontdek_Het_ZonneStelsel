@@ -101,6 +101,11 @@ public class Controller : MonoBehaviour
                 UI_manager.Instance.ShowLandButton(targetObj.ObjectName);
             }
         }
+
+        if (currentSelectedObject == null)
+        {
+            RemoveTarget();
+        }
     }
 
     public void RemoveTarget()
