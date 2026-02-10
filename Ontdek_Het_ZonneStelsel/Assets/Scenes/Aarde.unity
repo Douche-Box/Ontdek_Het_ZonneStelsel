@@ -1580,7 +1580,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aarde Surface
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8369989975106475462, guid: 4edf52a012bf9144e9b7c6e77463f9b5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2027,7 +2028,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gebouw aarde (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4252790643677890206, guid: 82dc0c36170698c4c9742e6cc89751f1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3095,7 +3097,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gebouw aarde
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4252790643677890206, guid: 82dc0c36170698c4c9742e6cc89751f1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
